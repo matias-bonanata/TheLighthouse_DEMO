@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SocialPlatforms;
 // UnityEngine.Experimental.GlobalIllumination;
 
 [ExecuteAlways] //execute methods in class whilst in unity editor
@@ -14,7 +15,7 @@ public class LightingManager : MonoBehaviour
     [Header("Time")]
     [SerializeField] float daySpeed = 1f;
     [SerializeField] float startingPositionModifier = 0f;
-    [SerializeField, Range(0,24)] private float TimeOfDay;
+    [SerializeField, Range(0,24)] public float TimeOfDay; //I made this public
     [SerializeField] private float dayBreak = 11.25f;
     [SerializeField] private float nightBreak = 0.8f;
 

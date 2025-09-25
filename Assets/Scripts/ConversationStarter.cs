@@ -7,6 +7,7 @@ public class ConversationStarter : MonoBehaviour
     [Header("What to do when Interact")]
     [SerializeField] private NPCConversation conversation;
     public Transform teleportLocation;
+    public GameObject thingToDestroy;
 
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI uiText;
@@ -18,6 +19,7 @@ public class ConversationStarter : MonoBehaviour
 
     private bool willConverse = false;
     private bool willTeleport = false;
+    private bool willDelete = false;
 
     void Start()
     {
@@ -37,6 +39,15 @@ public class ConversationStarter : MonoBehaviour
         else
         {
             willTeleport = false;
+        }
+
+        if (thingToDestroy != null)
+        {
+            willDelete = true;
+        }
+        else
+        {
+            willDelete = false;
         }
     }
 
@@ -65,6 +76,13 @@ public class ConversationStarter : MonoBehaviour
                     player.transform.position = teleportLocation.position;
                     player.enabled = true;
                     playerInteractUI.HideContainer();
+                }
+
+                if (willDelete == true)
+                {
+                    Destroy(thingToDestroy);
+                    uiText.text = " ";
+                    Destroy(transform.parent.gameObject);
                 }
             }
         }
