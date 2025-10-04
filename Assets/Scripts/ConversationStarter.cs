@@ -80,9 +80,9 @@ public class ConversationStarter : MonoBehaviour
 
                 if (willDelete == true)
                 {
-                    Destroy(thingToDestroy);
+                    thingToDestroy.SetActive(false);
                     uiText.text = " ";
-                    Destroy(transform.parent.gameObject);
+                    transform.parent.gameObject.SetActive(false);
                 }
             }
         }
