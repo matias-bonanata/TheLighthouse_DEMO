@@ -100,6 +100,32 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void SetVolume(AudioClip audioClip, float newVolume)
+    {
+        if (playingSounds.TryGetValue(audioClip, out AudioSource source))
+        {
+            if (source != null && source.isPlaying)
+            {
+                source.volume = newVolume;
+            }
+        }
+    }
+
+    public bool IsSoundPlaying(AudioClip audioClip)
+    {
+        if (playingSounds.TryGetValue(audioClip, out AudioSource source))
+        {
+            return source != null && source.isPlaying;
+        }
+        return false;
+    }
+
+
+
+
+
+
+
 
 
     //IGNORE IT

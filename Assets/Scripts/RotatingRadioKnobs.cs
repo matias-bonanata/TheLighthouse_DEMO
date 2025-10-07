@@ -5,25 +5,17 @@ public class RotatingRadioKnobs : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5f;
     private bool isDragging = false;
     private Vector3 lastMousePosition;
-    private float currentRotationX;
+    public float currentRotationX;
 
     public Transform radioSlider;
 
-    [Header("Sounds")]
-    [SerializeField] private AudioClip song1;
-    [SerializeField] private AudioSource audioSource;
-
-    private float song1volume = 1f;
-
-    void Start()
+    private void Start()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-
         // Store initial X rotation on start
         currentRotationX = transform.localEulerAngles.x;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -67,23 +59,6 @@ public class RotatingRadioKnobs : MonoBehaviour
             }
 
             lastMousePosition = currentMousePosition;
-
         }
-        else
-        {
-            isDragging = false;
-        }
-
-        //Channel Switch
-        if (!gameObject.CompareTag("Volume Knob") && radioSlider != null &&
-            radioSlider.localPosition.z > 0.23f && radioSlider.localPosition.z < 0.25f)
-        {
-            SoundManager.instance.PlayWaitSoundFXClip(song1, transform, song1volume);
-        }
-
-        //if (gameObject.CompareTag("Volume Knob"))
-        //{
-        //    audioSource.volume = Mathf.Pow(10, radioSlider.localPosition.z / 20f);
-        //}
     }
 }
