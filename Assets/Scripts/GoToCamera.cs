@@ -5,7 +5,7 @@ public class GoToCamera : MonoBehaviour
     [Header("Camera Preferences")]
     [SerializeField] private Camera mainCamera; // Assign your camera in inspector or find in Start
     [SerializeField] private float smoothSpeed = 5f; // Speed of the smooth movement 
-    [SerializeField] private float distanceInFront = 1.3f; // Distance to keep in front of the camera
+    [SerializeField] public float distanceInFront = 1.3f; // Distance to keep in front of the camera
     [SerializeField] private float rotationX = 0f; // Speed of the smooth movement 
     [SerializeField] private float rotationY = -90f; // Speed of the smooth movement 
     [SerializeField] private float rotationZ = 0.5f; // Speed of the smooth movement 
