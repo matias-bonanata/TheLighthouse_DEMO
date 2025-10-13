@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 7062820770858722205}
   - component: {fileID: 4839217396681218768}
   - component: {fileID: 226543918347487116}
+  - component: {fileID: 4822735811409626254}
   - component: {fileID: 5935044534319761038}
   m_Layer: 0
   m_Name: Radio
@@ -468,6 +469,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4822735811409626254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9191042176119226423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1606e6d8582816e41bc96ba19d0cb72f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  smoothSpeed: 5
+  distanceInFront: 1.3
+  rotationX: 0
+  rotationY: -90
+  rotationZ: 0.5
 --- !u!114 &5935044534319761038
 MonoBehaviour:
   m_ObjectHideFlags: 0
