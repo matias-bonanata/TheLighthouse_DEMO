@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class MentalMeter : MonoBehaviour
 {
@@ -44,11 +45,13 @@ public class MentalMeter : MonoBehaviour
         {
             UpdateHealth("Recover", 2);
             isCold = true;
+            ChangeMentalBarColor(Color.red);
         }
 
 
-            if (playerHealth >= 0)
+        if (playerHealth >= 0)
         {
+            //hunger
             if (playerHunger >= 0)
             {
                 playerHunger -= Time.deltaTime * hungerDrain;
@@ -58,6 +61,7 @@ public class MentalMeter : MonoBehaviour
                 UpdateHealth("Suffer", damageMult);
             }
 
+            //tired
             if (playerTired >= 0)
             {
                 playerTired -= Time.deltaTime * tiredDrain;
@@ -67,6 +71,7 @@ public class MentalMeter : MonoBehaviour
                 UpdateHealth("Suffer", damageMult);
             }
 
+            //cold
             if (isCold)
             {
                 if (playerCold >= 0)
@@ -163,6 +168,21 @@ public class MentalMeter : MonoBehaviour
                 }
             }
         }
+    }
+
+    //change colour
+   public void ChangeMentalBarColor(Color newColor)
+    {
+        StopAllCoroutines(); // stop previous color changes if active
+        StartCoroutine(ChangeColorRoutine(newColor));
+    }
+
+    private IEnumerator ChangeColorRoutine(Color newColor)
+    {
+        //Color originalColor = mentalBar.color;  // store original (usually white)
+        mentalBar.color = newColor;             // change to the desired color
+        yield return new WaitForSeconds(2f);    // wait for 2 seconds
+        mentalBar.color = Color.white;        // revert to original
     }
 
 }
