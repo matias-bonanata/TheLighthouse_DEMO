@@ -1,6 +1,7 @@
 using UnityEngine;
 using DialogueEditor;
 using TMPro;
+using System.Collections;
 
 public class ConversationStarter : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class ConversationStarter : MonoBehaviour
 
     [Header("Player Position for Teleport")]
     [SerializeField] public CharacterController player;
+
+    [Header("Hold to Delete")]
+    [SerializeField] private float holdTimer = 0f; // 5 seconds
+    [SerializeField] private float holdTime = 3f; // 5 seconds
 
     private bool willConverse = false;
     private bool willTeleport = false;
@@ -77,14 +82,25 @@ public class ConversationStarter : MonoBehaviour
                     player.enabled = true;
                     playerInteractUI.HideContainer();
                 }
+            }
 
+            if (Input.GetKey(KeyCode.E))
+            {
                 if (willDelete == true)
                 {
-                    thingToDestroy.SetActive(false);
-                    uiText.text = " ";
-                    transform.parent.gameObject.SetActive(false);
+                    holdTimer += Time.deltaTime;
+                    if (holdTimer >= holdTime)
+                    {
+                        DeleteParent();
+                        holdTimer = 0f; // reset or disable further deletion
+                    }
+                }
+                else
+                {
+                    holdTimer = 0f; // reset timer if key released
                 }
             }
+            if (Input.GetKeyUp(KeyCode.E)) holdTimer = 0f; // reset timer if key released
         }
     }
 
@@ -94,13 +110,19 @@ public class ConversationStarter : MonoBehaviour
         {
             if (playerInteractUI != null)
                 playerInteractUI.HideContainer();
+
+            //if is Holding, reset
+            holdTimer = 0f;
         }
     }
 
-
-
-
-   
+    void DeleteParent()
+    {
+        //DELETE
+        thingToDestroy.SetActive(false);
+        uiText.text = " "; //don't show any text
+        transform.parent.gameObject.SetActive(false);
+    }
 
     void Update()
     {

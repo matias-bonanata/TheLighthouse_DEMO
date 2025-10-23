@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class FloatingImage : MonoBehaviour
 {
     [SerializeField] private Transform player;            // Reference to the player transform
@@ -36,5 +37,7 @@ public class FloatingImage : MonoBehaviour
         // Set position: horizontally above NPC (possibly pulled), y floats
         transform.position = new Vector3(horizontalPos.x, newY, horizontalPos.z);
     }
+
+
 
 }
