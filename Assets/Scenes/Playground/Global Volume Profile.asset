@@ -58,7 +58,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 122
+    m_Value: 305
   baseHeight:
     m_OverrideState: 0
     m_Value: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     m_Value: -14.4
   density:
     m_OverrideState: 1
-    m_Value: 0.118
+    m_Value: 0.828
   attenuationDistance:
     m_OverrideState: 0
     m_Value: 106.1
