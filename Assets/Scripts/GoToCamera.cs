@@ -10,7 +10,11 @@ public class GoToCamera : MonoBehaviour
     [SerializeField] private float rotationY = -90f; // Speed of the smooth movement 
     [SerializeField] private float rotationZ = 0.5f; // Speed of the smooth movement 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //Move with click
+    [SerializeField] private float rotationSpeed = 5f; // sensitivity for mouse drag rotation
+    private Vector3 lastMousePosition;
+    private bool isDragging = false;
+
     void Start()
     {
         // If no camera assigned, use the main camera by default
@@ -23,20 +27,38 @@ public class GoToCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Rotate Object
+        // Handle mouse drag rotation input
+        if (Input.GetMouseButtonDown(0))
+        {
+            isDragging = true;
+            lastMousePosition = Input.mousePosition;
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            isDragging = false;
+        }
+
+        if (isDragging)
+        {
+            Vector3 mouseDelta = Input.mousePosition - lastMousePosition;
+            lastMousePosition = Input.mousePosition;
+
+            // Update rotations based on mouse delta
+            rotationX += mouseDelta.y * rotationSpeed * Time.deltaTime; // Invert Y if needed
+            rotationY += mouseDelta.x * rotationSpeed * Time.deltaTime;
+            rotationZ += mouseDelta.x * rotationSpeed * Time.deltaTime * 0.5f; // adjust factor to suit rotationZ control
+        }
+
+        // Move object toward camera
         Vector3 targetPosition = mainCamera.transform.position + mainCamera.transform.forward * distanceInFront;
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
 
-        // Calculate the target rotation so the object faces the camera but offsets the camera's 16° X rotation
+        // Calculate rotation to face camera plus offsets
         Quaternion cameraRotation = mainCamera.transform.rotation;
-
-        //Do movement
         Quaternion editMovement = Quaternion.Euler(rotationX, rotationY, rotationZ);
-
-        // Apply the compensation so object rotation is camera rotation minus that 16 degrees on X-axis
         Quaternion targetRotation = cameraRotation * editMovement;
 
-        // Smooth rotate to the adjusted target rotation
+        // Smoothly rotate
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, smoothSpeed * Time.deltaTime);
     }
 }
