@@ -1,8 +1,11 @@
+using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.InputSystem.XInput;
 
 public class ClickToInspect : MonoBehaviour
 {
     [SerializeField] public MonoBehaviour scriptToActivate;
+    [SerializeField] public MonoBehaviour ChecklistScript;
     [SerializeField] public GameObject backButton;
 
     private Vector3 initialPosition;
@@ -13,6 +16,9 @@ public class ClickToInspect : MonoBehaviour
 
     private bool isReturning = false;
     [SerializeField] private float returnSpeed = 8f; // you can adjust speed as needed
+
+    [SerializeField] private bool willDisableCameraMovement = false;
+    [SerializeField] private CinemachineInputAxisController inputController;
 
     void Start()
     {
@@ -31,8 +37,17 @@ public class ClickToInspect : MonoBehaviour
         // Ignore input if returning
         if (isReturning) return;
 
+        if (willDisableCameraMovement == true)
+        {
+            if (inputController != null)
+                inputController.enabled = false;
+        }
+
         if (scriptToActivate != null)
             scriptToActivate.enabled = true;
+
+        if (ChecklistScript != null)
+            ChecklistScript.enabled = true;
 
         if (backButton != null)
             backButton.SetActive(true);
@@ -46,6 +61,12 @@ public class ClickToInspect : MonoBehaviour
 
         if (scriptToActivate != null)
             scriptToActivate.enabled = false;
+
+        if (ChecklistScript != null)
+            ChecklistScript.enabled = false;
+
+        if (inputController != null)
+            inputController.enabled = true;
 
         isReturning = true;
 

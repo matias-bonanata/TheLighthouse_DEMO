@@ -10,10 +10,18 @@ public class GoToCamera : MonoBehaviour
     [SerializeField] private float rotationY = -90f; // Speed of the smooth movement 
     [SerializeField] private float rotationZ = 0.5f; // Speed of the smooth movement 
 
+
     //Move with click
     [SerializeField] private float rotationSpeed = 5f; // sensitivity for mouse drag rotation
     private Vector3 lastMousePosition;
     private bool isDragging = false;
+
+    //if is paper
+    [Header("canScroll")]
+    [SerializeField] private bool canScroll = false;
+    [SerializeField] private float scrollSpeed = 0.1f;
+    [SerializeField] private float yAxisModif = 0f;
+
 
     void Start()
     {
@@ -50,7 +58,7 @@ public class GoToCamera : MonoBehaviour
         }
 
         // Move object toward camera
-        Vector3 targetPosition = mainCamera.transform.position + mainCamera.transform.forward * distanceInFront;
+        Vector3 targetPosition = mainCamera.transform.position + mainCamera.transform.forward * distanceInFront + mainCamera.transform.up * yAxisModif;
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
 
         // Calculate rotation to face camera plus offsets
@@ -60,5 +68,22 @@ public class GoToCamera : MonoBehaviour
 
         // Smoothly rotate
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, smoothSpeed * Time.deltaTime);
+
+
+        //IF PAPER SCROLL DOWN
+        if (canScroll)
+        {
+            Vector3 mousePos = Input.mousePosition;
+            if (mousePos.y <= 50)
+            {
+                yAxisModif += scrollSpeed;
+            }
+            if (mousePos.y >= Screen.height - 50)
+            {
+                yAxisModif -= scrollSpeed;
+            }
+
+            yAxisModif = Mathf.Clamp(yAxisModif, -0.264f, 0.192f);
+        }
     }
 }
