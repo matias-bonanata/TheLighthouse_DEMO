@@ -45,6 +45,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 447aad5f68413ed46bbda2c9d6203358, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_035eb323c74b491a98dad245ea0e967a_Out_0_Texture2D:
         m_Texture: {fileID: 2800000, guid: c30e5ca43aaf96943819f6007314219b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -63,8 +67,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Interaction_Distance: 0.97
-    - _NormalStrength: 2.97
+    - _Interaction_Distance: 1.57
+    - _NormalStrength: 3.33
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.08
@@ -72,7 +76,7 @@ Material:
     - _Speed: 1.08
     - _Strength_V_Movement: -0.76
     m_Colors:
-    - _Albedo: {r: 0.2715153, g: 0.4716981, b: 0.16687433, a: 0}
+    - _Albedo: {r: 0.28235295, g: 0.4392157, b: 0.29803923, a: 0}
     - _Player: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

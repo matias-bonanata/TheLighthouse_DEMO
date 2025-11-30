@@ -60,7 +60,7 @@ Material:
     - _Speed: 1.72
     - _Strength_V_Movement: -0.78
     m_Colors:
-    - _Albedo: {r: 0.44431573, g: 0.5566038, b: 0.17590779, a: 1}
+    - _Albedo: {r: 0.28235295, g: 0.4392157, b: 0.29803923, a: 1}
     - _Player: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

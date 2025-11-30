@@ -26,13 +26,16 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _MossNormalStrength: 1
+    - _Level: 0.19
+    - _Metallic: 0
+    - _MossGlossStrength: 0
+    - _MossNormalStrength: 0.913
     - _QueueOffset: 4
-    - _RockGlossStrength: 7.73
+    - _RockGlossStrength: 0.38
     - _RockNormalStrength: 1
     - _UpNode: 0.97
     m_Colors:
-    - _MossOffset: {r: 6.24, g: 9.81, b: -0.36, a: 0}
+    - _MossOffset: {r: 5.51, g: 9.81, b: -0.36, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &6967777303545881630
