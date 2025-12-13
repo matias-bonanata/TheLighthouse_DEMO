@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8538825552158627599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8722601191303246024}
+  - component: {fileID: 4896866594487735463}
+  - component: {fileID: 740078820006750580}
+  m_Layer: 0
+  m_Name: Time & Lighting Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8722601191303246024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538825552158627599}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.16237882, y: 0, z: 0, w: 0.9867285}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 18.69, y: 0, z: 0}
+--- !u!114 &4896866594487735463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538825552158627599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd3f796d1d876640909724c359fc19d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Sun: {fileID: 0}
+  _Moon: {fileID: 0}
+--- !u!114 &740078820006750580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8538825552158627599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d17f5cbf7241f4eb5979b13f67ac1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DirectionalLight: {fileID: 0}
+  MoonDirectionalLight: {fileID: 0}
+  daySpeed: 0.1
+  startingPositionModifier: 0
+  TimeOfDay: 14.8
+  dayBreak: 11.25
+  nightBreak: 0.8
+  dayFogColor: {r: 1, g: 1, b: 1, a: 1}
+  nightFogColor: {r: 0.321, g: 0.467, b: 0.718, a: 1}
+  fogBlendAmount: 1
+  fogTransitionAmount: 0.5
+  maxIntensity: 0.3
+  targetIntensity: 0
+  smoothTime: 3
+  sunChangeDuration: 40
+  colors:
+  - {r: 1, g: 0.305, b: 0, a: 1}
+  - {r: 1, g: 0.8218813, b: 0.41176474, a: 1}
+  - {r: 1, g: 0.9702687, b: 0.6839622, a: 1}
