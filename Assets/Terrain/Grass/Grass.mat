@@ -68,15 +68,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _Interaction_Distance: 1.57
-    - _NormalStrength: 3.33
+    - _NormalStrength: 1.96
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.08
-    - _Smoothness: 0.461
+    - _Smoothness: 1
     - _Speed: 1.08
     - _Strength_V_Movement: -0.76
     m_Colors:
-    - _Albedo: {r: 0.28235295, g: 0.4392157, b: 0.29803923, a: 0}
+    - _Albedo: {r: 0.23465125, g: 1, b: 0.19215685, a: 0}
     - _Player: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

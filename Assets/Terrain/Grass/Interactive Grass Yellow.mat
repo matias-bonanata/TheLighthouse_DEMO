@@ -47,14 +47,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _Albedo_Scale: 2
-    - _Interaction_Distance: 1.17
+    - _Interaction_Distance: 1.29
     - _NormalStrength: 2.43
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.03
     - _Smoothness: 0.2
     - _Speed: 2
-    - _Strength_V_Movement: -1.02
+    - _Strength_V_Movement: -0.83
     m_Colors:
     - _Albedo: {r: 0.48750094, g: 0.5568628, b: 0.3137255, a: 0}
   m_BuildTextureStacks: []

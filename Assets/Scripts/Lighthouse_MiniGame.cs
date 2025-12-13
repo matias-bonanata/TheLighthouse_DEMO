@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 public class Lighthouse_MiniGame : MonoBehaviour
 {
@@ -10,6 +11,11 @@ public class Lighthouse_MiniGame : MonoBehaviour
     [SerializeField] private Sprite[] normalButtonSprites;   // Normal sprites for buttons
     [SerializeField] private Sprite[] pressedButtonSprites;  // Pressed sprites for buttons
     [SerializeField] private SpriteRenderer[] buttonSpriteRenderers;
+
+    [Header("if Win")]
+    [SerializeField] private MonoBehaviour scriptToEnable;
+    [SerializeField] private GameObject gameObjecToDisable;
+    [SerializeField] private GameObject lightObjectsToEnable;
 
     private bool[] isLocked;               // Track if each object is locked
 
@@ -34,11 +40,11 @@ public class Lighthouse_MiniGame : MonoBehaviour
     {
         float rotationAmount = 0f;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             rotationAmount = rotationSpeed * Time.deltaTime;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             rotationAmount = -rotationSpeed * Time.deltaTime;
         }
@@ -114,6 +120,10 @@ public class Lighthouse_MiniGame : MonoBehaviour
             Debug.Log("All objects have matching localEulerAngles!");
             completedCircle.SetActive(true);
             completedCircle.transform.localEulerAngles = baseLocalEuler;
+            rotationSpeed = 0f;
+            gameObjecToDisable.SetActive(false);
+            lightObjectsToEnable.SetActive(true);
+            StartCoroutine(ThreeSecondTimer());
         }
         else
         {
@@ -129,4 +139,13 @@ public class Lighthouse_MiniGame : MonoBehaviour
         return angle;
     }
 
+    IEnumerator ThreeSecondTimer()
+    {
+        yield return new WaitForSeconds(3f);  // Waits exactly 3 seconds
+
+        if (scriptToEnable != null) scriptToEnable.enabled = true;
+        gameObject.SetActive(false);
+
+        // 
+    }
 }

@@ -2,6 +2,8 @@ using UnityEngine;
 using DialogueEditor;
 using TMPro;
 using System.Collections;
+using Unity.Cinemachine;
+using Unity.Collections.LowLevel.Unsafe;
 
 public class ConversationStarter : MonoBehaviour
 {
@@ -25,6 +27,16 @@ public class ConversationStarter : MonoBehaviour
     private bool willConverse = false;
     private bool willTeleport = false;
     private bool willDelete = false;
+    private bool willChangeCamera = false;
+    private bool willInitialiseObject = false;
+
+    [Header("Camera Change")]
+    [SerializeField] private CinemachineCamera cameraToEdit;
+    [SerializeField] private int priorityNumber = 0;
+
+    [Header("Object to Initialise")]
+    [SerializeField] private GameObject objectToInitialise;
+    [SerializeField] private MonoBehaviour scriptToDisable;
 
     void Start()
     {
@@ -46,6 +58,15 @@ public class ConversationStarter : MonoBehaviour
             willTeleport = false;
         }
 
+        if (cameraToEdit != null)
+        {
+            willChangeCamera = true;
+        }
+        else
+        {
+            willChangeCamera = false;
+        }
+
         if (thingToDestroy != null)
         {
             willDelete = true;
@@ -53,6 +74,15 @@ public class ConversationStarter : MonoBehaviour
         else
         {
             willDelete = false;
+        }
+
+        if (objectToInitialise != null)
+        {
+            willInitialiseObject = true;
+        }
+        else
+        {
+            willInitialiseObject = false;
         }
     }
 
@@ -81,6 +111,22 @@ public class ConversationStarter : MonoBehaviour
                     player.transform.position = teleportLocation.position;
                     player.enabled = true;
                     playerInteractUI.HideContainer();
+                }
+
+                if (willChangeCamera == true)
+                {
+                    cameraToEdit.Priority = priorityNumber;
+                }
+
+                if (willInitialiseObject == true)
+                {
+                    objectToInitialise.SetActive(true);
+                    if (scriptToDisable != null) scriptToDisable.enabled = false;
+                    NPCFloatingUI targetScript = GetComponent<NPCFloatingUI>();
+                    if (targetScript != null)
+                    {
+                        targetScript.activationDistance = 0f;  // Change the value here
+                    }
                 }
             }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrateCamera : MonoBehaviour
 {
-    [SerializeField] private CinemachineCamera crateCamera;
+    [SerializeField] private CinemachineCamera zoomInCamera;
     private bool playerInside = false;
     //private ThirdPersonController playerMovement;
 
@@ -22,7 +22,7 @@ public class CrateCamera : MonoBehaviour
         {
             playerInside = false;
             // Optionally reset priority when leaving
-            crateCamera.Priority = 0;
+            zoomInCamera.Priority = 0;
         }
     }
 
@@ -31,7 +31,7 @@ public class CrateCamera : MonoBehaviour
         if (playerInside && Input.GetKeyDown(KeyCode.E))
         {
             // Toggle priority between 0 and 5 (or any values that fit your priorities)
-            crateCamera.Priority = (crateCamera.Priority == 0) ? 5 : 0;
+            zoomInCamera.Priority = (zoomInCamera.Priority == 0) ? 5 : 0;
         }
     }
 }

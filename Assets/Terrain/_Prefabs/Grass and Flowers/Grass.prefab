@@ -47,7 +47,7 @@ LODGroup:
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.016816698
+  - screenRelativeHeight: 0.999
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 827446020306353940}
@@ -62,6 +62,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1592395111958979261}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.37
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -106,6 +110,34 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0cce7a29066158047bf5abc4f92b5fcd, type: 2}
+    - target: {fileID: -1438123538979850782, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.212
+      objectReference: {fileID: 0}
+    - target: {fileID: -1438123538979850782, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -1438123538979850782, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -916816624686275440, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.299
+      objectReference: {fileID: 0}
+    - target: {fileID: -916816624686275440, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.399
+      objectReference: {fileID: 0}
+    - target: {fileID: -916816624686275440, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: -916816624686275440, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -163498549696734157, guid: 9a67ef86adcb382488520810ae8f89ff, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 

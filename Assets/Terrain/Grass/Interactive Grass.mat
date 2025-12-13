@@ -52,11 +52,11 @@ Material:
     m_Floats:
     - _Albedo_Scale: 2
     - _Interaction_Distance: 0.52
-    - _NormalStrength: 0.05
+    - _NormalStrength: 0.96
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.03
-    - _Smoothness: 2.5
+    - _Smoothness: 0.4
     - _Speed: 1.72
     - _Strength_V_Movement: -0.78
     m_Colors:

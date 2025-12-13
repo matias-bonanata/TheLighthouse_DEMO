@@ -9,7 +9,7 @@ public class NPCFloatingUI : MonoBehaviour
     [SerializeField] private SpriteRenderer hoverImage;            // Reference to the Image component (optional, for color manipulation)
 
     //ui activation and scale
-    [SerializeField] private float activationDistance = 3f;
+    [SerializeField] public float activationDistance = 3f;
     [SerializeField] private float awayScale = 0.5f;
     private bool isPlayerColliding = false;
 
