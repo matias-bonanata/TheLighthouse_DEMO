@@ -10,7 +10,6 @@ public class GoToCamera : MonoBehaviour
     [SerializeField] private float rotationY = -90f; // Speed of the smooth movement 
     [SerializeField] private float rotationZ = 0.5f; // Speed of the smooth movement 
 
-
     //Move with click
     [SerializeField] private float rotationSpeed = 5f; // sensitivity for mouse drag rotation
     private Vector3 lastMousePosition;
@@ -22,10 +21,18 @@ public class GoToCamera : MonoBehaviour
     [SerializeField] private float scrollSpeed = 0.1f;
     [SerializeField] private float yAxisModif = 0f;
 
+    private void Awake()
+    {
+        // Initialize camera in Awake to ensure it's set before the script might be disabled
+        if (mainCamera == null)
+        {
+            mainCamera = Camera.main;
+        }
+    }
 
     void Start()
     {
-        // If no camera assigned, use the main camera by default
+        // Double-check camera assignment
         if (mainCamera == null)
         {
             mainCamera = Camera.main;
@@ -35,6 +42,12 @@ public class GoToCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Safety check - exit if no camera
+        if (mainCamera == null)
+        {
+            return;
+        }
+
         // Handle mouse drag rotation input
         if (Input.GetMouseButtonDown(0))
         {
@@ -69,7 +82,6 @@ public class GoToCamera : MonoBehaviour
         // Smoothly rotate
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, smoothSpeed * Time.deltaTime);
 
-
         //IF PAPER SCROLL DOWN
         if (canScroll)
         {
@@ -82,7 +94,6 @@ public class GoToCamera : MonoBehaviour
             {
                 yAxisModif -= scrollSpeed;
             }
-
             yAxisModif = Mathf.Clamp(yAxisModif, -0.264f, 0.192f);
         }
     }
