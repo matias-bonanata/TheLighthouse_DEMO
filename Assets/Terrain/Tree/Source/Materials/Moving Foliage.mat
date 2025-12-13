@@ -64,11 +64,11 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.08
-    - _Smoothness: 0.517
+    - _Smoothness: 0.446
     - _Speed: 1.5
     - _Strength_V_Movement: 0
     m_Colors:
-    - _Albedo: {r: 1, g: 1, b: 1, a: 0}
+    - _Albedo: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0}
     - _Player: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

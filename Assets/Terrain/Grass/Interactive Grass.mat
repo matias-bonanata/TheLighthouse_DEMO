@@ -25,11 +25,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 180c77b3a734d1946b410d9272d27b08, type: 3}
+        m_Texture: {fileID: 2800000, guid: 447aad5f68413ed46bbda2c9d6203358, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Texture:
-        m_Texture: {fileID: 2800000, guid: 9199a6ec804f5804f9576bd7d056e8d8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5351cd6c019166241a91e5be65c5d66c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_035eb323c74b491a98dad245ea0e967a_Out_0_Texture2D:
@@ -52,15 +52,15 @@ Material:
     m_Floats:
     - _Albedo_Scale: 2
     - _Interaction_Distance: 0.52
-    - _NormalStrength: 0.72
+    - _NormalStrength: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.03
-    - _Smoothness: 9.8
+    - _Smoothness: 2.5
     - _Speed: 1.72
     - _Strength_V_Movement: -0.78
     m_Colors:
-    - _Albedo: {r: 1, g: 1, b: 1, a: 1}
+    - _Albedo: {r: 0.28235295, g: 0.4392157, b: 0.29803923, a: 1}
     - _Player: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
