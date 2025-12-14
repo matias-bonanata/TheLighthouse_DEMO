@@ -11,7 +11,7 @@ public class StartIntroConversation : MonoBehaviour
     [SerializeField] private CinemachineCamera cameraToUnPrioritise;
     [SerializeField] private GameObject gameObjectToDisable;
     [SerializeField] private GameObject gameObjectToEnable;
-
+    [SerializeField] private FadeBlackScreen fadeScript;
 
     void Start()
     {
@@ -32,7 +32,8 @@ public class StartIntroConversation : MonoBehaviour
     private IEnumerator SwitchCamerainSeconds()
     {
         yield return new WaitForSeconds(5f);
-
+        if (fadeScript != null) fadeScript.StartFadeSequence();
+        yield return new WaitForSeconds(0.2f);
         gameObjectToEnable.SetActive(true);
         cameraToPrioritise.Priority = 5;
         cameraToUnPrioritise.Priority = 0;

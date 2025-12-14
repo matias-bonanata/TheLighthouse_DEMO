@@ -56,7 +56,7 @@ public class Checklist_Inspect : MonoBehaviour
 
     private IEnumerator LoadNextSceneDelayed()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(60f);
         //Debug.Log("fade");
         if (fadeScript != null) fadeScript.StartFadeSequence();
         yield return new WaitForSeconds(0.5f);
