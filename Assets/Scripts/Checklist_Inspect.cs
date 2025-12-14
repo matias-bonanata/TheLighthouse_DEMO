@@ -1,10 +1,14 @@
 using UnityEngine;
+using System.Collections;
 
 public class Checklist_Inspect : MonoBehaviour
 {
     // Arrays of objects and their renderers to toggle
     [SerializeField] private GameObject[] targetObjects;
     [SerializeField] private Renderer[] targetRenderers;
+
+    [Header("Should Fade")]
+    [SerializeField] private FadeBlackScreen fadeScript;
 
     void Start()
     {
@@ -21,6 +25,8 @@ public class Checklist_Inspect : MonoBehaviour
                 }
             }
         }
+
+        StartCoroutine(LoadNextSceneDelayed());
     }
 
     void Update()
@@ -46,5 +52,14 @@ public class Checklist_Inspect : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator LoadNextSceneDelayed()
+    {
+        yield return new WaitForSeconds(2f);
+        //Debug.Log("fade");
+        if (fadeScript != null) fadeScript.StartFadeSequence();
+        yield return new WaitForSeconds(0.5f);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

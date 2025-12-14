@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority:
     Enabled: 1
-    m_Value: 0
+    m_Value: 5
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -2113,6 +2113,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1802533491}
     - target: {fileID: 6894139700894059850, guid: e71c8038c8efd214d98df4a843679a52, type: 3}
+      propertyPath: fadeScript
+      value: 
+      objectReference: {fileID: 223290568}
+    - target: {fileID: 6894139700894059850, guid: e71c8038c8efd214d98df4a843679a52, type: 3}
       propertyPath: hungerDrain
       value: 0
       objectReference: {fileID: 0}
@@ -2613,7 +2617,7 @@ Transform:
   m_GameObject: {fileID: 229279898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 131.75624, y: 17.08862, z: 53.10523}
+  m_LocalPosition: {x: 3.3160496, y: 5.0908995, z: -1.7780498}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3381,7 +3385,7 @@ Transform:
   m_GameObject: {fileID: 328760629}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 160.26, y: 5.21, z: 38.02}
+  m_LocalPosition: {x: 31.819807, y: -6.7877207, z: -16.863277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4450,6 +4454,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 223290567}
 --- !u!114 &407999211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4608,6 +4613,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!114 &432523897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8168,6 +8174,10 @@ PrefabInstance:
       propertyPath: editMessage
       value: 
       objectReference: {fileID: 1796090171}
+    - target: {fileID: 4162453609279895666, guid: ae1b07211bb0edc4dbdc60020131e9e6, type: 3}
+      propertyPath: mentalMeter
+      value: 
+      objectReference: {fileID: 223290567}
     - target: {fileID: 4162453609279895666, guid: ae1b07211bb0edc4dbdc60020131e9e6, type: 3}
       propertyPath: scriptToEnable
       value: 
@@ -13386,6 +13396,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!114 &1037851325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15880,7 +15891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: field of view
-      value: 80
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_FocalLength
@@ -15888,7 +15899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: far clip plane
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_SensorSize.x
@@ -15900,7 +15911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: near clip plane
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: orthographic size
@@ -15924,31 +15935,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 158.31592
+      value: 58.481567
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.041838
+      value: -3.2891269
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 41.396626
+      value: 0.63040924
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.25461307
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.058435045
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.94342965
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.20420115
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16080,6 +16091,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 223290568}
+  mentalMeter: {fileID: 0}
 --- !u!65 &1227277997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16901,123 +16913,123 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 82
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":275.5,\"yPos\":241},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"don't
-    call me boy.\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":579.5,\"yPos\":240},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"how
-    can you tell?\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1129.5,\"yPos\":251},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"there's
-    a storm coming?\",\"parentUIDs\":[7,16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-225.5,\"yPos\":560},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    *am* fit to do this job.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":42.5,\"yPos\":561},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sounds
-    fair.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":265.5,\"yPos\":559},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever
-    you say, old man.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":854},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    kind of person is the *type* for it?\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-233.5,\"yPos\":1032},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Well?\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-234.5,\"yPos\":1214},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[28,33,41,44,52,62,72,79,81],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":273.5,\"yPos\":854},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Like
-    what?\",\"parentUIDs\":[35],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":412.5,\"yPos\":1039},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
-    mistakes?\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.5,\"yPos\":1039},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Stories?\",\"parentUIDs\":[37,48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":548.5,\"yPos\":570},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
-    can I learn to do that?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":999.5,\"yPos\":656},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thanks
-    for the tip.\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1253.5,\"yPos\":656},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
-    you have anything else to teach me?\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1246.5,\"yPos\":1055},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You'll
-    come and see me?\",\"parentUIDs\":[55],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1119.5,\"yPos\":1256},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sure.\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1389.5,\"yPos\":1254},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Equipment?\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1263.5,\"yPos\":1465},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
-    you. That *was* kind of you.\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":73}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1490.5,\"yPos\":1464},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
-    I owe you?\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1718.5,\"yPos\":1463},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
-    didn't happen to leave any cigarettes, did you?\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1260.5,\"yPos\":1739},\"ID\":70,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Angelic?\",\"parentUIDs\":[69],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1501.5,\"yPos\":1655},\"ID\":74,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
-    not fair!\",\"parentUIDs\":[73],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":80}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1731.5,\"yPos\":1653},\"ID\":75,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sounds
-    fair.\",\"parentUIDs\":[73],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":572.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":11}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":275.5,\"yPos\":321},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"don't
+    call me boy.\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":579.5,\"yPos\":320},\"ID\":9,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"how
+    can you tell?\",\"parentUIDs\":[7],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1129.5,\"yPos\":331},\"ID\":10,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"there's
+    a storm coming?\",\"parentUIDs\":[7,16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-225.5,\"yPos\":640},\"ID\":18,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    *am* fit to do this job.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":32}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":42.5,\"yPos\":641},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sounds
+    fair.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":34}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":265.5,\"yPos\":639},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Whatever
+    you say, old man.\",\"parentUIDs\":[17],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":934},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    kind of person is the *type* for it?\",\"parentUIDs\":[22],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-233.5,\"yPos\":1112},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Well?\",\"parentUIDs\":[25],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-234.5,\"yPos\":1294},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[28,33,41,44,52,62,72,79,81],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":37}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":273.5,\"yPos\":934},\"ID\":36,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Like
+    what?\",\"parentUIDs\":[35],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":412.5,\"yPos\":1119},\"ID\":38,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"What
+    mistakes?\",\"parentUIDs\":[37],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":42}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.5,\"yPos\":1119},\"ID\":39,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Stories?\",\"parentUIDs\":[37,48],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":47}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":548.5,\"yPos\":650},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"How
+    can I learn to do that?\",\"parentUIDs\":[16],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":51}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":999.5,\"yPos\":736},\"ID\":49,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thanks
+    for the tip.\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":53}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1253.5,\"yPos\":736},\"ID\":50,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
+    you have anything else to teach me?\",\"parentUIDs\":[15],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":58}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1246.5,\"yPos\":1135},\"ID\":57,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You'll
+    come and see me?\",\"parentUIDs\":[55],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":61}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1119.5,\"yPos\":1336},\"ID\":59,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sure.\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":63}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1389.5,\"yPos\":1334},\"ID\":60,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Equipment?\",\"parentUIDs\":[58],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":67}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1263.5,\"yPos\":1545},\"ID\":64,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Thank
+    you. That *was* kind of you.\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":73}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1490.5,\"yPos\":1544},\"ID\":65,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Do
+    I owe you?\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1718.5,\"yPos\":1543},\"ID\":66,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You
+    didn't happen to leave any cigarettes, did you?\",\"parentUIDs\":[63],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":71}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1260.5,\"yPos\":1819},\"ID\":70,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Angelic?\",\"parentUIDs\":[69],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":76}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1501.5,\"yPos\":1735},\"ID\":74,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
+    not fair!\",\"parentUIDs\":[73],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":80}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1731.5,\"yPos\":1733},\"ID\":75,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Sounds
+    fair.\",\"parentUIDs\":[73],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":572.5,\"yPos\":102},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
     are sitting on a boat, a fishing trawler. An old, grizzled fisherman sits nearby,
     steering the rudder gently. He [[chats to you]] as the trawler navigates through
-    the mist.*\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":573.5,\"yPos\":130},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
+    the mist.*\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":9},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":573.5,\"yPos\":210},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"There\u2019s
     a strange wind on these shores today. Rising from the south, I reckon. Best mind
     yourself tonight, boy - that old wreck is in no condition to protect you from
-    a real storm.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":239.5,\"yPos\":341},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
-    old man barks a laugh. You glimpse the mottled yellow tombstones of his teeth.*\\r\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":578.5,\"yPos\":338},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
+    a real storm.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":239.5,\"yPos\":421},\"ID\":11,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
+    old man barks a laugh. You glimpse the mottled yellow tombstones of his teeth.*\\r\",\"parentUIDs\":[8],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":578.5,\"yPos\":418},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
     squints out at the horizon, his hand drifting to one of the carved amulets around
-    his neck. He breathes in the breeze.*\\r\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1128.5,\"yPos\":326},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye,
+    his neck. He breathes in the breeze.*\\r\",\"parentUIDs\":[9],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1128.5,\"yPos\":406},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye,
     boy. They form over the great sea and travel east, getting stronger as they go.
     The mist feeds 'em. Makes them crackle with lightning. You ever seen a mist storm?
     A big one? Dim flashes in the grey, until you're in the heart of it and the grey
     explodes around you. Nothing to worry about unless the hair on the back of your
-    neck rises.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1126.5,\"yPos\":437},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
-    laughs and claps you on the shoulder.*\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1126.5,\"yPos\":543},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
-    when you run, boy. You hear me?\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":585.5,\"yPos\":449},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I've
+    neck rises.\",\"parentUIDs\":[10],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1126.5,\"yPos\":517},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
+    laughs and claps you on the shoulder.*\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":49},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":50}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1126.5,\"yPos\":623},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"That's
+    when you run, boy. You hear me?\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":10}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":585.5,\"yPos\":529},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I've
     fished these shores for sixty years. Rains, typhoons, snows. Long summers where
     the mist was so hot you didn't know the fog from your own evaporated sweat. You
     get to be able to read the mist's moods like a broadcast signal. I'll leave the
-    signals to you, boy, and take my forecasts from the wind.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241.5,\"yPos\":458},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You've
+    signals to you, boy, and take my forecasts from the wind.\",\"parentUIDs\":[12],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":18},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":241.5,\"yPos\":538},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"You've
     still got feather-down on your chin, boy. When you've lived as long as I have,
     all the younger generation are yet weans to dandle on your knee. Until you've
-    proven you're fit to do this job, and do it well, you're a boy in my eyes.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-233.5,\"yPos\":635},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
-    keeps his attention on the blank wall of mist.*\\r\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":749},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    proven you're fit to do this job, and do it well, you're a boy in my eyes.\",\"parentUIDs\":[11],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-233.5,\"yPos\":715},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
+    keeps his attention on the blank wall of mist.*\\r\",\"parentUIDs\":[18],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":829},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     hope so, boy. It's a lot of doing. You're needed, right enough, but it's a lonely
     thing staying out here. There's a type for it and not everyone has the constitution.
-    I don't envy ye, that's for sure.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":931},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Someone
+    I don't envy ye, that's for sure.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-235.5,\"yPos\":1011},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Someone
     secure. Happy in their head. Makes work for themselves when the day's tough labour
-    is done. And the most important bit, well...\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-231.5,\"yPos\":1110},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
+    is done. And the most important bit, well...\",\"parentUIDs\":[24],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-231.5,\"yPos\":1190},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"To
     do this job, and do it well, you can't be bringing your ghosts with you. There's
     no room for them, not where you're going. You're not running from anything, are
-    you?\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":447.5,\"yPos\":1702},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"See
-    that? We're nearly there, boy. Can you see it?\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":43.5,\"yPos\":632},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
+    you?\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":447.5,\"yPos\":1782},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"See
+    that? We're nearly there, boy. Can you see it?\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":33}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":43.5,\"yPos\":712},\"ID\":32,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
     man. That's the attitude. Keep that up and I'll toss something nice in when I
-    come and see you next.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":22.5,\"yPos\":938},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
-    smile, fiddle with your uniform, and look out at the mist in silence.*\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":275.5,\"yPos\":629},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Grinning,
+    come and see you next.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":22.5,\"yPos\":1018},\"ID\":33,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+    smile, fiddle with your uniform, and look out at the mist in silence.*\",\"parentUIDs\":[32],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":35}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":275.5,\"yPos\":709},\"ID\":34,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Grinning,
     Tross puts something in his mouth and worrys it with his teeth. It might be a
-    fishbone.*\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":742},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    fishbone.*\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":36}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":822},\"ID\":35,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
     like ye, boy, but you could do with opening those ears up some. There's plenty
-    to be learning from folk around here.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":933},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
+    to be learning from folk around here.\",\"parentUIDs\":[34],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":38},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":274.5,\"yPos\":1013},\"ID\":37,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh,
     all sorts. People in these parts are different to your mainlanders. You lot are
     all about moving forward, modernising, looking to the future. Out here in the
     islands, we stick to the old ways, listen to the land and the sea, tell the old
-    stories. There's a lot to be learned from the mistakes of the past.\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":439.5,\"yPos\":1122},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Boy,
+    stories. There's a lot to be learned from the mistakes of the past.\",\"parentUIDs\":[36],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":439.5,\"yPos\":1202},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Boy,
     if you don't agree that our ancestors made some serious errors in judgement,
     you'd best come to some smarter conclusions. Fortunately, once I leave you to
-    yourself you'll have plenty of time to think.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":444.5,\"yPos\":1589},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
-    sit in uncomfortable silence.*\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":1116},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye,
+    yourself you'll have plenty of time to think.\",\"parentUIDs\":[38],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":444.5,\"yPos\":1669},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+    sit in uncomfortable silence.*\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":1196},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye,
     yeah, all sorts. You hear things from fishermen, net-gatherers, the folk of the
     shore. Distant lights out beyond the bay when the mist clears. Voices in the
     fog, luring the unwary out to heaven-knows-where, and they never come back. Some
     say there's an island out there where the sun always shines, and the mist just
     skirts around it. Out west, they whisper, out past the edge of the map. I've
     never tried to find it myself, but plenty have gone looking. I've heard tell
-    of phantom ships on the trading routes, sending signals in strange tongues...\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":1217},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    of phantom ships on the trading routes, sending signals in strange tongues...\",\"parentUIDs\":[39],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":194.5,\"yPos\":1297},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     mist plays tricks on the mind, and you've got to be more careful than most, boy.
     Being alone for so long, it's not wise. I told them to send someone with you,
     so the pair of ye could mind each other, but the militia wouldn't listen to an
     old sea-trawler like me.\\r\\nWatch yourself. I'd hate to turn up on your doorstep
     to find ye missing with the table still laid and the mist pouring in the open
-    windows.\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":1307},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
-    don't know how to answer that, so you mull over his words in silence.*\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":547.5,\"yPos\":665},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
+    windows.\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198.5,\"yPos\":1387},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+    don't know how to answer that, so you mull over his words in silence.*\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":48}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":547.5,\"yPos\":745},\"ID\":47,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Give
     it time, eh? You'll come to be familar with the mist, the sea, the wind. The
     main thing is to listen. You might think the mist is dead, a blank white wall,
     but if you shut your trap for a bit it'll show you its different... what's the
     word? Aspects. Despite what you might think, these mists we live in are always
-    changing. There are stories, aye, I heard stories...\",\"parentUIDs\":[46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":552.5,\"yPos\":770},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
-    tails off, listening, his mind elsewhere.*\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":986.5,\"yPos\":735},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
-    see they teach you manners on the mainland. If nothing else!\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":990.5,\"yPos\":845},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
+    changing. There are stories, aye, I heard stories...\",\"parentUIDs\":[46],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":39}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":552.5,\"yPos\":850},\"ID\":48,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
+    tails off, listening, his mind elsewhere.*\",\"parentUIDs\":[47],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":52}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":986.5,\"yPos\":815},\"ID\":51,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I
+    see they teach you manners on the mainland. If nothing else!\",\"parentUIDs\":[49],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":990.5,\"yPos\":925},\"ID\":52,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"He
     laughs, then starts to cough, wiping the phlegm on his sleeve. You look away
-    politely and lapse into silence.\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1248.5,\"yPos\":740},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
+    politely and lapse into silence.\",\"parentUIDs\":[51],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":54}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1248.5,\"yPos\":820},\"ID\":53,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
     winks. At least, you think he did. His eyes are so wrinkled and half-lidded against
-    the wind it's hard to tell.*\",\"parentUIDs\":[50],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1253.5,\"yPos\":850},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye.
+    the wind it's hard to tell.*\",\"parentUIDs\":[50],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":55}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1253.5,\"yPos\":930},\"ID\":54,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Aye.
     Plenty. But I can't be giving you all my wisdom from the off. You'll be seeing
-    a lot of me, boy, and I cannae risk ye getting bored.\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1248.5,\"yPos\":952},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
-    laughs and adjusts the rudder.*\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1247.5,\"yPos\":1134},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Someone's
+    a lot of me, boy, and I cannae risk ye getting bored.\",\"parentUIDs\":[53],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":57}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1248.5,\"yPos\":1032},\"ID\":55,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He
+    laughs and adjusts the rudder.*\",\"parentUIDs\":[54],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":59},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":60}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1247.5,\"yPos\":1214},\"ID\":58,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Someone's
     got to bring ye your vittles and equipment and that. I'll be back when you need
-    me. This is the beginning of a beautiful friendship, boy.\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":975.5,\"yPos\":1321},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
+    me. This is the beginning of a beautiful friendship, boy.\",\"parentUIDs\":[57],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":62}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":975.5,\"yPos\":1401},\"ID\":61,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
     old fisherman smiles, crinkling his face. The glance he gives you is knowing,
     appraising and humorous all at once. He's been weighing you up. You're not sure
-    he likes what he sees.*\\r\",\"parentUIDs\":[59],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":726.5,\"yPos\":1323},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
-    two of you settle into silence.*\",\"parentUIDs\":[61],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1385.5,\"yPos\":1330},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
+    he likes what he sees.*\\r\",\"parentUIDs\":[59],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":720.5,\"yPos\":1403},\"ID\":62,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*The
+    two of you settle into silence.*\",\"parentUIDs\":[61],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":64},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":65},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":66}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1385.5,\"yPos\":1410},\"ID\":63,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"The
     place is a ruin. I was kind enough to take a look and see what materials you
-    might need to start fixing it up. They're waiting for you there.\",\"parentUIDs\":[60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":69}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1256.5,\"yPos\":1539},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
-    shakes his head.*\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":70}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1262.5,\"yPos\":1639},\"ID\":69,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
-    the picture of angelic compassion, I am.\",\"parentUIDs\":[67],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":72}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1001.5,\"yPos\":1728},\"ID\":71,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Never
+    might need to start fixing it up. They're waiting for you there.\",\"parentUIDs\":[60],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":69}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1256.5,\"yPos\":1619},\"ID\":67,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross
+    shakes his head.*\",\"parentUIDs\":[64],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":70}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1262.5,\"yPos\":1719},\"ID\":69,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"I'm
+    the picture of angelic compassion, I am.\",\"parentUIDs\":[67],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":72}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1001.5,\"yPos\":1808},\"ID\":71,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Never
     heard of an angel? No? Old stories, old times. I suppose you wouldn't have. The
     militia has no call for filling your heads with nonsense. Ignore me, boy. I'm
-    an old man repeating the tales of old men.\",\"parentUIDs\":[70],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":770.5,\"yPos\":1732},\"ID\":72,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He's
+    an old man repeating the tales of old men.\",\"parentUIDs\":[70],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":770.5,\"yPos\":1812},\"ID\":72,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*He's
     lost in thought, gripping a talisman strung around his neck on rawhide cord.\\r\\nYou
-    leave him to his memories and listen to the silence.*\",\"parentUIDs\":[71],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":74},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":75}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1489.5,\"yPos\":1544},\"ID\":73,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Consider
-    it your first month's payment. And maybe your second month, too.\",\"parentUIDs\":[65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":78}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1499.5,\"yPos\":1806},\"ID\":76,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross's
+    leave him to his memories and listen to the silence.*\",\"parentUIDs\":[71],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":74},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":75}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1489.5,\"yPos\":1624},\"ID\":73,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Consider
+    it your first month's payment. And maybe your second month, too.\",\"parentUIDs\":[65],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":78}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1499.5,\"yPos\":1886},\"ID\":76,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*Tross's
     hand keeps adjusting the rudder. He's still gazing out into the nothingness,
-    following an invisible path through the waves.*\",\"parentUIDs\":[74],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":79}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1494.5,\"yPos\":1913},\"ID\":78,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nothing's
-    fair, boy. That's why you're here, no?\",\"parentUIDs\":[76],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-135.5,\"yPos\":1751},\"ID\":79,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
-    bite back an angry retort and sit in stony silence.*\",\"parentUIDs\":[78],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":81}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1735.5,\"yPos\":2003},\"ID\":80,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
+    following an invisible path through the waves.*\",\"parentUIDs\":[74],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":79}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1494.5,\"yPos\":1993},\"ID\":78,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Nothing's
+    fair, boy. That's why you're here, no?\",\"parentUIDs\":[76],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-135.5,\"yPos\":1831},\"ID\":79,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+    bite back an angry retort and sit in stony silence.*\",\"parentUIDs\":[78],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":81}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":1735.5,\"yPos\":2083},\"ID\":80,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Good
     man. That's the attitude. Keep that up and I'll toss something nice in when I
-    come and see you next.\",\"parentUIDs\":[75],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-261.5,\"yPos\":1837},\"ID\":81,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
+    come and see you next.\",\"parentUIDs\":[75],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"TROSS\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-261.5,\"yPos\":1917},\"ID\":81,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"*You
     smile, fiddle with your uniform, and look out at the mist in silence.*\",\"parentUIDs\":[80],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -17400,6 +17412,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 223290567}
 --- !u!114 &1322996049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17658,7 +17671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Priority:
     Enabled: 1
-    m_Value: 5
+    m_Value: 0
   OutputChannel: 1
   StandbyUpdate: 2
   m_StreamingVersion: 20241001
@@ -17696,7 +17709,7 @@ Transform:
   m_GameObject: {fileID: 1350767808}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 156.70255, y: 12.221856, z: 44.198868}
+  m_LocalPosition: {x: 28.26236, y: 0.22413635, z: -10.68441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24459,6 +24472,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 223290568}
+  mentalMeter: {fileID: 0}
 --- !u!65 &1513081482
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27532,15 +27546,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 160.26
+      value: 45.13
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.21
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.02
+      value: 173.35
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27576,7 +27590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4416926081852918490, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: Gravity
@@ -27933,6 +27947,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!114 &1794655606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28243,6 +28258,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 876406849}
   scriptToDisable: {fileID: 1762682273}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!65 &1796090172
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29208,6 +29224,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!114 &1873644094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30667,6 +30684,7 @@ MonoBehaviour:
   objectToInitialise: {fileID: 0}
   scriptToDisable: {fileID: 0}
   fadeScript: {fileID: 0}
+  mentalMeter: {fileID: 0}
 --- !u!114 &1989213422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32180,7 +32198,7 @@ Transform:
   m_GameObject: {fileID: 2087712321}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 128.44019, y: 11.997721, z: 54.883278}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32352,7 +32370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 86319aa33b0e8274a88a27cbeab1c369, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498690198681871229, guid: 86319aa33b0e8274a88a27cbeab1c369, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

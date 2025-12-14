@@ -16,6 +16,11 @@ public class FadeBlackScreen : MonoBehaviour
         StartCoroutine(FadeSequence());
     }
 
+    public void StartInstantFadeSequence()
+    {
+        StartCoroutine(InstantFadeSequence());
+    }
+
     private IEnumerator FadeSequence()
     {
         targetImage.gameObject.SetActive(true);
@@ -28,6 +33,21 @@ public class FadeBlackScreen : MonoBehaviour
 
         // Wait 2 seconds
         yield return new WaitForSeconds(2f);
+
+        // Fade out to 0
+        yield return StartCoroutine(FadeTo(0f, 1f));
+
+        targetImage.gameObject.SetActive(false);
+    }
+
+    private IEnumerator InstantFadeSequence()
+    {
+        targetImage.gameObject.SetActive(true);
+        Color color = targetImage.color;
+        color.a = 0f;
+        targetImage.color = color;
+
+        yield return StartCoroutine(FadeTo(1f, 0f));
 
         // Fade out to 0
         yield return StartCoroutine(FadeTo(0f, 1f));

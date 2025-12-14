@@ -31,10 +31,12 @@ public class MentalMeter : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Image mentalBar;
+    [SerializeField] private FadeBlackScreen fadeScript;
+
 
     void Start()
     {
-        
+        fadeScript.StartInstantFadeSequence();
     }
 
     
