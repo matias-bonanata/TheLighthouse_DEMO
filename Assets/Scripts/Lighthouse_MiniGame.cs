@@ -15,7 +15,10 @@ public class Lighthouse_MiniGame : MonoBehaviour
     [Header("if Win")]
     [SerializeField] private MonoBehaviour scriptToEnable;
     [SerializeField] private GameObject gameObjecToDisable;
+    [SerializeField] private GameObject disableInteracts;
+    [SerializeField] private GameObject enableInteracts;
     [SerializeField] private GameObject lightObjectsToEnable;
+    [SerializeField] private MentalMeter mentalMeter;
 
     private bool[] isLocked;               // Track if each object is locked
 
@@ -121,7 +124,13 @@ public class Lighthouse_MiniGame : MonoBehaviour
             completedCircle.SetActive(true);
             completedCircle.transform.localEulerAngles = baseLocalEuler;
             rotationSpeed = 0f;
+
+            mentalMeter.UpdateHealth("Recover", 10);
+            mentalMeter.ChangeMentalBarColor(Color.green);
+
             gameObjecToDisable.SetActive(false);
+            disableInteracts.SetActive(false);
+            enableInteracts.SetActive(true);
             lightObjectsToEnable.SetActive(true);
             StartCoroutine(ThreeSecondTimer());
         }

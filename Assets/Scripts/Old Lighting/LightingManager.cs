@@ -17,21 +17,29 @@ public class LightingManager : MonoBehaviour
     [SerializeField] float startingPositionModifier = 0f;
     [SerializeField, Range(0,24)] public float TimeOfDay; //I made this public
     [SerializeField] private float dayBreak = 11.25f;
-    [SerializeField] private float nightBreak = 0.8f;
+    //[SerializeField] private float nightBreak = 0.8f;
 
     //fog
     [Header("Fog Color")]
     [SerializeField] public Color dayFogColor = new Color(1f, 1f, 1f); // White, #FFFFFF
-    [SerializeField] public Color nightFogColor = new Color(0.321f, 0.467f, 0.718f); // #5277B7 
-    [SerializeField] private float fogBlendAmount = 0f;
-    [SerializeField] private float fogTransitionAmount = 0.5f;
+    //[SerializeField] public Color nightFogColor = new Color(0.321f, 0.467f, 0.718f); // #5277B7 
+    //[SerializeField] private float fogBlendAmount = 0f;
+    //[SerializeField] private float fogTransitionAmount = 0.5f;
 
     //moon intensity
-    [Header("Moon Intensity")]
-    [SerializeField] private float maxIntensity = 0.6f;
+    //[Header("Moon Intensity")]
+    //[SerializeField] private float maxIntensity = 0.6f;
     //[SerializeField] private float timeForMoonToShine = 4f;
-    [SerializeField] private float targetIntensity = 0f;
-    [SerializeField] private float smoothTime = 3f;
+    //[SerializeField] private float targetIntensity = 0f;
+    //[SerializeField] private float smoothTime = 3f;
+
+    [Header("Light Change Parameters")]
+    [SerializeField] private float ambientLightNight = 0.6f;
+    [SerializeField] private float sunLightNight = 0.3f;
+    [SerializeField] private float fogNight = 0.025f; 
+    [SerializeField] private float ambientLightDay = 2.8f;
+    [SerializeField] private float sunLightDay = 2f;
+    [SerializeField] private float fogDay = 0.005f;
 
     //sunset light change
     [Header("Sun Colors")]
@@ -51,29 +59,18 @@ public class LightingManager : MonoBehaviour
             TimeOfDay %= 24; //clamp between 0-24
             UpdateLighting(TimeOfDay / 24f);
 
-            if (TimeOfDay > nightBreak && TimeOfDay < (nightBreak + 3f))
+            if (TimeOfDay > 0.6f && TimeOfDay < 12)
             {
-                // Increase blendAmount until it reaches 1 smoothly
-                fogBlendAmount += Time.deltaTime * fogTransitionAmount;
-                fogBlendAmount = Mathf.Clamp01(fogBlendAmount);
-                RenderSettings.fogColor = Color.Lerp(dayFogColor, nightFogColor, fogBlendAmount);
-                
-                //moon
-                targetIntensity = maxIntensity;
+                RenderSettings.ambientIntensity = ambientLightNight;
+                DirectionalLight.intensity = sunLightNight;
+                RenderSettings.fogDensity = fogNight;
             }
-            if (TimeOfDay > dayBreak && TimeOfDay < (dayBreak + 3f))
+            else
             {
-                // Decrease blendAmount smoothly to 0
-                fogBlendAmount -= Time.deltaTime * fogTransitionAmount;
-                fogBlendAmount = Mathf.Clamp01(fogBlendAmount);
-                RenderSettings.fogColor = Color.Lerp(dayFogColor, nightFogColor, fogBlendAmount);
-
-                //moon
-                targetIntensity = 0f;
+                RenderSettings.ambientIntensity = ambientLightDay;
+                DirectionalLight.intensity = sunLightDay;
+                RenderSettings.fogDensity = fogDay;
             }
-            MoonDirectionalLight.intensity = Mathf.MoveTowards(MoonDirectionalLight.intensity, 
-                targetIntensity, Time.deltaTime / smoothTime * maxIntensity);
-
             //change sunlight to sunrise
             if (TimeOfDay > dayBreak && TimeOfDay < (dayBreak+1.2f))
             {

@@ -38,6 +38,12 @@ public class ConversationStarter : MonoBehaviour
     [SerializeField] private GameObject objectToInitialise;
     [SerializeField] private MonoBehaviour scriptToDisable;
 
+    [Header("Should Fade")]
+    [SerializeField] private FadeBlackScreen fadeScript;
+
+    [Header("Mental Meter")]
+    [SerializeField] private MentalMeter mentalMeter;
+
     void Start()
     {
         if (conversation != null)
@@ -107,6 +113,7 @@ public class ConversationStarter : MonoBehaviour
 
                 if (willTeleport == true)
                 {
+                    if (fadeScript != null) fadeScript.StartFadeSequence();
                     player.enabled = false;
                     player.transform.position = teleportLocation.position;
                     player.enabled = true;
@@ -162,16 +169,36 @@ public class ConversationStarter : MonoBehaviour
         }
     }
 
-    void DeleteParent()
+    private void DeleteParent()
     {
         //DELETE
+        increaseMental();
         thingToDestroy.SetActive(false);
         uiText.text = " "; //don't show any text
-        transform.parent.gameObject.SetActive(false);
+        //transform.parent.gameObject.SetActive(false);
     }
 
     void Update()
     {
         
+    }
+
+    public void increaseMental()
+    {
+        if (mentalMeter != null)
+        {
+            mentalMeter.UpdateHealth("Recover", 2);
+            mentalMeter.ChangeMentalBarColor(Color.green);
+        }
+
+    }
+
+    public void decreaseMental()
+    {
+        if (mentalMeter != null)
+        {
+            mentalMeter.UpdateHealth("Damage", 2);
+            mentalMeter.ChangeMentalBarColor(Color.red);
+        }
     }
 }

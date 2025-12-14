@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water Foam
+  m_Name: FAR Water Foam
   m_Shader: {fileID: -6465566751694194690, guid: a7a105a29480a044f8e3e78c478ccd27, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -68,9 +68,9 @@ Material:
     - _CastShadows: 0
     - _Cull: 2
     - _DstBlend: 10
-    - _FoamScale: 0.59
+    - _FoamScale: 1.3
     - _FoamSpeed: 0.1
-    - _Foam_Amount: 5.9
+    - _Foam_Amount: 2.5
     - _Foam_Cutout: 4
     - _Metallic: 0
     - _NormalStrength: 2.78
@@ -87,9 +87,9 @@ Material:
     - _SrcBlend: 1
     - _Surface: 1
     - _Water_Alpha: 0.74
-    - _WaveScale: 0.19
+    - _WaveScale: 0
     - _Wave_Modifier: 0.7
-    - _Wavespeed: 0.2
+    - _Wavespeed: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 0

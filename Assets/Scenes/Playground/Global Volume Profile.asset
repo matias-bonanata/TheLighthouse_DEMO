@@ -18,13 +18,13 @@ MonoBehaviour:
     m_Value: {r: 0, g: 0, b: 0, a: 1}
   center:
     m_OverrideState: 1
-    m_Value: {x: 1.46, y: 0.33}
+    m_Value: {x: 0.5, y: 0.5}
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.549
   smoothness:
-    m_OverrideState: 0
-    m_Value: 0.2
+    m_OverrideState: 1
+    m_Value: 0.439
   rounded:
     m_OverrideState: 0
     m_Value: 0
@@ -55,10 +55,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a074ec59f6e910b4e8c49f57e56cf95a, type: 3}
   m_Name: VolumetricFogVolumeComponent
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   distance:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 48
   baseHeight:
     m_OverrideState: 0
     m_Value: 0
@@ -73,7 +73,7 @@ MonoBehaviour:
     m_Value: -14.4
   density:
     m_OverrideState: 1
-    m_Value: 0.828
+    m_Value: 0.156
   attenuationDistance:
     m_OverrideState: 0
     m_Value: 106.1

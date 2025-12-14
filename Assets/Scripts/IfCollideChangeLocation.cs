@@ -15,6 +15,8 @@ public class IfCollideChangeLocation : MonoBehaviour
     //[SerializeField] private float fourthFloorYPos = 19.64f;    
     //[SerializeField] private float fifthFloorYPos = 22.62f;    
 
+    [SerializeField] private FadeBlackScreen fadeScript;
+
     private void OnTriggerEnter(Collider other)
     {
         // Check if the thing that entered is the player
@@ -31,8 +33,10 @@ public class IfCollideChangeLocation : MonoBehaviour
             {
                 player.transform.position = teleportLocation.position;
             }
-                lightHouseCamera.transform.position = new Vector3(
+            lightHouseCamera.transform.position = new Vector3(
                     127.82f, floorYPos, 41.72f);
+
+            if (fadeScript != null) fadeScript.StartFadeSequence();
         }
     }
 }

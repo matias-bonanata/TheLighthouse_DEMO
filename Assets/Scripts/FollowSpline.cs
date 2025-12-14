@@ -20,7 +20,8 @@ public class SplineFollower : MonoBehaviour
             return;
 
         progress += speed * Time.deltaTime / splineContainer.Spline.GetLength();
-        if (progress > 1f) progress = 0f;
+        //if (progress > 1f) progress = 0f;
+        if (progress > 1f) progress = 1f;
 
         Vector3 position = splineContainer.EvaluatePosition(progress);
 
@@ -43,5 +44,7 @@ public class SplineFollower : MonoBehaviour
             transform.rotation = lookRotation * rockRotation * offsetRotation;
 
         }
+
+        //if (progress > 0.95f) speed = 0f;
     }
 }
