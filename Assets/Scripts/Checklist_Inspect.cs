@@ -10,6 +10,8 @@ public class Checklist_Inspect : MonoBehaviour
     [Header("Should Fade")]
     [SerializeField] private FadeBlackScreen fadeScript;
 
+    [SerializeField] private AudioClip ambientSound;
+
     void Start()
     {
         // Initialize the renderer array and disable all renderers to start invisible
@@ -31,6 +33,11 @@ public class Checklist_Inspect : MonoBehaviour
 
     void Update()
     {
+        if (!SoundManager.instance.IsSoundPlaying(ambientSound))
+        {
+            SoundManager.instance.PlayWaitSoundFXClip(ambientSound, transform, 1f);
+        }
+
         if (Input.GetMouseButtonDown(0)) // Left mouse click
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

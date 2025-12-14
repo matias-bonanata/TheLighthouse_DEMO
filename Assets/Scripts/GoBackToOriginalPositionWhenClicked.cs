@@ -1,7 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using UnityEditor.ShaderGraph.Internal;
-using UnityEngine.SocialPlatforms;
 
 public class GoBackToOriginalPositionWhenClicked : MonoBehaviour
 {
