@@ -1862,6 +1862,7 @@ MonoBehaviour:
   - {fileID: 464038193}
   fadeScript: {fileID: 1105780882}
   ambientSound: {fileID: 8300000, guid: c8c982b0d3d820741a7be2fc94f8ab27, type: 3}
+  write: {fileID: 8300000, guid: 3e1b3941bd1e1d04184bfadb48571385, type: 3}
 --- !u!1 &1045828249
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,6 +19,8 @@ public class Lighthouse_MiniGame : MonoBehaviour
     [SerializeField] private GameObject enableInteracts;
     [SerializeField] private GameObject lightObjectsToEnable;
     [SerializeField] private MentalMeter mentalMeter;
+    [SerializeField] private AudioClip winSound;
+    [SerializeField] private AudioClip generator;
 
     private bool[] isLocked;               // Track if each object is locked
 
@@ -124,6 +126,9 @@ public class Lighthouse_MiniGame : MonoBehaviour
             completedCircle.SetActive(true);
             completedCircle.transform.localEulerAngles = baseLocalEuler;
             rotationSpeed = 0f;
+
+            SoundManager.instance.PlayWaitSoundFXClip(winSound, transform, 1f);
+            SoundManager.instance.PlayWaitSoundFXClip(generator, transform, 0.2f);
 
             mentalMeter.UpdateHealth("Recover", 10);
             mentalMeter.ChangeMentalBarColor(Color.green);

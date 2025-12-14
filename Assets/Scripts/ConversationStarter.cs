@@ -19,10 +19,12 @@ public class ConversationStarter : MonoBehaviour
 
     [Header("Player Position for Teleport")]
     [SerializeField] public CharacterController player;
+    [SerializeField] public AudioClip teleportSound;
 
     [Header("Hold to Delete")]
     [SerializeField] private float holdTimer = 0f; // 5 seconds
     [SerializeField] private float holdTime = 3f; // 5 seconds
+    [SerializeField] private AudioClip deleteSound;
 
     private bool willConverse = false;
     private bool willTeleport = false;
@@ -113,6 +115,12 @@ public class ConversationStarter : MonoBehaviour
 
                 if (willTeleport == true)
                 {
+                    if (!SoundManager.instance.IsSoundPlaying(teleportSound) && 
+                        teleportSound != null)
+                    {
+                        SoundManager.instance.PlayWaitSoundFXClip(teleportSound, transform, 1f);
+                    }
+
                     if (fadeScript != null) fadeScript.StartFadeSequence();
                     player.enabled = false;
                     player.transform.position = teleportLocation.position;
@@ -171,6 +179,12 @@ public class ConversationStarter : MonoBehaviour
 
     private void DeleteParent()
     {
+        if (!SoundManager.instance.IsSoundPlaying(deleteSound) &&
+    deleteSound != null)
+        {
+            SoundManager.instance.PlayWaitSoundFXClip(deleteSound, transform, 1f);
+        }
+
         //DELETE
         increaseMental();
         thingToDestroy.SetActive(false);

@@ -11,6 +11,7 @@ public class Checklist_Inspect : MonoBehaviour
     [SerializeField] private FadeBlackScreen fadeScript;
 
     [SerializeField] private AudioClip ambientSound;
+    [SerializeField] private AudioClip write;
 
     void Start()
     {
@@ -53,6 +54,7 @@ public class Checklist_Inspect : MonoBehaviour
                         if (targetRenderers[i] != null)
                         {
                             targetRenderers[i].enabled = !targetRenderers[i].enabled; // Toggle visibility
+                            SoundManager.instance.PlayWaitSoundFXClip(write, transform, 1f);
                         }
                         break; // Exit loop after toggling
                     }
