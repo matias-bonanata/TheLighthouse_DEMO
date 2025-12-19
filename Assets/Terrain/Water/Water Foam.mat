@@ -25,9 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHAPREMULTIPLY_ON
-  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -39,8 +37,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _ColorGradient:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainNormal:
         m_Texture: {fileID: 2800000, guid: 4f43ec351dfcbc041b0009fd3646a442, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecondNormal:
@@ -66,28 +72,56 @@ Material:
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _CastShadows: 0
+    - _ColorMode: 0
+    - _CrestSharpness: 0.1
+    - _CrestSize: 0.105
     - _Cull: 2
     - _DstBlend: 10
-    - _FoamScale: 0.59
+    - _FadeDistance: 0.5
+    - _FoamAmount: 0.44
+    - _FoamDepth: 0.19
+    - _FoamDirection: 0
+    - _FoamMode: 1
+    - _FoamNoiseAmount: 1
+    - _FoamScale: 0.7
+    - _FoamSharpness: 0.5
     - _FoamSpeed: 0.1
+    - _FoamStretchX: 1.95
+    - _FoamStretchY: 1
     - _Foam_Amount: 5.9
     - _Foam_Cutout: 4
+    - _LightContribution: 0
     - _Metallic: 0
+    - _NoiseSource: 1
     - _NormalStrength: 2.78
     - _Normal_Tiling: 7.8
+    - _Opaque: 0
     - _QueueControl: 0
     - _QueueOffset: -3
     - _ReceiveShadows: 1
+    - _RefractionAmplitude: 0.0618
+    - _RefractionFrequency: 35
+    - _RefractionScale: 1.36
+    - _RefractionSpeed: 0.1
     - _RippleDensity: 89.8
     - _RippleSlimness: 39.4
     - _RippleSpeed: 0.76
     - _Ripple_Modifier: -19.1
     - _Ripple_Opacity: 0
+    - _ShadowStrength: 0.35
     - _Smoothness: 0.73
     - _SrcBlend: 1
     - _Surface: 1
+    - _WaterClearness: 0.3
+    - _WaterDepth: 5
     - _Water_Alpha: 0.74
+    - _WaveAmplitude: 0.25
+    - _WaveDirection: 0
+    - _WaveFrequency: 1
+    - _WaveMode: 1
+    - _WaveNoise: 0.25
     - _WaveScale: 0.19
+    - _WaveSpeed: 0.5
     - _Wave_Modifier: 0.7
     - _Wavespeed: 0.2
     - _WorkflowMode: 1
@@ -96,6 +130,10 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _Base_Color: {r: 0.031505868, g: 0.07352389, b: 0.11320752, a: 1}
+    - _ColorDeep: {r: 0.65, g: 0.9, b: 1, a: 1}
+    - _ColorShallow: {r: 0.046858337, g: 0.49692428, b: 0.764151, a: 0.8}
+    - _CrestColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _Foam_Color: {r: 2, g: 2, b: 2, a: 1}
     - _RippleColor: {r: 1, g: 1, b: 1, a: 1}
     - _Ripple_Modifier: {r: 0.67, g: 0.52, b: 0, a: 0}

@@ -487,6 +487,10 @@ MonoBehaviour:
   rotationX: 0
   rotationY: -90
   rotationZ: 0.5
+  rotationSpeed: 5
+  canScroll: 0
+  scrollSpeed: 0.1
+  yAxisModif: 0
 --- !u!114 &5935044534319761038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,12 +503,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da361aa6646597a4fbc829549279f2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  smoothSpeed: 5
-  distanceInFront: 1.3
-  rotationX: 0
-  rotationY: -90
-  rotationZ: 0.5
   song1: {fileID: 8300000, guid: e7173895af396294099cf3a22f009eba, type: 3}
   staticSound: {fileID: 8300000, guid: ce4dd9edd045a5047bd1653e4268762c, type: 3}
   staticSoundVolume: 0

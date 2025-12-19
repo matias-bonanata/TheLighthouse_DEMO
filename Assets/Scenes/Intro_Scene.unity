@@ -1792,7 +1792,7 @@ MonoBehaviour:
   rotationZ: 90.2
   rotationSpeed: 0
   canScroll: 1
-  scrollSpeed: 0.012
+  scrollSpeed: 0.004
   yAxisModif: 0
 --- !u!114 &1020154424
 MonoBehaviour:
