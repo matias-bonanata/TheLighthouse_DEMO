@@ -11396,7 +11396,7 @@ Transform:
   m_GameObject: {fileID: 931340042}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: -31.819807, y: 9.7377205, z: 16.863277}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13399,7 +13399,7 @@ Transform:
   m_GameObject: {fileID: 1010645110}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6945623, y: -0.008591226, z: 0.008295375, w: 0.7193335}
-  m_LocalPosition: {x: -31.819807, y: 9.7377205, z: 16.863277}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33763,6 +33763,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6905747234260274434, guid: ca8c32629fea9e94ab3e83f98b1dd608, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7422447546989354520, guid: ca8c32629fea9e94ab3e83f98b1dd608, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -33815,6 +33819,14 @@ PrefabInstance:
       propertyPath: LightingManager
       value: 
       objectReference: {fileID: 1856620439}
+    - target: {fileID: 8791736346076525594, guid: ca8c32629fea9e94ab3e83f98b1dd608, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202073889918827389, guid: ca8c32629fea9e94ab3e83f98b1dd608, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
