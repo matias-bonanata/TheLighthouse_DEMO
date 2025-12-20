@@ -4,6 +4,7 @@ public class ClickToActivate : MonoBehaviour
 {
     [SerializeField] private MonoBehaviour[] scriptsToActivate;
     [SerializeField] private float returnSpeed = 5f;
+    [SerializeField] private bool disablesRigidbody = false;
 
     private Vector3 originalLocation;
     private Quaternion originalRotation;
@@ -102,6 +103,13 @@ public class ClickToActivate : MonoBehaviour
 
     private void OnObjectClicked()
     {
+        if (disablesRigidbody == true)
+        {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.useGravity = false;
+            rb.angularVelocity = Vector3.zero;
+        }
+
         // Save the original location and rotation
         originalLocation = transform.position;
         originalRotation = transform.rotation;
@@ -115,6 +123,12 @@ public class ClickToActivate : MonoBehaviour
 
     private void OnClickedAway()
     {
+        if (disablesRigidbody == true)
+        {
+            Rigidbody rb = GetComponent<Rigidbody>();
+            rb.useGravity = true;
+        }
+
         // Deactivate all scripts
         SetScriptsActive(false);
 

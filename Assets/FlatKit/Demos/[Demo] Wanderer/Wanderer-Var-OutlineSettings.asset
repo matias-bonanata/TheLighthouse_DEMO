@@ -47,8 +47,8 @@ Material:
     - _DepthThresholdMin: 1
     - _FadeRangeEnd: 50
     - _FadeRangeStart: 10
-    - _NormalThresholdMax: 0.75
-    - _NormalThresholdMin: 0.5
+    - _NormalThresholdMax: 1.59
+    - _NormalThresholdMin: 0.2
     - _Thickness: 2
     m_Colors:
     - _EdgeColor: {r: 0, g: 0, b: 0, a: 0.3764706}
@@ -76,8 +76,8 @@ MonoBehaviour:
   minDepthThreshold: 1
   maxDepthThreshold: 10
   useNormals: 1
-  minNormalsThreshold: 0.5
-  maxNormalsThreshold: 0.75
+  minNormalsThreshold: 0.2
+  maxNormalsThreshold: 1.59
   useColor: 1
   minColorThreshold: 0
   maxColorThreshold: 0.25

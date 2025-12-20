@@ -3,6 +3,7 @@ using UnityEngine;
 public class RotatingRadioKnobs : MonoBehaviour
 {
     [SerializeField] private float rotationSpeed = 5f;
+    [SerializeField] private float rotationModifierforSmall = 0f;
     private bool isDragging = false;
     private Vector3 lastMousePosition;
     public float currentRotationX;
@@ -22,7 +23,7 @@ public class RotatingRadioKnobs : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                if (hit.collider == GetComponent<Collider>())
+                if (hit.collider == GetComponent<BoxCollider>())
                 {
                     isDragging = true;
                     lastMousePosition = Input.mousePosition;
@@ -53,9 +54,9 @@ public class RotatingRadioKnobs : MonoBehaviour
             if (radioSlider != null)
             {
                 //Affect other rotation
-                Vector3 otherPos = radioSlider.localPosition;
-                otherPos.z = -otherZ;
-                radioSlider.localPosition = otherPos;
+                Vector3 otherPos = radioSlider.localEulerAngles;
+                otherPos.x = -otherZ * rotationModifierforSmall;
+                radioSlider.localEulerAngles = otherPos;
             }
 
             lastMousePosition = currentMousePosition;

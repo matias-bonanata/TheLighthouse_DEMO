@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d69a19d29ef66464ea0afc7cd84fd6c2, type: 3}
   m_Name: VolumetricFogRendererFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   downsampleDepthShader: {fileID: 4800000, guid: cffeaeec0396a2c4dad475266cc8dfeb, type: 3}
   volumetricFogShader: {fileID: 4800000, guid: 08f816187f9af0244a95556ee0cab83f, type: 3}
 --- !u!114 &11400000
@@ -43,7 +43,8 @@ MonoBehaviour:
   - {fileID: 7833122117494664109}
   - {fileID: -7957073526458714464}
   - {fileID: 5746100642686062675}
-  m_RendererFeatureMap: ad6b866f10d7b46ca076c33bc9cb92915350f2221740be4f
+  - {fileID: 777025345175344828}
+  m_RendererFeatureMap: ad6b866f10d7b46ca076c33bc9cb92915350f2221740be4fbcd6a6406f8cc80a
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -69,6 +70,20 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &777025345175344828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770acbaed70db4ad696458511aa3f084, type: 3}
+  m_Name: FlatKitFog
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings: {fileID: 11400000, guid: f68defe9b6889484787a8d20c715e802, type: 2}
 --- !u!114 &5746100642686062675
 MonoBehaviour:
   m_ObjectHideFlags: 0

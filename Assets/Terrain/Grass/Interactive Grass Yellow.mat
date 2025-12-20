@@ -51,12 +51,12 @@ Material:
     - _NormalStrength: 2.43
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.03
+    - _Scale: 0.09
     - _Smoothness: 0.2
-    - _Speed: 2
+    - _Speed: 2.5
     - _Strength_V_Movement: -0.83
     m_Colors:
-    - _Albedo: {r: 0.48750094, g: 0.5568628, b: 0.3137255, a: 0}
+    - _Albedo: {r: 0.745283, g: 0.58044404, b: 0.27772337, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &2537452789885818318

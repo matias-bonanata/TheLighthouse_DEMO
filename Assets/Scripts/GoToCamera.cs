@@ -23,6 +23,8 @@ public class GoToCamera : MonoBehaviour
 
     private void Awake()
     {
+
+
         // Initialize camera in Awake to ensure it's set before the script might be disabled
         if (mainCamera == null)
         {
