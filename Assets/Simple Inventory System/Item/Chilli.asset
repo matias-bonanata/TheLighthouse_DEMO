@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980a60e1e064f1745945bc01cf026f2b, type: 3}
   m_Name: Chilli
   m_EditorClassIdentifier: 
-  itemName: Chilli
+  itemName: Carrot
   itemDescription: A steaming bowl of homemade chili, packed with tender beef, kidney
     beans, and a blend of warming spices. The rich aroma promises a satisfying and
     filling meal.
   itemTooltip: Restores 40 Hunger
-  itemIcon: {fileID: 21300000, guid: 4e91672c0a9122944b236cf1fa7a1e84, type: 3}
+  itemIcon: {fileID: 21300000, guid: 3babf6872b3eac647a729b348954ee6b, type: 3}

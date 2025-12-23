@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 980a60e1e064f1745945bc01cf026f2b, type: 3}
   m_Name: Cracker
   m_EditorClassIdentifier: 
-  itemName: Cracker
+  itemName: Tuna
   itemDescription: ' A collection of savory crackers, ranging from plain salted to
     seeded and herb-infused varieties. A perfect accompaniment to soups and dips.'
   itemTooltip: Restores 10 Hunger
-  itemIcon: {fileID: 21300000, guid: 798eb805152623d4291e4399f9aeef74, type: 3}
+  itemIcon: {fileID: 21300000, guid: fb7428717a522744eb6a889cf669d31f, type: 3}
