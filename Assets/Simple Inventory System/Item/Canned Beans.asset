@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 980a60e1e064f1745945bc01cf026f2b, type: 3}
-  m_Name: Bean Soup
+  m_Name: Canned Beans
   m_EditorClassIdentifier: 
-  itemName: Bean Soup
-  itemDescription: A thick and flavorful bean soup, brimming with a variety of beans,
-    vegetables, and savory broth. A warming and filling meal.
-  itemTooltip: Restores 30 Hunger
+  itemName: Beans
+  itemDescription: Dusty tins of beans that've been plotting world domination since
+    the Eisenhower era. One shake reveals a mysterious sludge - instant fortification
+    or gastrointestinal warfare?
+  itemTooltip: Beans
   itemIcon: {fileID: 21300000, guid: 4af57011066779a4eaf84adef9a8c0d7, type: 3}

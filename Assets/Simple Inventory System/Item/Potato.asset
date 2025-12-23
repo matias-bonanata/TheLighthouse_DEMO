@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 980a60e1e064f1745945bc01cf026f2b, type: 3}
-  m_Name: Chilli
+  m_Name: Potato
   m_EditorClassIdentifier: 
-  itemName: Carrot
-  itemDescription: A steaming bowl of homemade chili, packed with tender beef, kidney
-    beans, and a blend of warming spices. The rich aroma promises a satisfying and
-    filling meal.
-  itemTooltip: Restores 40 Hunger
-  itemIcon: {fileID: 21300000, guid: 3babf6872b3eac647a729b348954ee6b, type: 3}
+  itemName: Potato
+  itemDescription: Lumpy earth spuds with eyes that follow you around the pantry.
+    Boil 'em for mash, bake 'em for bombs - these versatile tubers are one bad vibe
+    from starring in a horror flick.
+  itemTooltip: Potato
+  itemIcon: {fileID: 21300000, guid: a4aa2643751acff4d81fccfbce77eaa8, type: 3}

@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 980a60e1e064f1745945bc01cf026f2b, type: 3}
-  m_Name: Cracker
+  m_Name: Tuna
   m_EditorClassIdentifier: 
   itemName: Tuna
-  itemDescription: ' A collection of savory crackers, ranging from plain salted to
-    seeded and herb-infused varieties. A perfect accompaniment to soups and dips.'
-  itemTooltip: Restores 10 Hunger
+  itemDescription: 'Rusted relics from the high seas, these tuna cans whisper tales
+    of forgotten voyages. Open at your peril: the briny aroma might summon spectral
+    sailors demanding tribute.'
+  itemTooltip: Canned Tuna
   itemIcon: {fileID: 21300000, guid: fb7428717a522744eb6a889cf669d31f, type: 3}
