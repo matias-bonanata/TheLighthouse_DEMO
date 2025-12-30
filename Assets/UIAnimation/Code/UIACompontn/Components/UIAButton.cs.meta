@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3ca44d54353d1574cb602d6b09337c37
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIACompontn/Components/UIAButton.cs
+  uploadId: 830698

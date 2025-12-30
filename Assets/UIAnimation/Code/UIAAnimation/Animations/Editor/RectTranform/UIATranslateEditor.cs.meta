@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 9a974778537eb5242bda3ab69f506069
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIAAnimation/Animations/Editor/RectTranform/UIATranslateEditor.cs
+  uploadId: 830698

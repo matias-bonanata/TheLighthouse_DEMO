@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5c836baba801f7147901b75907ebfc9f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Leaderboard/Close/LeaderboardTranslateClose.asset
+  uploadId: 830698

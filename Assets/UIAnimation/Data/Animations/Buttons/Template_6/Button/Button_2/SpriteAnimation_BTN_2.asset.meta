@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 330e2eba3a690f146ba9e4b3d04d6002
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_6/Button/Button_2/SpriteAnimation_BTN_2.asset
+  uploadId: 830698

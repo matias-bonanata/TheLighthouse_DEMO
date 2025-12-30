@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5b46f53f104ee47923ee84449f3c5a, type: 3}
+  m_Name: New Rotate Animation
+  m_EditorClassIdentifier: 
+  easeIn: 1
+  easeOut: 1
+  clickDelay: 1
+  StartDelay: 0
+  Randomize: 0
+  minDuration: 0
+  maxDuration: 1
+  minEndValue: {x: 0, y: 0, z: 0}
+  maxEndValue: {x: 1, y: 1, z: 1}
+  duration: 1
+  EndValue: {x: 0, y: 0, z: 0}

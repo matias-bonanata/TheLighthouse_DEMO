@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5d307b95015ed449a9d75375788630c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_7/Button_2/Animation/Animation.controller
+  uploadId: 830698

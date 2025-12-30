@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 052404e82db3c954891ffbefdbf936dd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Panels/Translate + Rotate + Scale
+    + ParticlSystem/Panel_1/Open/OpenRotateAnimation_PANEL_1.asset
+  uploadId: 830698

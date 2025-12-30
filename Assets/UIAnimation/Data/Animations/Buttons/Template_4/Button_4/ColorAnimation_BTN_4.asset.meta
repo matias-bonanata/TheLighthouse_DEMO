@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a52b98999a7bd943b87b18280a08b1b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_4/Button_4/ColorAnimation_BTN_4.asset
+  uploadId: 830698

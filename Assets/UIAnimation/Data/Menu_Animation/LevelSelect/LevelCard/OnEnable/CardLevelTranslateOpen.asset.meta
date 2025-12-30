@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f6b756eb24cb2ad49bcac694db02f430
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/LevelSelect/LevelCard/OnEnable/CardLevelTranslateOpen.asset
+  uploadId: 830698

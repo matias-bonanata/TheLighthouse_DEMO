@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 67292190b6f61e649803c9f55c68ff88
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Setting/Close/SettingActivateClose.asset
+  uploadId: 830698

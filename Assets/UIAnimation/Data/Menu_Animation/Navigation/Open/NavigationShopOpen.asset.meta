@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 63f8d6312be37e145813465127b2dd83
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Navigation/Open/NavigationShopOpen.asset
+  uploadId: 830698

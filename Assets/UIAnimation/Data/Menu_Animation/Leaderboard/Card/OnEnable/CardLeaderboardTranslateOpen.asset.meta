@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2e327d5d268297d4496e8962ea254c53
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Leaderboard/Card/OnEnable/CardLeaderboardTranslateOpen.asset
+  uploadId: 830698

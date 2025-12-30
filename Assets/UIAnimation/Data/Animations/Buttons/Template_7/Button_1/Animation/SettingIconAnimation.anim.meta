@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5a7daf5eac5e2204aa3139a6753ef916
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_7/Button_1/Animation/SettingIconAnimation.anim
+  uploadId: 830698

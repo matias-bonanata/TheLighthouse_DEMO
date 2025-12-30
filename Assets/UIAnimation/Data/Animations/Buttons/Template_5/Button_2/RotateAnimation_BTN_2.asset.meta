@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 84eb2914da13f1e4e91f726ca589d3d9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_5/Button_2/RotateAnimation_BTN_2.asset
+  uploadId: 830698

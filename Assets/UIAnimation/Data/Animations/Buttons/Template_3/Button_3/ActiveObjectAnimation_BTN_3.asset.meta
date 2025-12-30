@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3dcb111500aafb7489981d4633b6636f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_3/Button_3/ActiveObjectAnimation_BTN_3.asset
+  uploadId: 830698

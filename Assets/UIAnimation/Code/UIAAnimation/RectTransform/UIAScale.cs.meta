@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9534a513d1fd70c4b90c9f535e571d6e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIAAnimation/RectTransform/UIAScale.cs
+  uploadId: 830698

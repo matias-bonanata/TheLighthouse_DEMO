@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6f8983f50df296c48aef9d313af08196
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Navigation/Start/NavigationPlayTranslateStart.asset
+  uploadId: 830698

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 66eb0c693962d7b4292b5c3a2d03050b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_2/Button_1/PatriclObjectAnimation_BTN_1.asset
+  uploadId: 830698

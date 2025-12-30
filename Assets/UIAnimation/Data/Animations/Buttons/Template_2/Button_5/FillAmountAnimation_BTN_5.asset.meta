@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 46c4f02460af794478d64e583e30afa3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_2/Button_5/FillAmountAnimation_BTN_5.asset
+  uploadId: 830698

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aaae22a2766915e4c9587ac31659adcb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Navigation/Close/NavigationPlayTranslateClose.asset
+  uploadId: 830698

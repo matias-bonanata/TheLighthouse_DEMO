@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 10aee802e11c51844b631d56f9ffc8c9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_1/Button_1/New Color
+    Animation.asset
+  uploadId: 830698

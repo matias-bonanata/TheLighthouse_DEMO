@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 314bb1c0ce21cf44a92a2bdc291c077b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIACompontn/Enum/InteractiveObjectData.cs
+  uploadId: 830698

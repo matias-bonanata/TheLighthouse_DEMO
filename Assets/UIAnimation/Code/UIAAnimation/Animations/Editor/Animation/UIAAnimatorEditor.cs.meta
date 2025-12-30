@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: f57f566c03bdc0643a22bd38a365b635
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIAAnimation/Animations/Editor/Animation/UIAAnimatorEditor.cs
+  uploadId: 830698

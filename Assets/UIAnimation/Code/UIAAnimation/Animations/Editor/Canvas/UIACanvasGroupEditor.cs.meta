@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: bb8ae5e28491665419b51bf1fcce444e
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIAAnimation/Animations/Editor/Canvas/UIACanvasGroupEditor.cs
+  uploadId: 830698

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3230439544003548344}
   - component: {fileID: 4584360761702946874}
   - component: {fileID: 2349850892218453353}
+  - component: {fileID: 4528379959640653377}
   m_Layer: 5
   m_Name: Card - Inventory
   m_TagString: Untagged
@@ -113,6 +114,75 @@ MonoBehaviour:
   m_EffectColor: {r: 1, g: 1, b: 1, a: 1}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &4528379959640653377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657131725597909817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca44d54353d1574cb602d6b09337c37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  animationSettings:
+  - _interactiveData: 0
+    _animationObjectData:
+    - animationName: Animation
+      interactiveObjectData: 0
+      objectList:
+        rectTransform: {fileID: 562643555729329818}
+        image: {fileID: 0}
+        canvasGroup: {fileID: 0}
+        animator: {fileID: 0}
+        particleSystem: {fileID: 0}
+      animationList:
+        uIAImage: {fileID: 0}
+        uIARectTransform: {fileID: 11400000, guid: c2213413225002d4999f7fb8ff3b0d47, type: 2}
+        uIACanvas: {fileID: 0}
+        uIAUnityAnimation: {fileID: 0}
+        uIAPatricles: {fileID: 0}
+    - animationName: Animation
+      interactiveObjectData: 1
+      objectList:
+        rectTransform: {fileID: 0}
+        image: {fileID: 3230439544003548344}
+        canvasGroup: {fileID: 0}
+        animator: {fileID: 0}
+        particleSystem: {fileID: 0}
+      animationList:
+        uIAImage: {fileID: 11400000, guid: d3406ce864a0a0f4f9412e27addb865f, type: 2}
+        uIARectTransform: {fileID: 0}
+        uIACanvas: {fileID: 0}
+        uIAUnityAnimation: {fileID: 0}
+        uIAPatricles: {fileID: 0}
+  OnStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onScriptPlayEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onScriptStopEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  InteractiveDelay: 0
+  onPointerEnterEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPointerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPointerDownEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPointerUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onPointerClickEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &713824908669391309
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +350,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.6
+  m_fontSize: 22.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -358,7 +428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.20739955}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.59643936, y: 0.0073547363}
+  m_AnchoredPosition: {x: -0.59643555, y: 0.0073547363}
   m_SizeDelta: {x: 1.1672764, y: 0.093129635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8228172141189159691

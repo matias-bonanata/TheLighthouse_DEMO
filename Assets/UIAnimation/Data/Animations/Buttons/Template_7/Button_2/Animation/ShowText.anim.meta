@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a2515479f6bd69848910b2f3cb8ce197
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_7/Button_2/Animation/ShowText.anim
+  uploadId: 830698

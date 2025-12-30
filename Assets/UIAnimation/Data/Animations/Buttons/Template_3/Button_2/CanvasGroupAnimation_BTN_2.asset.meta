@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 93626837441803644911c239ed6fbb2a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_3/Button_2/CanvasGroupAnimation_BTN_2.asset
+  uploadId: 830698

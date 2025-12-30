@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ad8422b308ef8c74886aa2be3f2aaf92
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Navigation/Open/NavigationCoinsTranslateOpen.asset
+  uploadId: 830698

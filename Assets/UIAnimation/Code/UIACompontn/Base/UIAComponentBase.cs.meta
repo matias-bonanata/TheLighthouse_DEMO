@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cbb73552bf85a6849a106fb0ac4ad004
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIACompontn/Base/UIAComponentBase.cs
+  uploadId: 830698

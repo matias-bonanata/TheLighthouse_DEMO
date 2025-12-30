@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ac6269f7f91d1ea42b5a5d2f2a8c5d0a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Leaderboard/Card/OnDisable/CardLeaderboardClose.asset
+  uploadId: 830698

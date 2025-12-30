@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d44f730cb3094e94d9636b61554b100d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Buttons/Template_4/Button_4/ScaleAnimation_BTN_4.asset
+  uploadId: 830698

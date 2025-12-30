@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: df6cd7378bf7a4b4e9002500a2d2850e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Navigation/Open/NavigationSettingTranslateOpen.asset
+  uploadId: 830698

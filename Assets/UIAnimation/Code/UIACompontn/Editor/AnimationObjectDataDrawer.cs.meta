@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7b55c907fed94d9459cefface16046f7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIACompontn/Editor/AnimationObjectDataDrawer.cs
+  uploadId: 830698

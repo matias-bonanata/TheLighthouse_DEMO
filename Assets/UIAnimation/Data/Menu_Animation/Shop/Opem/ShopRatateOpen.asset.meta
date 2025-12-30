@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2be6bb776f7420a499f230e96aac1cbd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Menu_Animation/Shop/Opem/ShopRatateOpen.asset
+  uploadId: 830698

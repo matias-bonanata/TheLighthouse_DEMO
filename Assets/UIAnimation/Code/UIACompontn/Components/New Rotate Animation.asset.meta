@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 824b67535a068c94a8685f8ce8be061b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Code/UIACompontn/Components/New Rotate Animation.asset
+  uploadId: 830698

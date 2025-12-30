@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0f58b2be21dad664cae22d28c3089dc9
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307739
+  packageName: UI Animation
+  packageVersion: 1.1
+  assetPath: Assets/UIAnimation/Data/Animations/Panels/Translate + Rotate + Scale
+    + ParticlSystem/Panel_1/Close/CloseScaleAnimation_PANEL_1.asset
+  uploadId: 830698
