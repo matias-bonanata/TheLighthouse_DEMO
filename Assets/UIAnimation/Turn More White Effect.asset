@@ -75,7 +75,7 @@ MonoBehaviour:
   maxDuration: 1
   duration: 0.5
   CurrentMode: 4
-  StartColor: {r: 0, g: 0, b: 0, a: 0}
-  EndColor: {r: 0, g: 0, b: 0, a: 1}
+  StartColor: {r: 0.69803923, g: 0.5921569, b: 0.3921569, a: 1}
+  EndColor: {r: 0.69803923, g: 0.5921569, b: 0.3921569, a: 1}
   ManualRandomColour: 0
   RandomColor: []

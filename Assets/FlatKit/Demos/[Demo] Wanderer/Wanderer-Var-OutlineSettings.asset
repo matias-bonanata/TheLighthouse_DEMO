@@ -13,8 +13,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - OUTLINE_USE_COLOR
-  - OUTLINE_USE_DEPTH
-  - OUTLINE_USE_NORMALS
   - RESOLUTION_INVARIANT_THICKNESS
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -45,13 +43,13 @@ Material:
     - _ColorThresholdMin: 0
     - _DepthThresholdMax: 10
     - _DepthThresholdMin: 1
-    - _FadeRangeEnd: 50
-    - _FadeRangeStart: 10
+    - _FadeRangeEnd: 14.4
+    - _FadeRangeStart: 6.85
     - _NormalThresholdMax: 1.59
     - _NormalThresholdMin: 0.2
     - _Thickness: 1
     m_Colors:
-    - _EdgeColor: {r: 0.11743503, g: 0.19126326, b: 0.2735849, a: 0.34901962}
+    - _EdgeColor: {r: 0.23028658, g: 0.29248977, b: 0.4245283, a: 0.5882353}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &11400000
@@ -66,16 +64,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130791d3e20646d2b6d81688877b0909, type: 3}
   m_Name: Wanderer-Var-OutlineSettings
   m_EditorClassIdentifier: 
-  edgeColor: {r: 0.11743503, g: 0.19126326, b: 0.2735849, a: 0.34901962}
+  edgeColor: {r: 0.23028658, g: 0.29248977, b: 0.4245283, a: 0.5882353}
   thickness: 1
   resolutionInvariant: 1
   fadeWithDistance: 0
-  fadeRangeStart: 10
-  fadeRangeEnd: 50
-  useDepth: 1
+  fadeRangeStart: 6.85
+  fadeRangeEnd: 14.4
+  useDepth: 0
   minDepthThreshold: 1
   maxDepthThreshold: 10
-  useNormals: 1
+  useNormals: 0
   minNormalsThreshold: 0.2
   maxNormalsThreshold: 1.59
   useColor: 1

@@ -15,7 +15,7 @@ public class DebrisPuddle_Spawner : MonoBehaviour
             for (int i = 0; i < childCount; i++)
             {
                 childObjects[i] = transform.GetChild(i).gameObject;
-                childObjects[i].SetActive(false); // initially set all inactive
+                childObjects[i].SetActive(false); // initially set all not active
             }
 
             StartCoroutine(ActivateRandomChildRoutine());
@@ -29,7 +29,7 @@ public class DebrisPuddle_Spawner : MonoBehaviour
         {
             if (childObjects != null)
             {
-                // Pick a random child index and activate it
+                // Pick a random debris
                 int randomIndex = Random.Range(0, childObjects.Length);
                 childObjects[randomIndex].SetActive(true);
 

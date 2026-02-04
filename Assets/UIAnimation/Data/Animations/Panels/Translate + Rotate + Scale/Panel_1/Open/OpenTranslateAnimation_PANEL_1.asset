@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a47d10153b60249a5b5402624b5d4b, type: 3}
   m_Name: OpenTranslateAnimation_PANEL_1
   m_EditorClassIdentifier: 
+  OnAnimationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAnimationStop:
+    m_PersistentCalls:
+      m_Calls: []
   timeScaleMod: 0
   Tween: 1
   Randomize: 0
-  easeIn: 33
+  easeIn: 3
   easeOut: 1
   curveIn:
     serializedVersion: 2
@@ -70,8 +76,8 @@ MonoBehaviour:
   duration: 0.2
   minEndValue: {x: 0, y: 0, z: 0}
   maxEndValue: {x: 1, y: 1, z: 1}
-  EndValue: {x: 0, y: 0, z: 0}
-  StartValue: {x: -842, y: 0, z: 0}
+  EndValue: {x: 400, y: -918.9, z: 0}
+  StartValue: {x: 300.74, y: -918.9, z: 0}
   CurrentMode: 1
   InitializeStartPosition: 1
   AutoStartPosition: 0

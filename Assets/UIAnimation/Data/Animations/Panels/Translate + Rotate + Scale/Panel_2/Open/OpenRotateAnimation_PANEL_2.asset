@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee5b46f53f104ee47923ee84449f3c5a, type: 3}
   m_Name: OpenRotateAnimation_PANEL_2
   m_EditorClassIdentifier: 
+  OnAnimationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAnimationStop:
+    m_PersistentCalls:
+      m_Calls: []
   timeScaleMod: 0
   Tween: 1
   Randomize: 0

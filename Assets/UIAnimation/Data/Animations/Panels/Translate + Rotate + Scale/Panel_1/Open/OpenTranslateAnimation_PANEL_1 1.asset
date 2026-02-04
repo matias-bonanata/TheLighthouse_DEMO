@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9534a513d1fd70c4b90c9f535e571d6e, type: 3}
-  m_Name: CardLeadeboardScaleOpen
+  m_Script: {fileID: 11500000, guid: e0a47d10153b60249a5b5402624b5d4b, type: 3}
+  m_Name: OpenTranslateAnimation_PANEL_1 1
   m_EditorClassIdentifier: 
   OnAnimationStart:
     m_PersistentCalls:
@@ -21,8 +21,8 @@ MonoBehaviour:
   timeScaleMod: 0
   Tween: 1
   Randomize: 0
-  easeIn: 26
-  easeOut: 27
+  easeIn: 3
+  easeOut: 1
   curveIn:
     serializedVersion: 2
     m_Curve:
@@ -73,12 +73,11 @@ MonoBehaviour:
     m_RotationOrder: 4
   minDuration: 0
   maxDuration: 1
-  duration: 0.3
+  duration: 0.2
   minEndValue: {x: 0, y: 0, z: 0}
   maxEndValue: {x: 1, y: 1, z: 1}
-  EndValue: {x: 3, y: 3, z: 3}
+  EndValue: {x: 400, y: -452.8, z: 0}
+  StartValue: {x: 305.38, y: -452.8, z: 0}
   CurrentMode: 1
-  StartValue: {x: 3, y: 3, z: 3}
-  MiddleValue: {x: 1.2, y: 1.2, z: 1.2}
-  AutoStartVelue: 1
-  Advanced: 0
+  InitializeStartPosition: 1
+  AutoStartPosition: 0

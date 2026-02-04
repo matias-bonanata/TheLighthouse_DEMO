@@ -3,16 +3,16 @@ using UnityEngine.Splines;
 
 public class SplineFollower : MonoBehaviour
 {
-    [SerializeField] private SplineContainer splineContainer; // Reference to your spline
-    [SerializeField] private float speed = 5f;                // Movement speed along spline
-    [SerializeField] private float progress = 0f;            // Normalized position on spline (0-1)
+    [SerializeField] private SplineContainer splineContainer; // Reference
+    [SerializeField] private float speed = 5f;                // Speed along spline
+    [SerializeField] private float progress = 0f;            // Normalised (1 = 100%)
     [SerializeField] private Vector3 rotationOffset;
 
-    // Floating/rocking parameters
-    [SerializeField] private float floatAmplitude = 0.5f;     // Amplitude of up/down float
-    [SerializeField] private float floatFrequency = 1.5f;     // Speed of up/down float
-    [SerializeField] private float rockAmplitude = 10f;       // Degrees to rock side to side
-    [SerializeField] private float rockFrequency = 1f;        // Speed of rocking
+    //Floating and Rocking
+    [SerializeField] private float floatAmplitude = 0.5f;     // How much up/down
+    [SerializeField] private float floatFrequency = 1.5f;     // how fast up/down
+    [SerializeField] private float rockAmplitude = 10f;       // How much rocking
+    [SerializeField] private float rockFrequency = 1f;        // Rocking speed
 
     void Update()
     {
@@ -20,12 +20,9 @@ public class SplineFollower : MonoBehaviour
             return;
 
         progress += speed * Time.deltaTime / splineContainer.Spline.GetLength();
-        //if (progress > 1f) progress = 0f;
-        if (progress > 1f) progress = 1f;
-
         Vector3 position = splineContainer.EvaluatePosition(progress);
 
-        // Add up and down floating motion using sine wave
+        //Use Sine wave
         position.y += Mathf.Sin(Time.time * floatFrequency) * floatAmplitude;
 
         transform.position = position;
@@ -44,7 +41,7 @@ public class SplineFollower : MonoBehaviour
             transform.rotation = lookRotation * rockRotation * offsetRotation;
 
         }
-
         //if (progress > 0.95f) speed = 0f;
+        if (progress > 1f) progress = 1f;
     }
 }

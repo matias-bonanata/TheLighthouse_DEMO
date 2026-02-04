@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -31,9 +32,9 @@ public class BoatController : MonoBehaviour
     //private float currentXRotation = -89.98f;  // Tracks current rotation
     [SerializeField] private float xnormalRotation = -80f;
 
-    [Header("Particle Effects")]
-    [SerializeField] private ParticleSystem forwardThrustParticles;
-    [SerializeField] private ParticleSystem backwardsThrustParticles;
+    [Header("Particle Effect")]
+    [SerializeField] private ParticleSystem thrustParticles;
+    [SerializeField] private CinemachineCamera boatCamera;
 
     private float baseYPosition;          // Remember starting Y height
 
@@ -44,15 +45,11 @@ public class BoatController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         baseYPosition = transform.position.y;
 
-        if (forwardThrustParticles == null || backwardsThrustParticles == null)
+        if (thrustParticles != null)
         {
-            ParticleSystem[] allParticles = GetComponentsInChildren<ParticleSystem>();
-            if (allParticles.Length >= 2)
-            {
-                forwardThrustParticles = allParticles[0];
-                backwardsThrustParticles = allParticles[1];
-            }
+            thrustParticles = GetComponent<ParticleSystem>();
         }
+        else return;
     }
 
     private void Update()
@@ -66,12 +63,6 @@ public class BoatController : MonoBehaviour
         // Forward movement
         if (pressingForward)
         {
-            if (!forwardThrustParticles.isPlaying)
-                forwardThrustParticles.Play();
-
-            if (backwardsThrustParticles.isPlaying)
-                backwardsThrustParticles.Stop();
-
             forwardCurrentMoveSpeed = Mathf.MoveTowards(
                 forwardCurrentMoveSpeed, maxMoveSpeed, increaseSpeed * Time.deltaTime);
             backwardCurrentMoveSpeed = Mathf.MoveTowards(
@@ -80,12 +71,6 @@ public class BoatController : MonoBehaviour
         // Backward movement
         else if (pressingBackward)
         {
-            if (!backwardsThrustParticles.isPlaying)
-                backwardsThrustParticles.Play();
-
-            if (forwardThrustParticles.isPlaying)
-                forwardThrustParticles.Stop();
-
             backwardCurrentMoveSpeed = Mathf.MoveTowards(
                 backwardCurrentMoveSpeed, reverseMaxSpeed, increaseSpeed * Time.deltaTime);
             forwardCurrentMoveSpeed = Mathf.MoveTowards(
@@ -93,9 +78,6 @@ public class BoatController : MonoBehaviour
         }
         else
         {
-            forwardThrustParticles.Stop();
-            backwardsThrustParticles.Stop();
-
             // Smoothly decelerate both when no input
             forwardCurrentMoveSpeed = Mathf.MoveTowards(
                 forwardCurrentMoveSpeed, 0f, decreaseSpeed * Time.deltaTime);
@@ -112,13 +94,22 @@ public class BoatController : MonoBehaviour
         // --- Apply movement ---
         rb.linearVelocity = moveDirection * netMoveSpeed;
 
+        if (forwardCurrentMoveSpeed == 0f && backwardCurrentMoveSpeed == 0f)
+        {
+            boatCamera.Lens.FieldOfView = 64.5f;
+            thrustParticles.Stop();
+        }
+        else 
+        {
+            boatCamera.Lens.FieldOfView = 97f;
+            thrustParticles.Play();
+        }
 
-
-        //
-        // --- Rotation controls ---
-        //
-        float targetRotationSpeed = (Input.GetKey(KeyCode.D) ||
-Input.GetKey(KeyCode.A)) ? maxRotationSpeed : 0f;
+            //
+            // --- Rotation controls ---
+            //
+            float targetRotationSpeed = (Input.GetKey(KeyCode.D) ||
+    Input.GetKey(KeyCode.A)) ? maxRotationSpeed : 0f;
 
         float rotationRate = targetRotationSpeed > currentRotationSpeed 
             ? increaseSpeed : decreaseSpeed;
