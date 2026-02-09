@@ -31,6 +31,7 @@ public class ConversationStarter : MonoBehaviour
     private bool willDelete = false;
     private bool willChangeCamera = false;
     private bool willInitialiseObject = false;
+    private bool willToggleObject = false;
 
     [Header("Camera Change")]
     [SerializeField] private CinemachineCamera cameraToEdit;
@@ -39,6 +40,12 @@ public class ConversationStarter : MonoBehaviour
     [Header("Object to Initialise")]
     [SerializeField] private GameObject objectToInitialise;
     [SerializeField] private MonoBehaviour scriptToDisable;
+
+    [Header("Toggle Object")]
+    [SerializeField] private GameObject objectToToggle1;
+    [SerializeField] private GameObject objectToToggle2;
+    private bool isObject1Toggled = false;
+    private bool isObject2Toggled = false;
 
     [Header("Should Fade")]
     [SerializeField] private FadeBlackScreen fadeScript;
@@ -92,6 +99,17 @@ public class ConversationStarter : MonoBehaviour
         {
             willInitialiseObject = false;
         }
+
+        if ((objectToToggle1 != null || objectToToggle2 != null))
+        {
+            willToggleObject = true;
+            if (objectToToggle1 != null) isObject1Toggled = objectToToggle1.activeSelf;
+            if (objectToToggle2 != null) isObject2Toggled = objectToToggle2.activeSelf;
+        }
+        else
+        {
+            willToggleObject = false;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -143,10 +161,12 @@ public class ConversationStarter : MonoBehaviour
                         targetScript.activationDistance = 0f;  // Change the value here
                     }
                 }
-            }
 
-            if (Input.GetKey(KeyCode.E))
-            {
+                if (willToggleObject == true)
+                {
+                    ToggleObjects();
+                }
+
                 if (willDelete == true)
                 {
                     holdTimer += Time.deltaTime;
@@ -192,9 +212,19 @@ public class ConversationStarter : MonoBehaviour
         //transform.parent.gameObject.SetActive(false);
     }
 
-    void Update()
+    private void ToggleObjects()
     {
-        
+        if (objectToToggle1 != null)
+        {
+            isObject1Toggled = !isObject1Toggled;
+            objectToToggle1.SetActive(isObject1Toggled);
+        }
+
+        if (objectToToggle2 != null)
+        {
+            isObject2Toggled = !isObject2Toggled;
+            objectToToggle2.SetActive(isObject2Toggled);
+        }
     }
 
     public void increaseMental()

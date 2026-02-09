@@ -7,18 +7,61 @@ using UnityEngine.UI;
 
 public class CookingLogic : MonoBehaviour
 {
-    [SerializeField] CardManager[] targetCards = new CardManager[5];  // 5 target cards
-    [SerializeField] Image[] destinationImages = new Image[5];       // 5 destination images
-    [SerializeField] Image fillBarImage;
-    [SerializeField] TextMeshProUGUI fillDescriptionText;
+    [SerializeField] private CardManager[] targetCards = new CardManager[5];  // 5 target cards
+    [SerializeField] private Image[] destinationImages = new Image[5];       // 5 destination images
+    [SerializeField] private Image fillBarImage;
+    [SerializeField] private TextMeshProUGUI fillDescriptionText;
 
-    [SerializeField] Sprite beansImage, carrotImage, fishImage, potatoImage;
+    [Header("Bag Buttons")]
+    [SerializeField] private Button putIntoBagButton;
+    [SerializeField] private Button eatNowButton;
+    [SerializeField] private GameObject bagObject;  // packed lunch
+
+    [SerializeField] Sprite beansImage, carrotImage, fishImage, potatoImage, crabImage;
 
     private float totalFillAmount = 0f;  // Tracks stacked fill across all cards
 
     private bool anyCardOccupied = false;
 
-    void Update()
+    private void Start()
+    {
+        // Hook up button listeners
+        if (putIntoBagButton != null)
+            putIntoBagButton.onClick.AddListener(OnPutIntoBag);
+
+        if (eatNowButton != null)
+            eatNowButton.onClick.AddListener(OnEatNow);
+    }
+
+    private void OnPutIntoBag()
+    {
+        ClearAllCardItems();
+        if (bagObject != null)
+        {
+            bagObject.SetActive(true);
+        }
+    }
+
+    private void OnEatNow()
+    {
+        ClearAllCardItems();
+    }
+
+    private void ClearAllCardItems()
+    {
+        // Clear item data from all target cards
+        foreach (CardManager card in targetCards)
+        {
+            if (card != null)
+            {
+                card.UnSetItem();
+            }
+        }
+
+        totalFillAmount = 0f;  // Reset fill amount immediately
+    }
+
+    private void Update()
     {
         ReadItemDataFromAllCards();
     }
@@ -75,6 +118,7 @@ public class CookingLogic : MonoBehaviour
             "carrot" => 0.15f,
             "fish" => 0.3f,
             "potato" => 0.30f,
+            "crab food" => 0.30f,
             _ => 0f
         };
     }
@@ -87,6 +131,7 @@ public class CookingLogic : MonoBehaviour
             "carrot" => carrotImage,
             "fish" => fishImage,
             "potato" => potatoImage,
+            "crab food" => crabImage,
             _ => null  // No sprite if unknown icon
         };
     }

@@ -1,10 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using ExternPropertyAttributes;
 
 public class MentalMeter : MonoBehaviour
 {
-
     [Header("Health Controls")]
     public float playerHealth;
     [SerializeField] private float maxHealth;
@@ -31,15 +31,16 @@ public class MentalMeter : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private Image mentalBar;
+    [SerializeField] private Image playerImage;
     [SerializeField] private FadeBlackScreen fadeScript;
 
+    private bool isColorOverridden = false;
 
     void Start()
     {
         fadeScript.StartInstantFadeSequence();
     }
 
-    
     // Update is called once per frame
     void Update()
     {
@@ -49,7 +50,6 @@ public class MentalMeter : MonoBehaviour
             isCold = true;
             ChangeMentalBarColor(Color.red);
         }
-
 
         if (playerHealth >= 0)
         {
@@ -84,14 +84,15 @@ public class MentalMeter : MonoBehaviour
                 {
                     UpdateHealth("Suffer", damageMult);
                 }
-            } else
+            }
+            else
             {
                 playerCold = maxCold;
             }
         }
 
         UpdateVitals("Normal", 0);
-
+        UpdateMentalBarColor();
     }
 
     public void UpdateVitals(string vitalType, int value)
@@ -129,6 +130,7 @@ public class MentalMeter : MonoBehaviour
         if (vitalType == "Normal")
         {
             mentalBar.fillAmount = playerHealth / maxHealth;
+            UpdateMentalBarColor(); // Update color based on new fillAmount
         }
     }
 
@@ -140,6 +142,7 @@ public class MentalMeter : MonoBehaviour
             {
                 playerHealth -= value / (hungerTolerance + tiredTolerance + coldTolerance);
                 mentalBar.fillAmount = playerHealth / maxHealth;
+                UpdateMentalBarColor(); // Update color immediately
             }
         }
 
@@ -149,6 +152,7 @@ public class MentalMeter : MonoBehaviour
             {
                 playerHealth -= value;
                 mentalBar.fillAmount = playerHealth / maxHealth;
+                UpdateMentalBarColor(); // Update color immediately
             }
 
             if (playerHealth <= maxHealth)
@@ -163,6 +167,7 @@ public class MentalMeter : MonoBehaviour
             {
                 playerHealth += value;
                 mentalBar.fillAmount = playerHealth / maxHealth;
+                UpdateMentalBarColor(); // Update color immediately
 
                 if (playerHealth >= maxHealth)
                 {
@@ -172,19 +177,74 @@ public class MentalMeter : MonoBehaviour
         }
     }
 
-    //change colour
-   public void ChangeMentalBarColor(Color newColor)
+    private void UpdateMentalBarColor()
     {
-        StopAllCoroutines(); // stop previous color changes if active
+        if (isColorOverridden) return;
+
+        float fillRatio = mentalBar.fillAmount;
+        Color green = new Color(0f, 1f, 0f, 1f);     // Pure GREEN (full)
+        Color yellow = new Color(1f, 1f, 0f, 1f);    // Pure YELLOW (half)
+        Color red = new Color(1f, 0f, 0f, 1f);       // Pure RED (empty)
+
+        Color barColor;
+
+        if (fillRatio > 0.5f)
+        {
+            // 0.51.0: YELLOW  GREEN
+            float t = (fillRatio - 0.5f) * 2f;        // t: 01
+            barColor = Color.Lerp(yellow, green, t);
+        }
+        else
+        {
+            // 0.00.5: RED  YELLOW  
+            float t = fillRatio * 2f;                 // t: 01
+            barColor = Color.Lerp(red, yellow, t);
+        }
+
+
+        mentalBar.color = barColor;
+        playerImage.color = barColor; // Also update player image
+    }
+
+    // Keep original method but simplified (no longer needed for auto-coloring)
+    public void ChangeMentalBarColor(Color newColor)
+    {
+        StopAllCoroutines();
         StartCoroutine(ChangeColorRoutine(newColor));
     }
 
     private IEnumerator ChangeColorRoutine(Color newColor)
     {
-        //Color originalColor = mentalBar.color;  // store original (usually white)
-        mentalBar.color = newColor;             // change to the desired color
-        yield return new WaitForSeconds(2f);    // wait for 2 seconds
-        mentalBar.color = Color.white;        // revert to original
-    }
+        isColorOverridden = true;
 
+        // FIRST: Calculate what the automatic color SHOULD be
+        float fillRatio = mentalBar.fillAmount;
+        Color targetColor = Color.Lerp(Color.red, Color.green, fillRatio);
+
+        // INSTANTLY change to new color
+        mentalBar.color = newColor;
+        playerImage.color = newColor;
+
+        yield return new WaitForSeconds(2f);
+
+        // Smoothly transition BACK to automatic color
+        float elapsed = 0f;
+        float duration = 0.5f;
+        Color currentColor = newColor;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / duration;
+            mentalBar.color = Color.Lerp(currentColor, targetColor, t);
+            playerImage.color = Color.Lerp(currentColor, targetColor, t);
+            yield return null;
+        }
+
+        // Snap to exact final color
+        mentalBar.color = targetColor;
+        playerImage.color = targetColor;
+
+        isColorOverridden = false;
+    }
 }

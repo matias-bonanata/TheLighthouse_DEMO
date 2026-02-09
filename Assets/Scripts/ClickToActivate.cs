@@ -5,6 +5,7 @@ public class ClickToActivate : MonoBehaviour
     [SerializeField] private MonoBehaviour[] scriptsToActivate;
     [SerializeField] private float returnSpeed = 5f;
     [SerializeField] private bool disablesRigidbody = false;
+    [SerializeField] private GameObject activateUI;
 
     private Vector3 originalLocation;
     private Quaternion originalRotation;
@@ -116,6 +117,7 @@ public class ClickToActivate : MonoBehaviour
 
         // Activate all scripts
         SetScriptsActive(true);
+        if (activateUI != null) activateUI.SetActive(true);
 
         isActive = true;
         isReturning = false;
@@ -131,6 +133,7 @@ public class ClickToActivate : MonoBehaviour
 
         // Deactivate all scripts
         SetScriptsActive(false);
+        if (activateUI != null) activateUI.SetActive(false);
 
         isActive = false;
         isReturning = true;
