@@ -4,11 +4,14 @@ using TMPro;
 using System.Collections;
 using Unity.Cinemachine;
 using Unity.Collections.LowLevel.Unsafe;
+using PixelCrushers.DialogueSystem;
 
 public class ConversationStarter : MonoBehaviour
 {
     [Header("What to do when Interact")]
-    [SerializeField] private NPCConversation conversation;
+    //[SerializeField] private NPCConversation conversation;
+    [SerializeField] private bool willConverse;
+    [SerializeField] private string conversationName;
     public Transform teleportLocation;
     public GameObject thingToDestroy;
 
@@ -26,7 +29,6 @@ public class ConversationStarter : MonoBehaviour
     [SerializeField] private float holdTime = 3f; // 5 seconds
     [SerializeField] private AudioClip deleteSound;
 
-    private bool willConverse = false;
     private bool willTeleport = false;
     private bool willDelete = false;
     private bool willChangeCamera = false;
@@ -54,15 +56,15 @@ public class ConversationStarter : MonoBehaviour
     [SerializeField] private MentalMeter mentalMeter;
 
     void Start()
-    {
-        if (conversation != null)
-        {
-            willConverse = true;
-        }
-        else
-        {
-            willConverse = false;
-        }
+    {        
+        //if (conversation != null)
+        //{
+        //    willConverse = true;
+        //}
+        //else
+        //{
+        //    willConverse = false;
+        //}
 
         if (teleportLocation != null && player != null)
         {
@@ -127,7 +129,7 @@ public class ConversationStarter : MonoBehaviour
             {
                 if (willConverse == true)
                 {
-                    ConversationManager.Instance.StartConversation(conversation);
+                    DialogueManager.StartConversation(conversationName);
                     playerInteractUI.HideContainer();
                 }
 

@@ -5181,7 +5181,7 @@ Transform:
   m_GameObject: {fileID: 229279898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.39624, y: 16.08862, z: 50.55523}
+  m_LocalPosition: {x: 85.44824, y: 8.97062, z: 118.11323}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11407,7 +11407,7 @@ Transform:
   m_GameObject: {fileID: 328760629}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 157.9, y: 4.21, z: 35.47}
+  m_LocalPosition: {x: 113.952, y: -2.908, z: 103.028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13233,7 +13233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 407999205}
   uiText: {fileID: 512367350}
@@ -13609,7 +13610,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 13930746}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -31315,7 +31317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 1904171106}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -35227,15 +35230,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 155.26549
+      value: 111.317505
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.40268
+      value: 2.2846794
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.045803
+      value: 107.603806
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35373,7 +35376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 1665801602}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -37112,7 +37116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 1322996046}
   uiText: {fileID: 512367350}
@@ -37430,7 +37435,7 @@ Transform:
   m_GameObject: {fileID: 1350767808}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 154.34254, y: 11.221858, z: 41.64887}
+  m_LocalPosition: {x: 110.394554, y: 4.103855, z: 109.20688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44284,7 +44289,7 @@ GameObject:
   - component: {fileID: 1458097652}
   - component: {fileID: 1458097654}
   m_Layer: 0
-  m_Name: lantern.004
+  m_Name: Lantern Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44686,7 +44691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -45367,7 +45373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 1641588998}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -45539,6 +45546,88 @@ PrefabInstance:
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 9132245446762353071, guid: ae1b07211bb0edc4dbdc60020131e9e6, type: 3}
   m_PrefabInstance: {fileID: 746279392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1530285926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1938981556}
+    m_Modifications:
+    - target: {fileID: 125852, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 292.5055
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -119.36893
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -29.879421
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: inputDevice
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: onUseKeyboard.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: onUseKeyboard.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424616, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: onUseKeyboard.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: initialDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 1c0bfecb6bd6b5e4e99de457088bea41, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+--- !u!4 &1530285927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+  m_PrefabInstance: {fileID: 1530285926}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531138506 stripped
 GameObject:
@@ -52006,7 +52095,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -54462,7 +54552,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1732114327
 Transform:
   m_ObjectHideFlags: 0
@@ -54895,15 +54985,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 157.9
+      value: 113.952
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: -2.908
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.47
+      value: 103.028
       objectReference: {fileID: 0}
     - target: {fileID: 3893294197879345259, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
       propertyPath: m_LocalRotation.w
@@ -55285,7 +55375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 1147882638}
+  willConverse: 1
+  conversationName: Test Conversation
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -55382,7 +55473,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: m_Name
-      value: ConversationManager
+      value: _OLD_ConversationManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3900108755062758285, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3900108755196472086, guid: d9fa78e8c3c4f2b4b8f7f77ca8426cca, type: 3}
       propertyPath: OptionImage
@@ -55600,7 +55695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 0}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -57548,7 +57644,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 912848160}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -58662,6 +58759,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1892967116}
+  - {fileID: 1530285927}
   - {fileID: 1795661915}
   - {fileID: 2023200482}
   - {fileID: 1040050368}
@@ -64894,7 +64992,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710e8186d049f1f44b43b2c7c6aaa4b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conversation: {fileID: 1906915783}
+  willConverse: 0
+  conversationName: 
   teleportLocation: {fileID: 0}
   thingToDestroy: {fileID: 0}
   uiText: {fileID: 512367350}
@@ -67160,7 +67259,7 @@ Transform:
   m_GameObject: {fileID: 2087712321}
   serializedVersion: 2
   m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
-  m_LocalPosition: {x: 126.080185, y: 10.997721, z: 52.33328}
+  m_LocalPosition: {x: 82.132195, y: 3.8797207, z: 119.89128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
