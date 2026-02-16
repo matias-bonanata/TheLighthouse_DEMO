@@ -52,14 +52,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _Albedo_Scale: 2
-    - _Interaction_Distance: 1.47
-    - _NormalStrength: 0.96
+    - _Interaction_Distance: 0.32
+    - _NormalStrength: 1.6
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.2
+    - _Scale: 0.01
     - _Smoothness: 0.5
-    - _Speed: 1
-    - _Strength_V_Movement: -1.23
+    - _Speed: 2.51
+    - _Strength_V_Movement: -0.62
     m_Colors:
     - _Albedo: {r: 0.3487762, g: 0.5, b: 0.09198114, a: 1}
     - _Player: {r: 1, g: 0, b: 0, a: 0}

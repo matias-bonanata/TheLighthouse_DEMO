@@ -299,7 +299,7 @@ MonoBehaviour:
   visibility: 3
   focusAnimationTrigger: 
   unfocusAnimationTrigger: 
-  onlyShowNPCPortraits: 0
+  onlyShowNPCPortraits: 1
   useAnimatedPortraits: 1
   usePortraitNativeSize: 0
   waitForOpen: 0
@@ -533,12 +533,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 224898291285934804}
-  m_Father: {fileID: 224035623553563078}
+  m_Father: {fileID: 224600576462826344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 341, y: -440.7}
+  m_SizeDelta: {x: 325, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &222194061783794178
 CanvasRenderer:
@@ -599,10 +599,10 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0, g: 0.3137255, b: 0, a: 1}
-    m_HighlightedColor: {r: 0, g: 0.78431374, b: 0, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0, g: 0.78431374, b: 0, a: 1}
+    m_NormalColor: {r: 0.7686275, g: 0.7137255, b: 0.6117647, a: 1}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_PressedColor: {r: 1, g: 0.95084643, b: 0, a: 1}
+    m_SelectedColor: {r: 0.7725491, g: 0.72156864, b: 0.6156863, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -621,19 +621,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114853144081569804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114879554413188470}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnFastForward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &114084872138153140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,8 +769,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -67}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 113.97499}
+  m_SizeDelta: {x: 0, y: -361.95004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222718797251176418
 CanvasRenderer:
@@ -1164,7 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightToLeft: 0
-  charactersPerSecond: 50
+  charactersPerSecond: 100
   audioClip: {fileID: 0}
   alternateAudioClips: []
   audioSource: {fileID: 0}
@@ -1956,6 +1944,8 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 224857961235629578}
+  - {fileID: 224410891883835976}
+  - {fileID: 224536639751460278}
   - {fileID: 224726507503313774}
   - {fileID: 224978949817934078}
   m_Father: {fileID: 224153627337747570}
@@ -2030,18 +2020,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671374657537960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 224934404992399328}
-  m_Father: {fileID: 224035623553563078}
+  m_Father: {fileID: 224600576462826344}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 178.5, y: -425.9}
+  m_SizeDelta: {x: 325, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &222744971797657802
 CanvasRenderer:
@@ -2372,7 +2362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3243,8 +3233,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 224515438305289756}
-  - {fileID: 224410891883835976}
-  - {fileID: 224536639751460278}
   m_Father: {fileID: 224726507503313774}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}

@@ -52,7 +52,7 @@ Material:
     - _NormalStrength: 2.43
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.09
+    - _Scale: 0.01
     - _Smoothness: 0.2
     - _Speed: 2.5
     - _Strength_V_Movement: -0.83
