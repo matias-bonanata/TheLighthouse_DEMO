@@ -61,18 +61,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 0}
   MoonDirectionalLight: {fileID: 0}
-  daySpeed: 0.1
+  daySpeed: 0.05
   startingPositionModifier: 0
-  TimeOfDay: 14.8
+  TimeOfDay: 17.1
   dayBreak: 11.25
-  nightBreak: 0.8
   dayFogColor: {r: 1, g: 1, b: 1, a: 1}
-  nightFogColor: {r: 0.321, g: 0.467, b: 0.718, a: 1}
-  fogBlendAmount: 1
-  fogTransitionAmount: 0.5
-  maxIntensity: 0.3
-  targetIntensity: 0
-  smoothTime: 3
+  ambientLightNight: 1.06
+  sunLightNight: 0.06
+  fogNight: 0.02
+  ambientLightDay: 2.8
+  sunLightDay: 2
+  fogDay: 0.002
   sunChangeDuration: 40
   colors:
   - {r: 1, g: 0.305, b: 0, a: 1}

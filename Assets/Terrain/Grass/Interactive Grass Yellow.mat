@@ -52,9 +52,9 @@ Material:
     - _NormalStrength: 2.43
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 0.01
+    - _Scale: -0.03
     - _Smoothness: 0.2
-    - _Speed: 2.5
+    - _Speed: 6.75
     - _Strength_V_Movement: -0.83
     m_Colors:
     - _Albedo: {r: 0.745283, g: 0.58044404, b: 0.27772337, a: 0}

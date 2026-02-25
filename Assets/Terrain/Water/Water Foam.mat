@@ -21,16 +21,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water Foam
-  m_Shader: {fileID: -6465566751694194690, guid: a7a105a29480a044f8e3e78c478ccd27, type: 3}
+  m_Shader: {fileID: 4800000, guid: efcaf526ceb1f4efd9eb4e4c30c6ade6, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - _COLORMODE_LINEAR
+  - _FOAMMODE_GRADIENT_NOISE
+  - _WAVEMODE_GRID
+  m_InvalidKeywords:
+  - _NOISESOURCE_UV
+  - _OPAQUE_OFF
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3050
-  stringTagMap: {}
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -128,10 +134,10 @@ Material:
     - _WaterDepth: 1
     - _Water_Alpha: 0.74
     - _WaveAmplitude: -0.08
-    - _WaveDirection: 0
+    - _WaveDirection: 1
     - _WaveFrequency: 2.12
     - _WaveMode: 2
-    - _WaveNoise: 0.77
+    - _WaveNoise: 1.269
     - _WaveScale: 0.19
     - _WaveSpeed: 0.05
     - _Wave_Modifier: 0.7
