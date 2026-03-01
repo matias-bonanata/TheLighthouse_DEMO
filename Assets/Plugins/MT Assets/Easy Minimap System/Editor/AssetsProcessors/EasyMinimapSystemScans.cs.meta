@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f1d141baec7beb940b6ea49e4a746535
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153343
+  packageName: Easy Minimap System MT - GPS, Radar, Worldmap, Fog of War & More
+  packageVersion: 2.5.0
+  assetPath: Assets/Plugins/MT Assets/Easy Minimap System/Editor/AssetsProcessors/EasyMinimapSystemScans.cs
+  uploadId: 709095

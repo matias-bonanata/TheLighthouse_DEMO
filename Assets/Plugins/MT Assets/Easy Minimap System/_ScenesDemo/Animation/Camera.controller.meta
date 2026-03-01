@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ce9f1cdb91152474c892f9b4c42d0ed4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153343
+  packageName: Easy Minimap System MT - GPS, Radar, Worldmap, Fog of War & More
+  packageVersion: 2.5.0
+  assetPath: Assets/Plugins/MT Assets/Easy Minimap System/_ScenesDemo/Animation/Camera.controller
+  uploadId: 709095

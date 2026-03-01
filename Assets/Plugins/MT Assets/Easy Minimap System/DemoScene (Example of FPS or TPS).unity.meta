@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c57c6e508c18edd4f8cde9971f724151
+timeCreated: 1575203323
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153343
+  packageName: Easy Minimap System MT - GPS, Radar, Worldmap, Fog of War & More
+  packageVersion: 2.5.0
+  assetPath: Assets/Plugins/MT Assets/Easy Minimap System/DemoScene (Example of FPS
+    or TPS).unity
+  uploadId: 709095

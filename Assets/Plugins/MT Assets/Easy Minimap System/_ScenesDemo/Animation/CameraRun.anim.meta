@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0432c5f124b167a49a46409ef27d6356
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153343
+  packageName: Easy Minimap System MT - GPS, Radar, Worldmap, Fog of War & More
+  packageVersion: 2.5.0
+  assetPath: Assets/Plugins/MT Assets/Easy Minimap System/_ScenesDemo/Animation/CameraRun.anim
+  uploadId: 709095

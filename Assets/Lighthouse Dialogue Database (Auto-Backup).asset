@@ -416,16 +416,23 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: "The Dialogue System is UI-independent. This means it can work with
-          any UI system \u2013 Unity UI, UI Toolkit, or any other. As long as the
-          UI implements the IDialogueUI C# interface, the Dialogue System will work
-          happily with it."
+        value: '<shake>I''m freezing</shake>. <wiggle>I''m joking</wiggle>.
+
+          It''s
+          a <fade>secret</fade>.
+
+          <bounce>Oh, how lucky</bounce>.
+
+          <speed=.1><incr><rainb>really</rainb></incr>
+          <speed=3>helps ^^<speed=1>'
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: '{{default}};
-
-'
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -449,8 +456,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 25.324322
-        y: 287.16217
+        x: 24.343937
+        y: 289.12296
         width: 160
         height: 30
     - id: 5
@@ -504,8 +511,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 275.3063
-        y: 285.96396
+        x: 282.16904
+        y: 286.94437
         width: 160
         height: 30
     - id: 6
@@ -608,8 +615,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 149.3984
-        y: 510.31036
+        x: 151.35919
+        y: 512.2712
         width: 160
         height: 30
     - id: 8
@@ -769,8 +776,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 30
+        x: 172
+        y: 28
         width: 160
         height: 30
     - id: 2
@@ -800,7 +807,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: '
+
+'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -1097,7 +1106,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 7
+        destinationConversationID: 2
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1106,7 +1121,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 309
-        y: 355
+        y: 354
         width: 160
         height: 30
     - id: 8
@@ -1146,7 +1161,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 8
+        destinationConversationID: 2
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1195,7 +1216,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 9
+        destinationConversationID: 2
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -1205,6 +1232,55 @@ MonoBehaviour:
         serializedVersion: 2
         x: 48
         y: 360
+        width: 160
+        height: 30
+    - id: 10
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 261
+        y: 464
         width: 160
         height: 30
     entryGroups: []

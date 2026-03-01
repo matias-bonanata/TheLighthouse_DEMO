@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 77ef74044f6dd1f4f9d6b258080ab279
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 153343
+  packageName: Easy Minimap System MT - GPS, Radar, Worldmap, Fog of War & More
+  packageVersion: 2.5.0
+  assetPath: Assets/Plugins/MT Assets/Easy Minimap System/_ScenesDemo/DemoScene (Example
+    of GPS Routes)/LightingData.asset
+  uploadId: 709095
