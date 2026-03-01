@@ -417,15 +417,15 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: "The Dialogue System is UI-independent. This means it can work with
-          any UI system \u2013 Unity UI, UI Toolkit, or any other. As long as the
-          UI implements the IDialogueUI C# interface, the Dialogue System will work
-          happily with it."
+          any UI system \u2013 Unity UI, UI Toolkit, or any other. "
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: '{{default}};
-
-'
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 1
@@ -449,8 +449,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 25.324322
-        y: 287.16217
+        x: 24.343937
+        y: 289.12296
         width: 160
         height: 30
     - id: 5
@@ -504,8 +504,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 275.3063
-        y: 285.96396
+        x: 282.16904
+        y: 286.94437
         width: 160
         height: 30
     - id: 6
@@ -608,8 +608,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 149.3984
-        y: 510.31036
+        x: 151.35919
+        y: 512.2712
         width: 160
         height: 30
     - id: 8
@@ -800,7 +800,9 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: '
+
+'
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2

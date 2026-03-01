@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1a497e764bae43d48ac41348b242b9e3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 234145
+  packageName: Feel + Text Animator + Dialogue System Bundle Demo Scene
+  packageVersion: 1.1.0
+  assetPath: Assets/Pixel Crushers/Dialogue System/Third Party Support/Feel Support/Scripts/MMF_Bark.cs
+  uploadId: 601333

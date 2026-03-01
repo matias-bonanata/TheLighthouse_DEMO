@@ -54,7 +54,7 @@ public class SpyglassCamera : MonoBehaviour
         spyglassUIContainer.SetActive(false);
         targetFOV = normalFOV;
 
-        mainVcam.Priority = activePriority;
+        //mainVcam.Priority = activePriority;
         spyglassVcam.Priority = inactivePriority;
 
         CacheOriginalPostProcessingValues();
@@ -96,14 +96,14 @@ public class SpyglassCamera : MonoBehaviour
         {
             ApplySpyglassPostProcessing();
             spyglassVcam.Priority = activePriority;
-            mainVcam.Priority = inactivePriority;
+            //mainVcam.Priority = inactivePriority;
             spyglassUIContainer.SetActive(true);
             targetFOV = normalFOV;
         }
         else
         {
             RestoreOriginalPostProcessing();
-            mainVcam.Priority = activePriority;
+            //mainVcam.Priority = activePriority;
             spyglassVcam.Priority = inactivePriority;
             spyglassUIContainer.SetActive(false);
             xRotation = 0f;

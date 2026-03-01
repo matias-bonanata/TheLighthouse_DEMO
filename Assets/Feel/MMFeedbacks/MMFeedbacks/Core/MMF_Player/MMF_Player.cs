@@ -1889,6 +1889,11 @@ namespace MoreMountains.Feedbacks
 			}
 		}
 
-		#endregion EVENTS
-	}    
+        public object GetFeedbackByName(string feedbackLabel)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion EVENTS
+    }    
 }

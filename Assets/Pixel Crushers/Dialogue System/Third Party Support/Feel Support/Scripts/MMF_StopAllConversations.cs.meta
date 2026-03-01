@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2f470a45c61dbde429fa968437409520
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 234145
+  packageName: Feel + Text Animator + Dialogue System Bundle Demo Scene
+  packageVersion: 1.1.0
+  assetPath: Assets/Pixel Crushers/Dialogue System/Third Party Support/Feel Support/Scripts/MMF_StopAllConversations.cs
+  uploadId: 601333

@@ -139,65 +139,6 @@ MonoBehaviour:
     modulationTarget: 2
     mappedGradient:
       serializedVersion: 2
-      key0: {r: 0.4245283, g: 0.40012294, b: 0.29436633, a: 1}
-      key1: {r: 0.23094898, g: 0.383, b: 0.3339513, a: 1}
-      key2: {r: 0.23591715, g: 0.29799998, b: 0.16687998, a: 0}
-      key3: {r: 0.081434675, g: 0.2830189, b: 0.16062845, a: 0}
-      key4: {r: 0.3773585, g: 0.36956334, b: 0.1512994, a: 0}
-      key5: {r: 0.5471698, g: 0.30566293, b: 0.20906018, a: 0}
-      key6: {r: 0.42352942, g: 0.4, b: 0.29411766, a: 0}
-      key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 7517
-      ctime1: 14842
-      ctime2: 23323
-      ctime3: 45875
-      ctime4: 52814
-      ctime5: 57054
-      ctime6: 65535
-      ctime7: 0
-      atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
-      atime4: 0
-      atime5: 0
-      atime6: 0
-      atime7: 0
-      m_Mode: 0
-      m_ColorSpace: -1
-      m_NumColorKeys: 7
-      m_NumAlphaKeys: 2
-    mappedCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 34
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 0
-    targetLayer: {fileID: 8574412962073106934, guid: f1ef5cbee8e42e043a5deedb8b4e70fc, type: 2}
-    targetMaterial: {fileID: 2100000, guid: 0cce7a29066158047bf5abc4f92b5fcd, type: 2}
-    targetVariableName: _BaseColor
-  - modulationSource: 1
-    modulationTarget: 2
-    mappedGradient:
-      serializedVersion: 2
       key0: {r: 0.38679248, g: 0.36281344, b: 0.26090246, a: 1}
       key1: {r: 0.21181916, g: 0.5283019, b: 0.3009692, a: 1}
       key2: {r: 0.20438597, g: 0.33962262, b: 0.065681726, a: 0}
