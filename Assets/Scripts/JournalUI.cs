@@ -4,44 +4,33 @@ using UnityEngine.UI;
 
 public class JournalUI : MonoBehaviour
 {
-    [SerializeField] private Image journalImage; // Assign your UI Image that shows the journal page
-    [SerializeField] private Sprite[] pages;     // Assign all journal page sprites in order in the inspector
+    [SerializeField] private Image journalImage;           // Main journal page Image
+    [SerializeField] private Sprite[] pages;               // Journal page sprites
+    [SerializeField] private Button nextButton;            // Next button
+    [SerializeField] private Button previousButton;        // Previous button
+    [SerializeField] private GameObject targetObject;      // Object to activate/deactivate
+    [SerializeField] private Image secondaryImage;         // Secondary Image to change sprites
+    [SerializeField] private Sprite[] secondarySprites;    // Sprites for secondary Image per page
 
     private int currentPage = 0;
 
     private void Start()
     {
+        nextButton.onClick.AddListener(NextPage);
+        previousButton.onClick.AddListener(PreviousPage);
         UpdatePage();
     }
 
-    private void Update()
-    {
-        //if (gameObject.activeSelf)
-        //{
-        //    playerMovement.enabled = false;
-        //}
-        
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            NextPage();
-        }
-        else if (Input.GetKeyDown(KeyCode.A))
-        {
-            PreviousPage();
-        }
-    }
-
-    private void NextPage()
+    public void NextPage()
     {
         if (currentPage < pages.Length - 1)
         {
             currentPage++;
             UpdatePage();
         }
-        // If on last page, do nothing on right input (no bound overflow)
     }
 
-    private void PreviousPage()
+    public void PreviousPage()
     {
         if (currentPage > 0)
         {
@@ -50,7 +39,6 @@ public class JournalUI : MonoBehaviour
         }
         else if (currentPage == 0)
         {
-            // No more pages to the left, deactivate journal object
             transform.parent.gameObject.SetActive(false);
         }
     }
@@ -58,10 +46,17 @@ public class JournalUI : MonoBehaviour
     private void UpdatePage()
     {
         journalImage.sprite = pages[currentPage];
-    }
 
-    //public void disableParent()
-    //{
-    //    transform.parent.gameObject.SetActive(false);
-    //}
+        // Handle target object state (page 0 = active, page 1+ = inactive)
+        if (targetObject != null)
+        {
+            targetObject.SetActive(currentPage == 0);
+        }
+
+        // Change secondary image sprite per page
+        if (secondaryImage != null && secondarySprites != null && currentPage < secondarySprites.Length)
+        {
+            secondaryImage.sprite = secondarySprites[currentPage];
+        }
+    }
 }

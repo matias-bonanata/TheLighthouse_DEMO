@@ -62,7 +62,7 @@ MonoBehaviour:
     - title: Name
       value: Bingo
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -182,7 +182,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -219,7 +219,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 160
-        y: 30
+        y: 30.980392
         width: 160
         height: 30
     - id: 1
@@ -237,7 +237,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -279,8 +279,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 160
-        y: 93
+        x: 159.0196
+        y: 94.960785
         width: 160
         height: 30
     - id: 2
@@ -408,7 +408,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -475,7 +475,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 1
         type: 0
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -567,7 +567,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 26.250256
-        y: 393.64368
+        y: 392.71774
         width: 160
         height: 30
     - id: 7
@@ -676,7 +676,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1.0200001
+    canvasZoom: 1.08
   - id: 2
     fields:
     - title: Title

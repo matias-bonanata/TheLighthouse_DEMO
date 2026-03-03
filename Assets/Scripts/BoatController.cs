@@ -49,7 +49,6 @@ public class BoatController : MonoBehaviour
         {
             thrustParticles = GetComponent<ParticleSystem>();
         }
-        else return;
     }
 
     private void Update()
