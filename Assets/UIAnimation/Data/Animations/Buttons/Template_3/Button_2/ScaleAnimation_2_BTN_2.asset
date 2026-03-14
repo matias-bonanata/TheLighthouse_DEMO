@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9534a513d1fd70c4b90c9f535e571d6e, type: 3}
   m_Name: ScaleAnimation_2_BTN_2
   m_EditorClassIdentifier: 
+  OnAnimationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAnimationStop:
+    m_PersistentCalls:
+      m_Calls: []
   timeScaleMod: 0
   Tween: 1
   Randomize: 0
@@ -70,9 +76,9 @@ MonoBehaviour:
   duration: 0.6
   minEndValue: {x: 0, y: 0, z: 0}
   maxEndValue: {x: 1, y: 1, z: 1}
-  EndValue: {x: 0.57573, y: 0.57573, z: 0.57573}
+  EndValue: {x: 1, y: 1, z: 1}
   CurrentMode: 1
   StartValue: {x: 55, y: 55, z: 55}
-  MiddleValue: {x: 1, y: 1, z: 1}
-  AutoStartVelue: 0
+  MiddleValue: {x: 1.1, y: 1.1, z: 1.1}
+  AutoStartVelue: 1
   Advanced: 1

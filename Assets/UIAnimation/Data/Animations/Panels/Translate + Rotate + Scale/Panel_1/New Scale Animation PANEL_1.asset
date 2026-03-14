@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9534a513d1fd70c4b90c9f535e571d6e, type: 3}
   m_Name: New Scale Animation PANEL_1
   m_EditorClassIdentifier: 
+  OnAnimationStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAnimationStop:
+    m_PersistentCalls:
+      m_Calls: []
   timeScaleMod: 0
   Tween: 1
   Randomize: 0
@@ -70,7 +76,7 @@ MonoBehaviour:
   duration: 0.3
   minEndValue: {x: 0, y: 0, z: 0}
   maxEndValue: {x: 1, y: 1, z: 1}
-  EndValue: {x: 1.2, y: 1.2, z: 1.2}
+  EndValue: {x: 1.02, y: 1.02, z: 1.02}
   CurrentMode: 0
   StartValue: {x: 0, y: 0, z: 0}
   MiddleValue: {x: 0, y: 0, z: 0}

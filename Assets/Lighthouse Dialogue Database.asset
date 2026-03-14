@@ -38,7 +38,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Name
-      value: Player
+      value: Flea
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -53,6 +53,10 @@ MonoBehaviour:
       value: True
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: <br><align=right><i><b>Flea</i></b><br>
+      type: 0
+      typeString: CustomFieldType_Text
     portrait: {fileID: 0}
     spritePortrait: {fileID: 0}
     alternatePortraits: []
@@ -75,6 +79,10 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Display Name
+      value: <br><align=left><bounce><b>Bingo</b></bounce><br>
+      type: 0
+      typeString: CustomFieldType_Text
     portrait: {fileID: 0}
     spritePortrait: {fileID: 21300000, guid: 4ddc7bee051ae7c478e0c7d8c0fb85e8, type: 3}
     alternatePortraits: []
@@ -245,7 +253,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Long Text or Short Text?
+        value: Name's <wiggle>Bingo</wiggle> nice to meet you. What's your name?
         type: 0
         typeString: 
       - title: Sequence
@@ -306,7 +314,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Long Text
+        value: . . . .
         type: 0
         typeString: 
       - title: Sequence
@@ -334,7 +342,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 19.918919
+        x: 20.844845
         y: 168.6937
         width: 160
         height: 30
@@ -361,7 +369,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Short Text
+        value: It's Flea
         type: 0
         typeString: 
       - title: Sequence
@@ -389,8 +397,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 269
-        y: 172
+        x: 268.0741
+        y: 171.07407
         width: 160
         height: 30
     - id: 4
@@ -416,15 +424,10 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '<shake>I''m freezing</shake>. <wiggle>I''m joking</wiggle>.
-
-          It''s
-          a <fade>secret</fade>.
-
-          <bounce>Oh, how lucky</bounce>.
-
-          <speed=.1><incr><rainb>really</rainb></incr>
-          <speed=3>helps ^^<speed=1>'
+        value: "<speed=.1><incr><shake>I'm FREEZING</shake></incr><speed=1>\n<size=20><wiggle>ha
+          ha ha ha ha</wiggle></size>\nIt's just a <fade>j o k e</fade>, no need
+          to be \n<shake>w o r r i e d !</shake>\n<bounce>Oh, how lucky</bounce>
+          you are to have met me!\n<speed=.8><rainb>really</rainb><speed=1> lucky."
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -456,7 +459,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 24.343937
+        x: 22.492085
         y: 289.12296
         width: 160
         height: 30
@@ -483,7 +486,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Hey ;0
+        value: Name's {rot}Bingo{/rot} <shake>NOTHING TO WORRY ABOUT NOW !!!</shake>
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
@@ -511,8 +514,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 282.16904
-        y: 286.94437
+        x: 284.02087
+        y: 286.01843
         width: 160
         height: 30
     - id: 6
@@ -675,7 +678,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 15.740753}
     canvasZoom: 1.08
   - id: 2
     fields:
