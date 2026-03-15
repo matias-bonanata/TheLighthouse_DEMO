@@ -1,0 +1,83 @@
+#JoinField { 
+  margin-top: 4px; 
+  align-self: center; 
+}
+
+#MemberQuickFind 
+{
+  width: 18px;
+  height: 18px;
+
+  border-width: 0px;
+
+  margin-left: 0px;
+  margin-right: 4px;
+
+  align-self: center;
+
+  background-color: transparent;
+
+  -unity-background-image-tint-color: rgba(255,255,255,.85);
+  -unity-text-align: middle-center;
+
+  padding: 0px;
+}
+
+#MemberFindField 
+{
+  margin-right: 0px;
+  min-width: 0;
+
+  padding-right: 3px;
+}
+
+#MemberFindField #unity-text-input
+{
+  border-width: 0px;
+
+  padding-right: 3px;
+}
+
+#MemberCancelFind {
+  width: 12px;
+  height: 12px;
+
+  font-size: 10px;
+
+  -unity-text-align: middle-center;
+  -unity-font-style: bold;
+
+  padding: 0;
+
+  margin-left: 0px;
+
+  align-self: center;
+
+  background-color: transparent;
+}
+
+#RightSideDynamic
+{
+  flex-grow: 1;
+}
+
+#RightSideDynamic > .unity-toggle
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#KeyButton
+{
+  border-width: 2px;
+  border-color: black;
+}
+
+#Lower .toggled
+{
+  background-color: deepskyblue;
+}
+
+.HideJoin{
+  display: none;
+}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cf19cb7a080c07145b336b42152dc80f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Examples/DemoAssets/Materials/UI/UImask.mat
+  uploadId: 844220

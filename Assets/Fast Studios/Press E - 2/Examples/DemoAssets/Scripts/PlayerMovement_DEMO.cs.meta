@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fd8889fcaf82d8f4c99554154b50ce55
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Examples/DemoAssets/Scripts/PlayerMovement_DEMO.cs
+  uploadId: 844220

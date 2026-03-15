@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc65ce8ab519f8b45bed02eaf6e98041
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Examples/DemoAssets/Animations/Animator/Door.controller
+  uploadId: 844220

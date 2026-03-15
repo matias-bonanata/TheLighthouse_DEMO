@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement class="cond-root" style="margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 0; flex-direction: row;">
+        <ui:VisualElement name="LeftCol" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="ObjectSelection" style="flex-grow: 1; width: 64px; height: 64px; max-width: 64px; min-width: 64px; min-height: 64px; max-height: 64px; align-items: center; justify-content: center; align-self: center; align-content: flex-start;">
+                <ui:VisualElement name="PreviewImage" style="flex-grow: 1; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(62, 12, 56); border-right-color: rgb(62, 12, 56); border-top-color: rgb(62, 12, 56); border-bottom-color: rgb(62, 12, 56); background-color: rgb(98, 69, 120);">
+                    <ui:VisualElement name="Selected" style="flex-grow: 1;">
+                        <ui:VisualElement name="RemoveContainer" style="flex-grow: 1; position: absolute; min-width: 16px; min-height: 16px; max-height: 16px; max-width: 16px; width: 16px; height: 16px; align-self: flex-end; margin-top: 4px; margin-right: 0;">
+                            <ui:VisualElement name="RemoveObjectButton" style="flex-grow: 1; margin-right: 4px; margin-left: -2px; background-color: rgb(121, 35, 99); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-left-color: rgb(62, 12, 56); border-right-color: rgb(62, 12, 56); border-top-color: rgb(62, 12, 56); border-bottom-color: rgb(62, 12, 56); border-top-width: 1.5px; border-right-width: 1.5px; border-bottom-width: 1.5px; border-left-width: 1.5px;">
+                                <ui:Label text="X" picking-mode="Ignore" style="font-size: 10px; align-items: center; justify-content: center; align-self: center; align-content: center; -unity-text-align: middle-center; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="NotSelected" style="flex-grow: 1; align-items: center; justify-content: center;">
+                        <ui:Label text="?" style="position: absolute; -unity-font-style: bold; color: rgb(255, 255, 255); align-self: center; justify-content: center; align-content: center; align-items: center; font-size: 48px;" />
+                        <uie:PropertyField name="gameObject" binding-path="gameObject" label=" " class="HideLabel Hide" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="TransformSection" style="flex-grow: 1; flex-direction: row;">
+                <ui:VisualElement name="Variabels" style="flex-grow: 1; max-width: 75%; margin-left: 5px;">
+                    <uie:PropertyField name="Position" binding-path="Position" label="Position" class="TransformVec3" />
+                    <uie:PropertyField name="Rotation" binding-path="Rotation" label="Rotation" class="TransformVec3" />
+                    <uie:PropertyField name="Scale" binding-path="Scale" label="Scale" class="TransformVec3" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Buttons" style="flex-grow: 1; max-width: 75px; min-width: 32px; margin-left: 5px;">
+                    <ui:Button text="Set" name="Set" style="margin-bottom: 0; margin-top: 0; align-items: flex-end; flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="IndividualSetting" style="flex-grow: 1; margin-right: 5px;">
+                <ui:VisualElement name="HorizontalRows" style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="Row1" style="flex-grow: 1; max-width: 80px; margin-right: 10px;">
+                        <uie:PropertyField binding-path="CanStack" name="CanStack" label="Can Stack" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Row2" style="flex-grow: 1;">
+                        <uie:PropertyField binding-path="HasStackLimit" name="HasStackLimit" label="Has Stack Limit" style="flex-grow: 1;" />
+                        <uie:PropertyField binding-path="HasVisualStackLimit" name="HasVisualStackLimit" label="Has Visual Limit" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Row3" style="flex-grow: 1; max-width: 33%;">
+                        <uie:PropertyField binding-path="ActualStackLimit" name="ActualStackLimit" label=" " class="HideLabel" />
+                        <uie:PropertyField binding-path="VisualStackLimit" name="VisualStackLimit" label=" " class="HideLabel" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <uie:PropertyField binding-path="DistanceBetween" name="DistanceBetween" label="Distance Between" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SettingsButton" class="cond-key-btn" style="flex-grow: 1; width: 24px; height: 24px; min-width: 24px; min-height: 24px; max-width: 24px; max-height: 24px; align-self: flex-end; background-image: resource(&apos;FastStudios/ForEditor/Icons/settings&apos;); background-size: 50% 50%; margin-top: 6px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; margin-left: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="RightCol" style="flex-grow: 1; max-width: 8px; min-width: 8px; width: 8px; flex-direction: column; margin-left: 5px; display: none;">
+            <ui:VisualElement name="OrderButtons" style="flex-grow: 1; min-width: 8px; align-content: stretch; justify-content: space-between; align-self: flex-end;">
+                <ui:VisualElement name="UpButton" style="flex-grow: 1; width: 8px; height: 8px; background-image: resource(&apos;FastStudios/ForEditor/Icons/Up&apos;); max-height: 8px; max-width: 8px; align-self: center; align-items: flex-start;" />
+                <ui:VisualElement name="DownButton" style="flex-grow: 1; width: 8px; height: 8px; background-image: resource(&apos;FastStudios/ForEditor/Icons/Down&apos;); max-height: 8px; max-width: 8px; align-self: center; align-content: flex-end; justify-content: flex-end; align-items: flex-end;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

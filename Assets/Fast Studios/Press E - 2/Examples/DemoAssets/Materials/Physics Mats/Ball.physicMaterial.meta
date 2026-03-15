@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b36373eccffd1484d90915ddb368f873
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 13400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Examples/DemoAssets/Materials/Physics
+    Mats/Ball.physicMaterial
+  uploadId: 844220

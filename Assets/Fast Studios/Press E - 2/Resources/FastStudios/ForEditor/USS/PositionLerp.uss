@@ -1,0 +1,157 @@
+.VisibilityOff{
+    visibility: hidden;
+}
+
+.HideAlt {
+    display: none;
+}
+
+.HideAlt1 {
+    display: none;
+}
+
+.Hide {
+    display: none;
+}
+
+.Hide1 {
+    display: none;
+}
+
+.Hide2 {
+    display: none;
+}
+
+.Hide3 {
+    display: none;
+}
+
+.HideField{
+    display: none;
+}
+
+.HideLabel .unity-base-field__label{
+    display: none;
+}
+
+.TimelineSection {
+    margin-top: 6px;
+}
+
+.TimelineContainer {
+    padding: 6px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.TimelineRow {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+    height: 36px;
+}
+
+.TimelinePlayPauseButton {
+    /* For some reason, for the play mouse button be 32px, it has to be 36px*/
+    min-width: 36px;
+    min-height: 36px;
+    width: 36px;
+    height: 36px;
+    max-width: 36px;
+    max-height: 36px;
+    margin: 0px;
+
+    background-color: #1e1e1e;
+    border-right-width: 2px;
+    border-left-width: 0px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+    border-radius: 0px;
+}
+
+.TimelineSlider {
+    flex-grow: 1;
+    margin-right: 6px;
+}
+
+.TimelineTimeLabel {
+    min-width: 90px;
+    -unity-text-align: middle-center;
+}
+
+.BlackgroundAndBorder {
+    background-color: #1e1e1e;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+}
+
+#TimelineSlider {
+    height: 32px;
+    min-height: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+    padding-right: 1px;
+    border-right-width: 2px;
+    border-color: black;
+}
+
+#TimelineSlider .unity-slider-input,
+#TimelineSlider .unity-base-slider__input,
+#TimelineSlider .unity-base-field__input {
+    justify-content: center;
+    align-items: stretch;
+}
+
+#TimelineSlider .unity-base-field__label {
+    display: none;
+}
+
+#TimelineSlider .unity-base-field__input {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: stretch;
+}
+
+#TimelineSlider #unity-tracker {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50%;
+}
+
+#TimelineSlider #unity-tracker {
+    align-self: stretch;
+    margin: 0px;
+    overflow: visible;
+    display: none;
+}
+
+#TimelineSlider #unity-dragger-border {
+    display: none;
+}
+
+#TimelineSlider #unity-dragger {
+    border-radius: 1px;
+    width: 8px;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 0px;
+    background-color: #f4b752;
+}
+
+.Loop
+{
+    background-color: deepskyblue;
+}
+

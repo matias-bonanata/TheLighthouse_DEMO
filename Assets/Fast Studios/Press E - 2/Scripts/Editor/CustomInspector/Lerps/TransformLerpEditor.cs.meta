@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7a598d49e3f8d654da725dfa0dc7ac61
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visualTree: {fileID: 9197481963319205126, guid: 031bb01fed56c9a4482668dd13d7005f,
+      type: 3}
+  - USS: {fileID: 7433441132597879392, guid: 42a972935d5dc8e41871e64066182408, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/Lerps/TransformLerpEditor.cs
+  uploadId: 844220

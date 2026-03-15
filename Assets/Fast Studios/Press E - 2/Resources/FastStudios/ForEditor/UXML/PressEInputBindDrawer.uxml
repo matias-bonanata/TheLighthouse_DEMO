@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement style="flex-direction: column;">
+        <ui:Label name="BindHeaderLabel" class="BindHeader" text="Bind" />
+        <uie:PropertyField name="InputMethodField" binding-path="InputMethod" />
+        <uie:PropertyField name="KeyCodeField" binding-path="Key" />
+        <uie:PropertyField name="MouseButtonField" binding-path="MouseButton" />
+        <uie:PropertyField name="InputActionField" binding-path="Action" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,478 @@
+.unity-base-field__input {
+    flex-shrink: 1;
+}
+
+.unity-base-field__label {
+    flex-grow: 1;
+    max-width: 150px;
+}
+
+#DetailsColLeft .unity-base-field {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#DetailsColLeft .unity-base-field__label {
+    flex-grow: 1;
+    max-width: 115px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#DetailText .unity-base-field__label {
+    max-height: 15px;
+    margin-bottom: 5px;
+}
+
+#hasDetailText .unity-base-field__label {
+    max-width: 80px;
+}
+
+#overrideDetailTextKey .unity-base-field__input {
+    max-width: 30px;
+}
+
+#DetailsColRight .unity-base-field {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#DetailsColRight .unity-base-field__label {
+    flex-grow: 1;
+    max-width: 120px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#hasDetailtImage .unity-base-field__label {
+    max-width: 80px;
+}
+
+#overrideDetailImageKey .unity-base-field__label {
+    width: 150px;
+}
+
+#overrideDetailImageKey .unity-base-field__input {
+    max-width: 30px;
+}
+
+#DetailsColLeft {
+    margin-right: 5px;
+}
+
+#DetailsColRight {
+    margin-left: 5px;
+}
+
+#DetailsColParent {
+    margin-top: 10px;
+}
+
+.unity-property-field > .unity-vector2-field .unity-float-field .unity-label {
+    flex-grow: 0;
+}
+
+.unity-property-field > .unity-vector2-field .unity-composite-field__field-spacer {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+.unity-property-field > .unity-vector2-field > .unity-vector2-field__input {
+    flex-direction: column;
+}
+
+.unity-property-field > .unity-vector2-field > .unity-vector2-field__label {
+    align-content: center;
+    justify-content: flex-start;
+    -unity-text-align: middle-left;
+}
+
+.unity-property-field > .unity-vector2-field #unity-y-input {
+    margin-top: 5px;
+}
+
+#overrideInspectionQuaternion .unity-label {
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 30px;
+}
+
+.VisibilityOff{
+    visibility: hidden;
+}
+
+.HideAlt {
+    display: none;
+}
+
+.HideAlt1 {
+    display: none;
+}
+
+.Hide {
+    display: none;
+}
+
+.Hide1 {
+    display: none;
+}
+
+.Hide2 {
+    display: none;
+}
+
+.Hide3 {
+    display: none;
+}
+
+.HideField{
+    display: none;
+}
+
+#unity-input-hasMaxInteractions {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: middle-left;
+    align-content: center;
+    justify-content: center;
+}
+
+#hasMaxInteractions {
+    align-self: center;
+}
+
+.unity-vector3-field .unity-float-field > .unity-label {
+    max-width: 15px;
+}
+
+#NewAnchorPositionContainer .unity-vector3-field > .unity-label {
+    max-width: 105px;
+}
+
+#SeeCenterOfMassGizmosColor .unity-label {
+    max-width: 0;
+}
+
+#AnchorPointGizmosColor .unity-label {
+    max-width: 0;
+}
+
+#Conditions{
+    margin-left: 5px;
+}
+
+#unity-foldout-Conditions #unity-content
+{
+    margin-left: 0px;
+}
+
+.ConditionUnityContent #unity-list-view__footer
+{
+    align-self: center;
+}
+
+.ConditionUnityContent #unity-list-view__remove-button
+{
+    display: none;
+}
+
+.ConditionListBorder .unity-list-view__empty-label
+{
+    display: none;
+}
+
+#Conditions .unity-list-view__size-field{
+    display: none;
+}
+
+.ConditionUnityContent .unity-list-view__footer{
+    /* margin-top: 10px; */
+    margin-right: 0px;
+
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    /* border-radius: 3px; */
+    border-color: black;
+
+    background-color: #453658;
+}
+
+.JoinListContainer{
+    display: none;
+}
+
+.ConditionListBorder
+{
+    border-width: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    border-bottom-width: 2px;
+    border-color: black;
+
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+#constContainer
+{
+    min-width: 180px;
+    max-width: 260px;
+    flex-grow: 1;
+}
+
+#constContainer > .unity-property-field > .unity-base-field > .unity-label{
+    display: none;
+}
+
+#opField > .unity-popup-field{
+    margin: 0px;
+}
+
+#rightBinding #MemberPopup .unity-label{
+    display: none;
+}
+
+#opField > .unity-popup-field{
+    flex-shrink: 1;
+}
+
+#opField > .unity-popup-field > .unity-label{
+    /* display: none; */
+    max-width: 64px;
+}
+
+#leftField .unity-base-field__label 
+{
+    flex-grow: 1;
+    min-width: 80px;
+    max-width: 85px;
+}
+
+#leftField{
+    flex-grow: 1;
+    max-width: 300px;
+    align-self: flex-end;
+}
+
+#rightBinding
+{
+    flex-grow: 1;
+    max-width: 300px;
+    align-self: flex-end;
+}
+
+#UpButton:disabled
+{
+    opacity: .2;
+}
+
+#DownButton:disabled
+{
+    opacity: .2;
+}
+
+#rightBinding .unity-base-field__label 
+{
+    flex-grow: 1;
+    min-width: 80px;
+    max-width: 85px;
+}
+
+#RightSideDynamic .unity-base-field__label 
+{
+    flex-grow: 1;
+    min-width: 80px;
+    max-width: 85px;
+}
+
+#BinderRootRoot
+{
+    max-width: 300px;
+    flex-grow: 1;
+}
+
+#Middle
+{
+    flex-grow: 1;
+}
+
+#opField
+{
+    flex-grow: 1;
+}
+
+#opField .unity-base-popup-field__text
+{
+    -unity-text-align: middle-center;
+}
+
+#ConditionRoot .unity-base-popup-field__input
+{
+    background-color: #303030;
+
+    border-width: 2px;
+    border-color: black;
+}
+
+#ConditionRoot .unity-object-field__input
+{
+    border-left-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-right-width: 0px;
+    border-color: black;
+}
+
+#ConditionRoot .unity-object-field__input .unity-object-field__selector
+{
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-color: black;
+}
+
+#MemberPopup{
+    margin-top: 10px;
+}
+
+#unity-foldout-Conditions #unity-list-view__reorderable-item
+{
+    padding-left: 1px;
+    padding-right: 2px;
+    background-color: #303030;
+
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: black;
+}
+
+#unity-foldout-Conditions #unity-list-view__reorderable-item__container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#unity-foldout-Conditions #unity-list-view__foldout-header #unity-list-view__reorderable-handle{
+    display: none;
+}
+
+#unity-foldout-Conditions #unity-list-view__foldout-header > .unity-toggle{
+    display: none;
+}
+
+.ConditionListContainer #unity-list-view__size-field{
+    display: none;
+}
+
+.ConditionListContainer
+{
+    margin-top: 0px;
+}
+
+#unity-foldout-Conditions > .unity-toggle #unity-checkmark{
+    display: none;
+}
+
+#unity-foldout-Conditions > .unity-toggle
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    align-self: stretch; 
+
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-color: black;
+}
+
+#unity-foldout-Conditions > .unity-toggle .unity-foldout__text
+{
+    margin-left: 0px;
+    background-color: #5b4776;
+    -unity-text-align: middle-center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+#JoinField{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#JoinField .unity-popup-field{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#JoinField .unity-popup-field > .unity-label
+{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#FirstContainer .unity-float-field__input{
+    flex-grow: 1;
+}
+
+#FirstContainer #unity-input-WorldSpaceOffset{
+    min-width: 300px;
+}
+
+#FirstContainer #unity-input-WorldSpaceOffset > .unity-label{
+    max-width: 50px;
+}
+
+#ScaleContainer .unity-float-field__input{
+    flex-grow: 1;
+}
+
+#ScaleContainer #unity-input-PromptScaleMinMax{
+    min-width: 100px;
+}
+
+#ScaleContainer #unity-input-PromptScaleMinMax > .unity-label{
+    max-width: 0px;
+}
+
+#LocalPositionWorldUIAnchor #unity-input-LocalPositionWorldUIAnchor > .unity-label{
+    max-width: 0px;
+}
+
+#WorldSpacePrefab #unity-input-WorldSpacePrefab > .unity-label{
+    max-width: 0px;
+}
+
+#InspectionOverrides #InspectionLeftCol .unity-base-field__label{
+    max-width: 100px;
+}
+
+#InspectionOverrides #InspectionRightCol .unity-base-field__label{
+    max-width: 0px;
+}
+
+#OverrideInteractionKey{
+    max-width: 70px;
+}
+
+#unity-input-OverrideInteractionKey{
+    max-width: 70px;
+}
+
+#unity-input-OverrideInteractionKey .unity-base-field__label{
+    min-width: 20px;
+    max-width: 20px;
+}
+
+.HideLabel .unity-base-field__label{
+    display: none;
+}

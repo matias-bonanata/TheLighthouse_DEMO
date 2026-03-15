@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e5d4d9d80eb5b4349b09d8b2198e9e4d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visualTree: {fileID: 9197481963319205126, guid: f365b3ede606783419409dd273da4819,
+      type: 3}
+  - USS: {fileID: 7433441132597879392, guid: 403f8d0899dccd741a65212fd6c6959d, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/KeyEditor.cs
+  uploadId: 844220

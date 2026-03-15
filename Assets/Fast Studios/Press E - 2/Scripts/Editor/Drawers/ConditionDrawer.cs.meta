@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0133f91554937ad4e9c52130221b0624
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UXML: {fileID: 9197481963319205126, guid: 347b42367ba191141b04ef94dc65d0bd, type: 3}
+  - USS: {fileID: 7433441132597879392, guid: af76e80851eb47343944c6a83db7bc42, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/Drawers/ConditionDrawer.cs
+  uploadId: 844220

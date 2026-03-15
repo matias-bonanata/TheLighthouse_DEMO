@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4e4f29ab7fa57174da9022478a0a52fe
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UXML: {fileID: 9197481963319205126, guid: 81638ca2e95a9f444a2f70fbeeff2576, type: 3}
+  - USS: {fileID: 7433441132597879392, guid: cda9f414acb5a6640af4d9ff0c7a29af, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  - localTarget: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/AnchorChangerEditor.cs
+  uploadId: 844220

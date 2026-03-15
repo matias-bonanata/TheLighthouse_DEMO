@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 267089f45adb11c40919401d59011204
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visualTree: {fileID: 9197481963319205126, guid: 35ac16303e0b491488070d438302c3be,
+      type: 3}
+  - USS: {fileID: 7433441132597879392, guid: 467eea26ac5a6a642b366dd32666b26f, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/DepositEditor.cs
+  uploadId: 844220

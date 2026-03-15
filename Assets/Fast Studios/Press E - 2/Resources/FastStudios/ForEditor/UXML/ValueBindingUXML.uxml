@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="BinderRoot">
+        <uie:ObjectField name="TargetField" label="Reference" binding-path="target" allow-scene-objects="true" />
+        <uie:PropertyField name="ComponentPopup" label="Component" />
+        <uie:PropertyField name="MemberPopup" label="Variable" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,662 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <engine:VisualElement name="MainImage" enabled="true" style="flex-grow: 1; max-height: 128px; background-color: rgb(91, 71, 118); height: 128px; -unity-background-scale-mode: scale-to-fit; background-image: resource(&apos;FastStudios/ForEditor/InteractableHeader_510x128&apos;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+    <engine:VisualElement name="MainVars" style="flex-grow: 1;">
+        <engine:VisualElement name="Upper" style="flex-grow: 1;">
+            <engine:VisualElement name="Tabs" style="flex-grow: 1; min-height: auto; max-width: none; min-width: auto; flex-shrink: 0; max-height: none; flex-direction: row; margin-bottom: 10px; height: auto; margin-top: 5px;">
+                <engine:Button text="Main" name="MainButton" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; min-width: auto; min-height: auto; flex-grow: 1; flex-shrink: 1; max-height: 48px; font-size: 16px; height: 24px; border-top-width: 2px; border-right-width: 0; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 10px; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 10px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <engine:Button text="UI" name="UIButton" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; flex-grow: 1; max-height: 48px; font-size: 16px; height: 24px; border-top-width: 2px; border-right-width: 0; border-bottom-width: 2px; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);" />
+                <engine:Button text="Events" name="EventsButton" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; flex-grow: 1; max-height: 48px; font-size: 16px; height: 24px; border-top-width: 2px; border-right-width: 0; border-bottom-width: 2px; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0);" />
+                <engine:Button text="Settings" name="SettingsButton" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-shrink: 1; flex-grow: 1; max-height: 48px; font-size: 16px; height: 24px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 0; border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0);" />
+            </engine:VisualElement>
+            <engine:EnumField label="Type" value="UnityEvent" type="FastStudios.InteractMode, Assembly-CSharp" binding-path="interactMode" name="interactMode" tabindex="100" style="margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="Lower" style="flex-grow: 1; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+            <engine:VisualElement name="UnityEventTab" enabled="true" tabindex="1" style="flex-grow: 1;">
+                <editor:PropertyField name="UnityEventField" binding-path="unityEventToTrigger" label="Event To Trigger" />
+            </engine:VisualElement>
+            <engine:VisualElement name="HoldTab" enabled="true" tabindex="2" style="flex-grow: 1;">
+                <editor:PropertyField name="holdTime" binding-path="holdTime" label="Hold Time" style="margin-bottom: 5px;" />
+                <editor:PropertyField name="releaseToCancel" binding-path="releaseToCancel" label="Release Key To Cancel" style="margin-bottom: 10px;" />
+                <editor:PropertyField name="UnityEventField" binding-path="unityEventToTrigger" label="Event To Trigger" />
+                <engine:VisualElement name="HoldLimit" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="HoldLimitFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Hold Limit" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="HoldLimitContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="hasMaxHoldInteractions" label="Has Max Hold Interactions" name="hasMaxHoldInteractions" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="maxHoldInteractions" label="Max Hold Interactions" name="maxHoldInteractions" style="margin-top: 3px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="GrabTab" enabled="true" tabindex="3" style="flex-grow: 1; flex-direction: column;">
+                <editor:PropertyField binding-path="GrabId" label="Grab ID" name="GrabId" style="margin-top: -7px; margin-bottom: 10px;" />
+                <engine:VisualElement name="Distance" style="flex-grow: 1;">
+                    <engine:VisualElement name="DistanceFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Distance" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DistanceContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="GrabDistance" label="Distance" name="GrabDistance" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="GrabOffset" label="Offset" name="GrabOffset" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="ScrolledBasedDistance" label="Scrolled Based Distance" name="ScrolledBasedDistance" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="ScrollMultiplier" label="Scroll Multiplier" name="ScrollMultiplier" style="margin-top: 2px; margin-bottom: 2px;" />
+                        <editor:PropertyField binding-path="GrabDistanceMinMax" label="Grab Distance MinMax" name="GrabDistanceMinMax" style="margin-top: 4px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Physics" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="PhysicsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Physics" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="PhysicsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="PhysicsGrabMode" label="Physics Mode" name="PhysicsGrabMode" />
+                        <editor:PropertyField binding-path="PlayerHelperForce" label="Player Helper Force" name="PlayerHelperForce" />
+                        <editor:PropertyField binding-path="linearDamping" label="Linear Damping" name="linearDamping" />
+                        <editor:PropertyField binding-path="angularDamping" label="Angular Damping" name="angularDamping" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="CanPlace" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="CanPlaceFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Can Place" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="CanPlaceContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="CanPlaceGrabDown" label="Enabled" name="CanPlaceGrabDown" />
+                        <editor:PropertyField binding-path="PreventDropping" label="Prevent Dropping" name="PreventDropping" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="CheckCollisionBeforePlacing" label="Check Collision Before Placing" name="CheckCollisionBeforePlacing" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="AlignNormals" label="Align With Normals" name="AlignNormals" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="VisualizeObject" label="Can Visualize Object" name="VisualizeObject" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="UseManagerMaterials" label="Use Manager Mats" name="UseManagerMaterials" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="CanRotatePlaceObject" label="Can Rotate Object" name="CanRotatePlaceObject" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="RotationAxis" label="Rotation Axis" name="RotationAxis" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="CalculateOnLocal" label="Use Local Rotation" name="CalculateOnLocal" style="margin-top: 2px;" />
+                        <editor:PropertyField binding-path="OverrideTurnKeys" label="Turn Left Method" name="OverrideTurnKeys" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="NewTurnLeft" label="Turn Left Method" name="NewTurnLeft" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="NewTurnRight" label="Turn Left Mouse" name="NewTurnRight" />
+                        <editor:PropertyField binding-path="PressDown" label="Press Down" name="PressDown" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="RotationIncrement" label="Increment" name="RotationIncrement" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="CanGrabRotate" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="CanGrabRotateFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Can Rotate" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="CanGrabRotateContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="CanRotateGrab" label="Enabled" name="CanRotateGrab" />
+                        <editor:PropertyField binding-path="RotationSensitivity" label="Sensitivity" name="RotationSensitivity" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="OverrideGrabRotateKeys" label="Override Grab Rotation Key" name="OverrideGrabRotateKeys" style="margin-top: 3px;" />
+                        <editor:PropertyField binding-path="NewGrabRotation" label="Input Method" name="NewGrabRotation" />
+                        <editor:PropertyField binding-path="GrabShowCursorWhenRotating" label="Show Cursor When Rotating" name="GrabShowCursorWhenRotating" style="margin-top: 3px;" />
+                        <editor:PropertyField binding-path="GrabDontHideCursorOnStop" label="Dont Hide Cursor On Stop" name="GrabDontHideCursorOnStop" style="margin-top: 3px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="TransformBased" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="TransformBasedFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Transform" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="TransformBasedContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="OverrideGrabRotation" label="Override Grab Rotation" name="OverrideGrabRotation" />
+                        <editor:PropertyField binding-path="newGrabRotation" label="New Rotation" name="newGrabRotation" />
+                        <engine:VisualElement name="GrabSpaceAlways" style="flex-grow: 1; height: 10px; min-height: 10px; max-height: 10px;" />
+                        <editor:PropertyField binding-path="UseTransformToPosition" label="Is Transform Based" name="UseTransformToPosition" />
+                        <editor:PropertyField binding-path="OverrideManagerTransform" label="Override Manager Transform" name="OverrideManagerTransform" />
+                        <editor:PropertyField binding-path="GrabTransform" label="New Transform" name="GrabTransform" />
+                        <engine:VisualElement name="GrabSpace" style="flex-grow: 1; height: 10px; min-height: 10px; max-height: 10px;" />
+                        <editor:PropertyField binding-path="TransformGrabInstantFollow" label="Instant Mode" name="TransformGrabInstantFollow" />
+                        <editor:PropertyField binding-path="TransformGrabFollowSharpness" label="Follow Speed" name="TransformGrabFollowSharpness" />
+                        <editor:PropertyField binding-path="TransformGrabRotationSharpness" label="Rotation Speed" name="TransformGrabRotationSharpness" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Throw" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="ThrowFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Throw" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ThrowContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="isThrowable" label="Enabled" name="isThrowable" />
+                        <editor:PropertyField binding-path="throwForce" label="Force" name="throwForce" />
+                        <engine:VisualElement name="Space" style="flex-grow: 1; height: 15px; min-height: 15px; max-height: 15px;" />
+                        <engine:VisualElement name="ThrowBoolContainer" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="ThrowTowardsAim" label="Throw Towards Aim" name="ThrowTowardsAim" style="flex-grow: 1; max-width: 50%;" />
+                            <editor:PropertyField binding-path="ThrowUseRaycastAim" label="Use Raycast Aim" name="ThrowUseRaycastAim" style="width: 50%; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="ThrowAimDistance" label="Aim Distance Reference" name="ThrowAimDistance" />
+                        <engine:VisualElement name="Space" style="flex-grow: 1; height: 15px; min-height: 15px; max-height: 15px;" />
+                        <editor:PropertyField binding-path="TimePressedIncreaseForce" label="Hold Charge" name="TimePressedIncreaseForce" />
+                        <editor:PropertyField binding-path="ForceClamp" label="Force Clamp" name="ForceClamp" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="TimeToReachMaxForce" label="Time To Reach Max Force" name="TimeToReachMaxForce" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="hasThrowAnimationCurve" label="Use Curve" name="hasThrowAnimationCurve" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="ThrowAnimationCurve" label="Animation Curve" name="ThrowAnimationCurve" />
+                        <engine:VisualElement name="Space" style="flex-grow: 1; height: 15px; min-height: 15px; max-height: 15px;" />
+                        <editor:PropertyField binding-path="canSeeThrowTrajectory" label="Can See Trajectory" name="canSeeThrowTrajectory" />
+                        <editor:PropertyField binding-path="OnlySeeTrajectoryOnForceIncrease" label="Only See Trajectory On Force Increase" name="OnlySeeTrajectoryOnForceIncrease" />
+                        <editor:PropertyField binding-path="LinePoints" label="Points" name="LinePoints" />
+                        <editor:PropertyField binding-path="TrajectoryPrecision" label="Precision" name="TrajectoryPrecision" />
+                        <editor:PropertyField binding-path="LineMaterial" label="Material" name="LineMaterial" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="DragTab" enabled="true" tabindex="4" style="flex-grow: 1;">
+                <editor:PropertyField name="DragType" binding-path="DragType" label="Type" />
+                <editor:PropertyField name="MoveAxis" binding-path="MoveAxis" label="Axis" />
+                <engine:VisualElement name="DragPositionContainer" style="flex-grow: 1;">
+                    <engine:VisualElement name="PosClamp" style="flex-grow: 1; margin-top: 15px;">
+                        <engine:VisualElement name="PosClampFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Clamp" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="PosClampContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="DragIsToClamp" binding-path="DragIsToClamp" style="margin-top: 5px;" />
+                            <editor:PropertyField name="DragClampMinMax" binding-path="DragClampMinMax" />
+                            <editor:PropertyField name="invertDirection" binding-path="invertDirection" label="Invert Direction" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragPhysics" style="flex-grow: 1; margin-top: 10px;">
+                        <engine:VisualElement name="DragPhysicsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Physics" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DragPhysicsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="DragSpring" binding-path="DragSpring" label="Spring" />
+                            <editor:PropertyField name="DragDamping" binding-path="DragDamping" label="Damping" />
+                            <editor:PropertyField name="DragRbDamping" binding-path="DragRbDamping" label="Rigidbody Damping" />
+                            <editor:PropertyField name="DragBounciness" binding-path="DragBounciness" label="Bouciness" />
+                            <editor:PropertyField name="DragLocked" binding-path="DragLocked" label="Locked" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragGizmos" style="flex-grow: 1; margin-top: 10px;">
+                        <engine:VisualElement name="DragGizmosFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Gizmos" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DragGizmosContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="SeeDragClampGizmos" binding-path="SeeDragClampGizmos" label="See Clamp Gizmos" />
+                            <editor:PropertyField name="DragRailGizmosColor" binding-path="DragRailGizmosColor" label="Rail Color" />
+                            <editor:PropertyField name="DragLimitGizmosColor" binding-path="DragLimitGizmosColor" label="Limit Color" />
+                            <editor:PropertyField name="DragCurrentGizmosColor" binding-path="DragCurrentGizmosColor" label="Current Pos Color" />
+                            <editor:PropertyField name="DragGizmoSphereRadius" binding-path="DragGizmoSphereRadius" label="Sphere Radius" />
+                            <editor:PropertyField name="SeeDragDistanceGizmo" binding-path="SeeDragDistanceGizmo" label="Max Distance Gizmos" />
+                            <editor:PropertyField name="DragDistanceEdgeColor" binding-path="DragDistanceEdgeColor" label="Max Distance Color" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DragRotationContainer" style="flex-grow: 1;">
+                    <editor:PropertyField binding-path="DragRotationDirection" label="Direction" name="DragRotationDirection" />
+                    <editor:PropertyField binding-path="DragRotOffsetDeg" label="Offset" name="DragRotOffsetDeg" />
+                    <editor:PropertyField binding-path="ConsiderHitPlace" label="Consider Hit Place" name="ConsiderHitPlace" />
+                    <engine:VisualElement name="RotationClamp" style="flex-grow: 1; margin-top: 15px;">
+                        <engine:VisualElement name="RotationClampFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Clamp" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="RotationClampContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField binding-path="DragRotIsToClamp" label="Is To Clamp" name="DragRotIsToClamp" />
+                            <editor:PropertyField binding-path="DragAngleClampMinMax" label="Clamp Angles" name="DragAngleClampMinMax" />
+                            <editor:PropertyField binding-path="UseRotStartPosition" label="Has Start Position" name="UseRotStartPosition" />
+                            <editor:PropertyField binding-path="rotClampStartType" label="Start Type" name="rotClampStartType" />
+                            <editor:PropertyField binding-path="startPercentage" label="Percentage" name="startPercentage" />
+                            <editor:PropertyField binding-path="startDegrees" label="Degrees" name="startDegrees" />
+                            <editor:PropertyField binding-path="AlwaysReturnToStartPos" label="Always Return To Start Pos" name="AlwaysReturnToStartPos" />
+                            <editor:PropertyField binding-path="ReturnByTheSameDirection" label="Return By The Same Direction" name="ReturnByTheSameDirection" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="RotationPhysics" style="flex-grow: 1; margin-top: 10px;">
+                        <engine:VisualElement name="RotationPhysicsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Physics" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="RotationPhysicsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="DragRotIdleDamping" binding-path="DragRotIdleDamping" label="Idle Damping" />
+                            <editor:PropertyField name="DragRotDamping" binding-path="DragRotDamping" label="Damping" />
+                            <editor:PropertyField name="DragRotSpring" binding-path="DragRotSpring" label="Spring" />
+                            <editor:PropertyField name="DragRotLimitSpring" binding-path="DragRotLimitSpring" label="On Limit Spring" />
+                            <editor:PropertyField name="DragRotLimitDamping" binding-path="DragRotLimitDamping" label="On Limiti Damping" />
+                            <editor:PropertyField name="DragRotBounciness" binding-path="DragRotBounciness" label="Bounciness" />
+                            <editor:PropertyField name="DragLocked" binding-path="DragLocked" label="Locked" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragRotationGizmos" style="flex-grow: 1; margin-top: 10px;">
+                        <engine:VisualElement name="DragRotationGizmosFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Gizmos" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DragRotationGizmosContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="DragRotationFillArc" binding-path="DragRotationFillArc" label="Fill Arc" />
+                            <editor:PropertyField name="DragRotationArcColor" binding-path="DragRotationArcColor" label="Angle Interval Color" />
+                            <editor:PropertyField name="DragRotationLimitColor" binding-path="DragRotationLimitColor" label="Limit Color" />
+                            <editor:PropertyField name="DragRotationCurrentColor" binding-path="DragRotationCurrentColor" label="Current Point Color" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AutomaticRadius" style="flex-grow: 1; margin-top: 10px;">
+                        <engine:VisualElement name="AutomaticRadiusFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                            <engine:Label text="Radius" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="AutomaticRadiusContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                            <editor:PropertyField name="AutomaticRotationRadius" binding-path="AutomaticRotationRadius" label="Automatic Radius" />
+                            <editor:PropertyField name="RotationRadius" binding-path="RotationRadius" label="Radius" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DragSlider" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="DragSliderFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Slider" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragSliderContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField name="DragUseSlider" binding-path="DragUseSlider" label="Enabled" />
+                        <editor:PropertyField name="DragPosSliderMinMax" binding-path="DragPosSliderMinMax" label="Value Min Max" />
+                        <editor:PropertyField name="DragSliderMax" binding-path="DragSliderMax" label="Max Value" />
+                        <editor:PropertyField name="DragRotSliderMaxAngle" binding-path="DragRotSliderMaxAngle" label="Max Angle" />
+                        <editor:PropertyField name="lastSliderValue" binding-path="lastSliderValue" enabled="false" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DragDistance" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="DragDistanceFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Distance" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragDistanceContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField name="DragHasMaxDistance" binding-path="DragHasMaxDistance" />
+                        <editor:PropertyField name="DragMaxDistance" binding-path="DragMaxDistance" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DragSteps" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="DragStepsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Steps" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragStepsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField name="DragUseSteps" binding-path="DragUseSteps" label="Enabled" />
+                        <editor:PropertyField name="DragStepCount" binding-path="DragStepCount" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="InspectionTab" enabled="true" tabindex="5" style="flex-grow: 1;">
+                <editor:PropertyField name="InspectionViewMode" binding-path="InspectionViewMode" label="Inspection Distance" />
+                <editor:PropertyField name="InspectionDistance" binding-path="InspectionDistance" label="Inspection Distance" />
+                <engine:VisualElement name="CanRotate" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="CanRotateFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Can Rotate" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="CanRotateContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField name="InspectionCanRotate" binding-path="InspectionCanRotate" label="Enabled" />
+                        <editor:PropertyField name="InspectionRotationSens" binding-path="InspectionRotationSens" label="Sensitivity" />
+                        <editor:PropertyField name="OverrideRotationKey" binding-path="OverrideRotationKey" label="Override Rotation Key" style="margin-top: 5px;" />
+                        <editor:PropertyField name="NewInspectionRotation" binding-path="NewInspectionRotation" label="Input Method" />
+                        <engine:VisualElement name="CursorContainer" style="flex-grow: 1; flex-direction: row; margin-top: 10px;">
+                            <editor:PropertyField name="ShowCursorWhenRotating" binding-path="ShowCursorWhenRotating" label="Show Cursor" style="flex-grow: 1; width: 50%;" />
+                            <editor:PropertyField name="DontHideCursorOnStop" binding-path="DontHideCursorOnStop" label="Keep Cursor" style="flex-grow: 1; width: 50%;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Navigation" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="NavigationFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Navigation" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="NavigationContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField name="InspectionTargetType" binding-path="InspectionTargetType" label="Target Type" />
+                        <editor:PropertyField name="InspectionTargetTransform" binding-path="InspectionTargetTransform" label="Transform" />
+                        <editor:PropertyField name="InspectionTargetPosition" binding-path="InspectionTargetPosition" label="Position" />
+                        <editor:PropertyField name="InspectionTargetRotation" binding-path="InspectionTargetRotation" label="Rotation" />
+                        <editor:PropertyField name="InspectionHasMargin" binding-path="InspectionHasMargin" label="Has Margin" style="margin-top: 10px;" />
+                        <editor:PropertyField name="InspectionLeftMargin" binding-path="InspectionLeftMargin" label="Left" style="margin-top: 3px;" />
+                        <editor:PropertyField name="InspectionRightMargin" binding-path="InspectionRightMargin" label="Right" />
+                        <editor:PropertyField name="InspectionTopMargin" binding-path="InspectionTopMargin" label="Top" />
+                        <editor:PropertyField name="InspectionBottomMargin" binding-path="InspectionBottomMargin" label="Bottom" />
+                        <editor:PropertyField name="InspectionRotationOffsetOnEdge" binding-path="InspectionRotationOffsetOnEdge" label="Has Rotation Offset On Edge" style="margin-top: 5px;" />
+                        <editor:PropertyField name="InspectionLeftOffset" binding-path="InspectionLeftOffset" label="Left " style="margin-top: 3px;" />
+                        <editor:PropertyField name="InspectionRightOffset" binding-path="InspectionRightOffset" label="Right" />
+                        <editor:PropertyField name="InspectionTopOffset" binding-path="InspectionTopOffset" label="Top" />
+                        <editor:PropertyField name="InspectionBottomOffset" binding-path="InspectionBottomOffset" label="Bottom" />
+                        <editor:PropertyField name="InspectionMarginDeadZone" binding-path="InspectionMarginDeadZone" label="Dead Zone" />
+                        <editor:PropertyField name="InspectionMarginFeather" binding-path="InspectionMarginFeather" label="Zones Feather" />
+                        <editor:PropertyField name="InspectionPreviewDeadZoneOnGame" binding-path="InspectionPreviewDeadZoneOnGame" label="Preview" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Details" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="DetailsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Details" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DetailsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="hasDetailBackground" label="Has Background" name="hasDetailBackground" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="DetailBackgroundColor" label="Background Color" name="DetailBackgroundColor" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="DetailBackground" label="Background" name="DetailBackground" style="margin-top: 5px;" />
+                        <engine:VisualElement name="DetailsColParent" style="flex-grow: 1; flex-direction: column;">
+                            <engine:VisualElement name="DetailsColLeft" style="flex-grow: 1; width: auto; margin-right: 0;">
+                                <engine:VisualElement name="UpperBoolParent" style="flex-grow: 1; flex-direction: row;">
+                                    <editor:PropertyField name="hasDetailText" binding-path="hasDetailText" label="Has Text" style="min-width: 125px;" />
+                                    <editor:PropertyField name="OverrideDetailTextKey" binding-path="OverrideDetailTextKey" label="Override Text Key" style="min-width: 150px;" />
+                                    <editor:PropertyField name="DetailTextFirst" binding-path="DetailTextFirst" label="Text First" style="min-width: 150px;" />
+                                </engine:VisualElement>
+                                <editor:PropertyField name="NewDetailText" binding-path="NewDetailImage" label="New Input" />
+                                <editor:PropertyField name="DetailText" binding-path="DetailText" label="Text" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="DetailsColRight" style="flex-grow: 1; width: auto; margin-left: 0; margin-top: 10px;">
+                                <engine:VisualElement name="LowerBoolParent" style="flex-grow: 1; flex-direction: row;">
+                                    <editor:PropertyField name="hasDetailImage" binding-path="hasDetailImage" label="Has Image" style="min-width: 125px;" />
+                                    <editor:PropertyField name="OverrideDetailImageKey" binding-path="OverrideDetailImageKey" label="Override Image Key" style="min-width: 150px;" />
+                                    <editor:PropertyField name="DetailImageFirst" binding-path="DetailImageFirst" label="Image First" style="min-width: 150px;" />
+                                </engine:VisualElement>
+                                <editor:PropertyField name="NewDetailImage" binding-path="NewDetailImage" label="Image Activation Input" />
+                                <editor:PropertyField name="DetailImageColor" binding-path="DetailImageColor" label="Image Color" />
+                                <editor:PropertyField name="DetailImage" binding-path="DetailImage" label="Image" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Animation" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="InspectionAnimationFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Animation" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="InspectionAnimationContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="TimeToTakeObject" label="Animation Duration" name="TimeToTakeObject" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="TakeObjectAnimationCurve" label="Animation Curve" name="TakeObjectAnimationCurve" style="margin-top: 10px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="InspectionOverrides" style="flex-grow: 1; margin-top: 10px;">
+                    <engine:VisualElement name="InspectionOverridesFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Overrides" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="InspectionOverridesContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: row;">
+                        <engine:VisualElement name="InspectionLeftCol" style="width: 120px;">
+                            <editor:PropertyField name="overrideInspectionQuaternion" binding-path="overrideInspectionQuaternion" label="Quaternion" style="width: 120px;" />
+                            <editor:PropertyField name="overrideInspectionPrefab" binding-path="overrideInspectionPrefab" label="Prefab" style="width: 120px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="InspectionRightCol" style="flex-grow: 1; width: 60%;">
+                            <editor:PropertyField binding-path="inspectionQuaternionOverride" label=" " name="inspectionQuaternionOverride" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                            <editor:PropertyField binding-path="InspectionPrefab" label=" " name="InspectionPrefab" style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement tabindex="101" name="UITabs" style="flex-grow: 1;">
+                <engine:VisualElement name="ScreenSpace" style="flex-grow: 1; margin-top: 0; margin-bottom: 10px;">
+                    <engine:VisualElement name="ScreenSpaceFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Screen Space Prompt" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ScreenSpaceContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="ScreenSpacePrompt" label="Enable" name="ScreenSpacePrompt" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="ScreenSpaceOffset" label="Offset" name="ScreenSpaceOffset" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="overrideScreenSpacePrefab" label="Override Manager Prefab" name="overrideScreenSpacePrefab" style="margin-top: 10px;" />
+                        <editor:ObjectField label="New Prefab" name="ScreenSpacePrefab" type="UnityEngine.GameObject, UnityEngine.CoreModule" allow-scene-objects="false" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="WorldSpace" style="flex-grow: 1; margin-top: 0; margin-bottom: 10px;">
+                    <engine:VisualElement name="WorldSpaceFoldout" tabindex="0" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="World Space Prompt" tabindex="0" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="WorldSpaceContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <engine:VisualElement name="FirstContainer" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="WorldSpacePrompt" label="Enable" name="WorldSpacePrompt" tabindex="0" style="margin-top: 0; margin-right: 50px; align-self: center; flex-grow: 1;" />
+                            <editor:PropertyField binding-path="WorldPromptLayer" label="Layer" name="WorldPromptLayer" tabindex="0" style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="OverrideWorldPrefabContainer" style="flex-grow: 1; flex-direction: row; margin-top: 10px; align-items: center;">
+                            <editor:PropertyField binding-path="overrideWorldSpacePrefab" label="Override Prefab" name="overrideWorldSpacePrefab" style="flex-grow: 1; max-width: 175px;" />
+                            <editor:PropertyField binding-path="WorldSpacePrefab" name="WorldSpacePrefab" label=" " style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="WorldSpaceOffset" label="Offset" name="WorldSpaceOffset" tabindex="0" style="margin-top: 10px;" />
+                        <engine:VisualElement name="ScaleContainer" style="flex-grow: 1; flex-direction: row; align-items: center; margin-top: 10px;">
+                            <editor:PropertyField binding-path="ReferencePrompHasScaleMinMax" label="Has Scale Min Max" name="ReferencePrompHasScaleMinMax" tabindex="0" style="flex-grow: 1;" />
+                            <editor:PropertyField binding-path="PromptScaleMinMax" label=" " name="PromptScaleMinMax" tabindex="0" style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="AlignWorldSpaceToAnchor" label="Align World Space To Anchor" name="AlignWorldSpaceToAnchor" tabindex="0" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="AdditionalWorldPrompt" label="Additional" name="AdditionalWorldPrompt" tabindex="0" style="margin-top: 10px;" />
+                        <engine:VisualElement name="WorldSizeContainer" style="flex-grow: 1; flex-direction: row; margin-top: 10px;">
+                            <editor:PropertyField binding-path="WorldSize" label="Fixed World Size" name="WorldSize" tabindex="0" style="flex-grow: 1; max-width: 175px;" />
+                            <editor:PropertyField binding-path="ReferencePromptDistance" label="Reference Distance" name="ReferencePromptDistance" tabindex="0" style="flex-grow: 1; margin-left: 5px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="WorldUIOverrideAnchorContainer" style="flex-grow: 1; flex-direction: row; margin-top: 10px;">
+                            <editor:PropertyField binding-path="WorldUIOverrideAnchor" label="Will Override UI Anchor" name="WorldUIOverrideAnchor" style="flex-grow: 1;" />
+                            <editor:PropertyField binding-path="LocalPositionWorldUIAnchor" label=" " name="LocalPositionWorldUIAnchor" style="flex-grow: 1;" />
+                            <engine:Button text="Set Anchor" name="LocalPositionWorldUIAnchorButton" style="flex-grow: 1; margin-left: 10px; max-width: 75px; margin-top: 0;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="OverrideWorldPromptMessage" label="Override Prompt Message" name="OverrideWorldPromptMessage" style="margin-top: 10px;" />
+                        <engine:VisualElement name="WorldUIHelpBox" style="flex-grow: 1; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; height: 48px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background-color: rgb(51, 51, 51); flex-direction: row;">
+                            <engine:VisualElement name="HelpIcon" style="flex-grow: 1; width: 32px; height: 32px; min-width: 32px; min-height: 32px; max-width: 32px; max-height: 32px; align-self: center; margin-left: 10px; background-image: resource(&apos;FastStudios/ForEditor/Icons/info&apos;);" />
+                            <engine:Label text="Current World Prompt Prefab doesn&apos;t contain interaction text reference in UI Prefab script." name="HelpBoxLabel" style="-unity-text-align: middle-left; flex-grow: 1; flex-shrink: 1; max-width: 360px; flex-wrap: wrap; white-space: normal; margin-left: 10px; margin-right: 0; color: rgb(255, 255, 255);" />
+                            <engine:Button text="Button" style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="WorldPromptMessage" label="Prompt Message" name="WorldPromptMessage" />
+                        <engine:VisualElement name="ConditionPromptMessageContainer" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="HasDeclinedConditionMessage" label="Condition Declined" name="HasDeclinedConditionMessage" style="flex-grow: 1; width: 175px; max-width: 175px;" />
+                            <editor:PropertyField binding-path="DeclinedWorldPromptMessage" name="DeclinedWorldPromptMessage" style="flex-grow: 1;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="GrabUI" style="flex-grow: 1; margin-top: 0; margin-bottom: 10px;">
+                    <engine:VisualElement name="GrabUIFoldout" tabindex="0" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="While Interacting" tabindex="0" name="OVR" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="GrabUIContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="GrabUIEnabled" label="Enable" name="GrabUIEnabled" tabindex="0" style="margin-top: 0;" />
+                        <engine:VisualElement name="GrabUISpriteRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="GrabUIControlSprite" label="Override Image Sprite" name="GrabUIControlSprite" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="GrabUISprite" name="GrabUISprite" tabindex="0" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="GrabUIColorRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="GrabUIControlColor" label="Override Image Color" name="GrabUIControlColor" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="GrabUIColor" name="GrabUIColor" tabindex="0" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="GrabUISizeRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="GrabUIControlSize" label="Override Image Size" name="GrabUIControlSize" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="GrabUISize" name="GrabUISize" tabindex="0" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="GrabUIPrefabRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="overrideGrabUIPrefab" label="Override Interaction Prefab" name="overrideGrabUIPrefab" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="GrabUIPrefab" name="GrabUIPrefab" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="DragUI" style="flex-grow: 1; margin-top: 0; margin-bottom: 10px;">
+                    <engine:VisualElement name="DragUIFoldout" tabindex="0" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="While Interacting" tabindex="0" name="OVR" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="DragUIContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="DragUIEnabled" label="Enable" name="DragUIEnabled" tabindex="0" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="DragUIOverrideScreenOffset" label="Offset" name="DragUIOverrideScreenOffset" tabindex="0" style="margin-top: 10px;" />
+                        <engine:VisualElement name="DrabUISizeRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="DragUIControlSize" label="Override Image Size" name="DragUIControlSize" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="DragUISize" name="DragUISize" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DrabUISpriteRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="DragUIControlSprite" label="Override Image Sprite" name="DragUIControlSprite" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="DragUISprite" name="DragUISprite" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DrabUIColorRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="DragUIControlColor" label="Override Image Color" name="DragUIControlColor" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="DragUIColor" name="DragUIColor" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="DragUIOverrideOnArc" label="Set UI Anchor To Target" name="DragUIOverrideOnArc" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="DragUIOverrideAnchor" label="Will Override UI Anchor" name="DragUIOverrideAnchor" style="margin-top: 10px;" />
+                        <engine:VisualElement name="NewUIAnchorPositionContainer" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="LocalPositionDragUIAnchor" label="Local Pos UI Anchor" name="LocalPositionDragUIAnchor" style="flex-grow: 1;" />
+                            <engine:Button text="Set Anchor" name="LocalPositionDragUIAnchorButton" style="flex-grow: 1; margin-left: 10px; max-width: 75px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="DragUIPrefabRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="overrideDragUIPrefab" label="Override Interaction Prefab" name="overrideDragUIPrefab" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="DragUIPrefab" name="DragUIPrefab" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="HoldUI" style="flex-grow: 1; margin-top: 0; margin-bottom: 10px;">
+                    <engine:VisualElement name="HoldUIFoldout" tabindex="0" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="While Interacting" tabindex="0" name="OVR" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="HoldUIContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="HoldUIEnabled" label="Enable" name="HoldUIEnabled" tabindex="0" style="margin-top: 0;" />
+                        <engine:VisualElement name="HoldUISliderRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="DragHasSlider" label="Has Slider" name="DragHasSlider" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="applySliderValue" name="applySliderValue" tabindex="0" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="HoldUIPrefabRow" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                            <editor:PropertyField binding-path="overrideHoldPrefab" label="Override Hold Prefab" name="overrideHoldPrefab" tabindex="0" style="margin-top: 10px; flex-grow: 1; max-width: 200px;" />
+                            <editor:PropertyField binding-path="HoldUIPrefab" name="HoldUIPrefab" tabindex="0" class="HideLabel" style="margin-top: 10px; flex-grow: 1;" />
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="ActAsWorldPrompt" label="Is World" name="ActAsWorldPrompt" tabindex="0" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="HoldUIOverrideAnchor" label="Will Override UI Anchor" name="HoldUIOverrideAnchor" style="margin-top: 10px;" />
+                        <engine:VisualElement name="NewHoldUIAnchorPositionContainer" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="LocalPositionHoldUIAnchor" label="Local Pos UI Anchor" name="LocalPositionHoldUIAnchor" style="flex-grow: 1;" />
+                            <engine:Button text="Set Anchor" name="LocalPositionHoldUIAnchorButton" style="flex-grow: 1; margin-left: 10px; max-width: 75px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement tabindex="102" name="EventsTabs" style="flex-grow: 1;">
+                <engine:VisualElement name="OnInteractEvent" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="OnInteractEventFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="On Interact Event" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="OnInteractEventContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="AddOnInteractEvent" label="Enable" name="AddOnInteractEvent" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="onInteract" label="On Interact Event" name="onInteract" style="margin-top: 10px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="EndEvent" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="EndEventFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="On End Event" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="EndEventContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="AddEndEvent" label="Enable" name="AddEndEvent" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="onInteractEnd" label="On Interact End" name="onInteractEnd" style="margin-top: 10px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="OnRayCastEnterAndExit" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="OnRayCastEnterAndExitFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="On Raycast Enter/Exit" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="OnRayCastEnterAndExitContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="OnRayCastEnterAndExit" label="Enable" name="OnRayCastEnterAndExit" style="margin-top: 0;" />
+                        <engine:VisualElement name="OnRayCastEnterAndExitLower" style="flex-grow: 1; flex-direction: row;">
+                            <engine:VisualElement name="OnRayCastEnterAndExitLeft" style="flex-grow: 1; width: 50%;">
+                                <editor:PropertyField binding-path="onRaycastEnter" label="On Raycast Enter" name="onRaycastEnter" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="OnRayCastEnterAndExitRight" style="flex-grow: 1; width: 50%;">
+                                <editor:PropertyField binding-path="onRaycastExit" label="On Raycast Exit" name="onRaycastExit" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="ConditionEvents" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="ConditionEventsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Condition" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ConditionEventsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <engine:VisualElement name="AcceptAndDecline" style="flex-grow: 1; flex-direction: row;">
+                            <engine:VisualElement name="Left" style="flex-grow: 1; width: 50%;">
+                                <editor:PropertyField binding-path="OnConditionDecline" label="Decline" name="OnConditionDecline" />
+                            </engine:VisualElement>
+                            <engine:VisualElement name="Right" style="flex-grow: 1; width: 50%;">
+                                <editor:PropertyField binding-path="OnConditionAccept" label="Accept" name="OnConditionAccept" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <editor:PropertyField binding-path="hasOnConditionAttended" label="Has On Condition Attented" name="hasOnConditionAttended" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="onConditionAttended" label="On Condition Attended" name="onConditionAttended" style="margin-top: 10px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="OnSensorExitEvent" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="OnSensorExitEventFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="On Sensor Exit" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="OnSensorExitEventContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="hasOnSensorExit" label="Enabled" name="hasOnSensorExit" />
+                        <editor:PropertyField binding-path="onSensorExit" label="On Sensor Exit" name="onSensorExit" style="margin-top: 10px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="GrabReturnToPosEvent" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="GrabReturnToPosEventFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Grab Return To Pos" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="GrabReturnToPosEventContainer" tabindex="0" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="hasGrabReturnToPosEvent" label="Enabled" name="hasGrabReturnToPosEvent" />
+                        <engine:VisualElement name="BeforeAndAfter" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="BeforeReturnToPos" label="Before Return To Pos" name="BeforeReturnToPos" style="flex-grow: 1; max-width: 50%; width: 50%; min-width: 50%;" />
+                            <editor:PropertyField binding-path="AfterReturnToPos" label="After Return To Pos" name="AfterReturnToPos" style="flex-grow: 1; max-width: 50%; width: 50%; min-width: 50%;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement tabindex="103" name="SettingsTabs" style="flex-grow: 1;">
+                <engine:VisualElement name="OverrideKey" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="OverrideKeyFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Override Key" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="OverrideKeyContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: column;">
+                        <editor:PropertyField binding-path="OverrideInteractionKey" label="Enable" name="OverrideInteractionKey" style="flex-grow: 1; -unity-text-align: middle-left; margin-bottom: 3px; margin-right: 3px; margin-top: 2px; max-width: 200px; flex-shrink: 1;" />
+                        <editor:PropertyField binding-path="NewInteraction" label=" " name="NewInteraction" class="HideLabel" style="margin-top: 0; -unity-text-align: middle-left; margin-right: 5px; flex-grow: 1;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="HasMaxInteractions" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="maxInteractionsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Max Interactions" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="maxInteractionsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px; flex-direction: row;">
+                        <editor:PropertyField binding-path="hasMaxInteractions" label="Enable" name="hasMaxInteractions" style="margin-top: 3px; width: 50%; flex-grow: 0; -unity-text-align: middle-left; margin-bottom: 3px;" />
+                        <editor:PropertyField binding-path="maxInteractions" label="Max Interactions" name="maxInteractions" style="margin-top: 0; width: 60%; -unity-text-align: middle-left;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="Sensor" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="SensorFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Sensor" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="SensorContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="HasSensor" label="Enable" name="HasSensor" style="margin-top: 0;" />
+                        <editor:PropertyField binding-path="SensorOffset" label="Offset" name="SensorOffset" style="margin-top: 0;" />
+                        <engine:EnumField label="Type" type="FastStudios.SensorType, Assembly-CSharp" binding-path="SensorType" name="SensorType" style="margin-top: 5px;" />
+                        <engine:FloatField label="Radius" value="5" binding-path="SensorRadius" name="SensorRadius" style="margin-top: 5px;" />
+                        <engine:FloatField label="Distance" value="5" binding-path="SensorDistance" name="SensorDistance" style="margin-top: 5px;" />
+                        <editor:PropertyField binding-path="OnlyShowUI" label="Only Show UI" name="OnlyShowUI" />
+                        <editor:PropertyField binding-path="DrawRadiusInEditor" label="Draw Radius In Editor" name="DrawRadiusInEditor" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="AutoInteract" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="HasAutoInteractFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Auto Interact" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="HasAutoInteractContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="HasAutoInteract" label="Enable" name="HasAutoInteract" style="margin-top: 0;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="NewAnchor" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="NewAnchorFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="New Anchor" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="NewAnchorContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="WillOverrideAnchor" label="Will Override Anchor" name="WillOverrideAnchor" />
+                        <engine:VisualElement name="NewAnchorPositionContainer" style="flex-grow: 1; flex-direction: row;">
+                            <editor:PropertyField binding-path="LocalPositionNewAnchor" label="Local Pos Anchor" name="LocalPositionNewAnchor" style="flex-grow: 1;" />
+                            <engine:Button text="Set Anchor" name="LocalPositionNewAnchorButton" binding-path="SetNewAnchorButton" style="flex-grow: 1; margin-left: 10px; max-width: 75px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="SeeAnchorPointGizmosContainer" style="flex-grow: 1; flex-direction: row; margin-top: 10px;">
+                            <editor:PropertyField binding-path="SeeAnchorPointGizmos" label="Anchor Point On Gizmos" name="SeeAnchorPointGizmos" style="flex-grow: 1; max-width: 175px;" />
+                            <editor:PropertyField binding-path="AnchorPointGizmosColor" name="AnchorPointGizmosColor" label=" " style="flex-grow: 1; max-width: 175px;" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="SeeCenterOfMassGizmosContainer" style="flex-grow: 1; flex-direction: row; margin-top: 2px;">
+                            <editor:PropertyField binding-path="SeeCenterOfMassGizmos" label="Mass Center On Gizmos" name="SeeCenterOfMassGizmos" style="flex-grow: 1; max-width: 175px;" />
+                            <editor:PropertyField binding-path="SeeCenterOfMassGizmosColor" name="SeeCenterOfMassGizmosColor" label=" " style="flex-grow: 1; max-width: 175px;" />
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="AllowInteractWithOther" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="AllowInteractWithOtherFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Others Interactables Behaviour" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="AllowInteractWithOtherContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="CanInteractWithOthers" label="Can Interact" name="CanInteractWithOthers" />
+                        <editor:PropertyField binding-path="AllowJustSpecificInteractions" label="Just Specific Interactions" name="AllowJustSpecificInteractions" />
+                        <editor:PropertyField binding-path="SpecificOthersInteractions" label="Specific Interactions" name="SpecificOthersInteractions" />
+                        <editor:PropertyField binding-path="CanShowOthersUI" label="Can Show UI" name="CanShowOthersUI" style="margin-top: 10px;" />
+                        <editor:PropertyField binding-path="AllowJustSpecificUIToShow" label="Just Specific UI" name="AllowJustSpecificUIToShow" />
+                        <editor:PropertyField binding-path="SpecificOthersUI" label="Just Specific UI" name="SpecificOthersUI" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="GizmosSettings" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="GizmosSettingsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Gizmos" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="GizmosSettingsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px; padding-left: 10px;">
+                        <editor:PropertyField binding-path="SeeGizmos" label="Enabled" name="SeeGizmos" />
+                        <editor:PropertyField binding-path="SeeGizmosOnlySelected" label="Only When Selected" name="SeeGizmosOnlySelected" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="ConditionsSectionForMain" tabindex="100" style="flex-grow: 1; margin-top: 10px;">
+                <engine:VisualElement name="Conditions" style="flex-grow: 1; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0;">
+                    <engine:VisualElement name="ConditionsFoldout" style="flex-grow: 1; max-height: 32px; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 10px; margin-right: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; height: 32px;">
+                        <engine:Label text="Conditions" style="font-size: 20px; padding-left: 2px; left: 15px; right: auto; flex-shrink: 1; flex-wrap: wrap; width: 88px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="ConditionsContainer" style="flex-grow: 0; max-height: none; background-color: rgb(77, 77, 77); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-left: 30px; margin-right: 30px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; flex-shrink: 1; min-height: auto; margin-top: -2px; padding-top: 10px; padding-bottom: 10px;">
+                        <editor:PropertyField binding-path="UseConditions" label="Enabled" name="UseConditions" style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px;" />
+                        <editor:PropertyField binding-path="Conditions" label="Your Conditions" name="Conditions" style="margin-left: 0;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 94eb5a739f362ca45a1bc68e5553f1a8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 12385, guid: 0000000000000000e000000000000000, type: 0}
+  disableValidation: 0
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Resources/FastStudios/ForEditor/USS/PressEInputBindDrawer.uss
+  uploadId: 844220

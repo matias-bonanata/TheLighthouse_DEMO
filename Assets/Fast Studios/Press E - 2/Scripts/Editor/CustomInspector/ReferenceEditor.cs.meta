@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 1e03dc472fffb3e48bcb746a2221d544
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UXML: {fileID: 9197481963319205126, guid: 1ed87f31a0d83e842929e67e78bfd850, type: 3}
+  - USS: {fileID: 7433441132597879392, guid: cda9f414acb5a6640af4d9ff0c7a29af, type: 3}
+  - localTarget: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/ReferenceEditor.cs
+  uploadId: 844220

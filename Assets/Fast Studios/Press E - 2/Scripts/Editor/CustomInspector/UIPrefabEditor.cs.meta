@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 99659e4fa1a307642b8401c3a07a1e28
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - visualTree: {fileID: 9197481963319205126, guid: 52c0f90b1e7d2874c8129155f2ecb9ca,
+      type: 3}
+  - USS: {fileID: 7433441132597879392, guid: c58d1833dec53604398828149db40eb9, type: 3}
+  - GothicBold: {fileID: 12800000, guid: 526cb30c1e8810d41ab42f3475cb21ff, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/CustomInspector/UIPrefabEditor.cs
+  uploadId: 844220

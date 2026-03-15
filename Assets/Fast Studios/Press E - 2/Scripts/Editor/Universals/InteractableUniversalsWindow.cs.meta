@@ -1,0 +1,38 @@
+fileFormatVersion: 2
+guid: b5dc2a132c7d9f5458778f74d3c86e92
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - visualTree: {fileID: 9197481963319205126, guid: 1d8e18b6241c5a8429faa40340e55fc1,
+      type: 3}
+  - InteractableUXML: {fileID: 9197481963319205126, guid: 7ed2c3526a647044eae1ca7efe143286,
+      type: 3}
+  - UIprefabUXML: {fileID: 9197481963319205126, guid: 52c0f90b1e7d2874c8129155f2ecb9ca,
+      type: 3}
+  - KeyUXML: {fileID: 9197481963319205126, guid: f365b3ede606783419409dd273da4819,
+      type: 3}
+  - PositionLerpUXML: {fileID: 9197481963319205126, guid: 54d1c3a22a251804ab7a1953312c1100,
+      type: 3}
+  - RotationLerpUXML: {fileID: 9197481963319205126, guid: 705215fef2585544da8a9cd7cf90da11,
+      type: 3}
+  - ScaleLerpUXML: {fileID: 9197481963319205126, guid: 1aff1ba73b551504d8da700b87c06388,
+      type: 3}
+  - TransformLerpUXML: {fileID: 9197481963319205126, guid: 031bb01fed56c9a4482668dd13d7005f,
+      type: 3}
+  - universalsUSS: {fileID: 7433441132597879392, guid: 6aed9c9c01a185444bf0df59d2d26316,
+      type: 3}
+  - currentUXML: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 340168
+  packageName: PressE PRO - A Complete Interaction System for Unity
+  packageVersion: 1.7
+  assetPath: Assets/Fast Studios/Press E - 2/Scripts/Editor/Universals/InteractableUniversalsWindow.cs
+  uploadId: 844220

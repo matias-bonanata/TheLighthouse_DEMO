@@ -1,0 +1,89 @@
+.VisibilityOff{
+    visibility: hidden;
+}
+
+.HideAlt {
+    display: none;
+}
+
+.HideAlt1 {
+    display: none;
+}
+
+.Hide {
+    display: none;
+}
+
+.Hide1 {
+    display: none;
+}
+
+.Hide2 {
+    display: none;
+}
+
+.Hide3 {
+    display: none;
+}
+
+.HideField{
+    display: none;
+}
+
+.HideOpacity {
+    opacity: 0;
+}
+
+.HideLabel .unity-base-field__label{
+    display: none;
+}
+
+#gameObject > .unity-object-field{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#PreviewImage {
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.TransformVec3 .unity-vector3-field__label{
+    max-width: 60px;
+}
+
+.unity-vector3-field__input{
+    flex-grow: 1;
+}
+
+#SettingsButton
+{
+  background-color: #4d4d4d;
+  border-width: 2px;
+  border-color: black;
+}
+
+#SettingsButton.toggled
+{
+  background-color: deepskyblue !important;
+}
+
+#CanStack .unity-toggle__label
+{
+    flex-shrink: 1;
+}
+
+#Row2 .unity-toggle__input
+{
+    flex-shrink: 1;
+    max-width: 30px;
+}
+
+#Row2 .unity-toggle__label
+{
+    flex-grow: 1;
+    min-width: 110px;
+}
