@@ -30449,31 +30449,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 112.115
+      value: 113.89925
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5931501
+      value: -0.92365265
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 107.05562
+      value: 103.956604
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.25540408
+      value: 0.25821564
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.054874394
+      value: -0.0033301294
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.94618875
+      value: 0.9660013
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1910089
+      value: 0.012458268
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32541,9 +32541,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FramingMode: 2
-  FramingSize: 0.101
-  CenterOffset: {x: 0, y: -0.54}
-  Damping: 3.45
+  FramingSize: 0.28
+  CenterOffset: {x: 0, y: -1.15}
+  Damping: 3.31
   SizeAdjustment: 2
   LateralAdjustment: 1
   FovRange: {x: 80, y: 179}
@@ -32600,7 +32600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350767808}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10176038, y: 0.89363766, z: -0.36492372, w: 0.24059775}
+  m_LocalRotation: {x: 0.09782749, y: 0.8940767, z: -0.3659789, w: 0.23898992}
   m_LocalPosition: {x: 111.34855, y: 4.103858, z: 108.386856}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -32647,10 +32647,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1350767808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4afa82ae3200b82408d605c3dbdd1e38, type: 3}
+  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotateWithFollowTarget
-  Damping: 0
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotationComposer
+  Composition:
+    ScreenPosition: {x: 0, y: 0}
+    DeadZone:
+      Enabled: 0
+      Size: {x: 0.2, y: 0.2}
+    HardLimits:
+      Enabled: 0
+      Size: {x: 0.8, y: 0.8}
+      Offset: {x: 0, y: 0}
+  CenterOnActivate: 1
+  TargetOffset: {x: 0, y: 0, z: 0}
+  Damping: {x: 0.5, y: 0.5}
+  Lookahead:
+    Enabled: 0
+    Time: 0
+    Smoothing: 0
+    IgnoreY: 0
 --- !u!1 &1356483812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1667097752526412742, guid: a2f8e853b94ca43b1a07e36b46f8f81d, type: 3}
@@ -60510,15 +60526,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4946267852804803302, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalScale.x
-      value: 927.52234
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4946267852804803302, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalScale.y
-      value: 927.52234
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4946267852804803302, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalScale.z
-      value: 927.52234
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4994724264577825036, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: cozyCamera
@@ -60526,15 +60542,15 @@ PrefabInstance:
       objectReference: {fileID: 918987727}
     - target: {fileID: 7940265865173638439, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 778.6593
+      value: 112.115
       objectReference: {fileID: 0}
     - target: {fileID: 7940265865173638439, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 459.67978
+      value: 2.5931501
       objectReference: {fileID: 0}
     - target: {fileID: 7940265865173638439, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -944.72754
+      value: 107.05562
       objectReference: {fileID: 0}
     - target: {fileID: 7940265865173638439, guid: e238fd5bc8d53ef4b9a36d398b854860, type: 3}
       propertyPath: m_LocalRotation.w

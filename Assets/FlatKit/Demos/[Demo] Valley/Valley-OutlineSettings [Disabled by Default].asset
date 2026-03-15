@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130791d3e20646d2b6d81688877b0909, type: 3}
   m_Name: 'Valley-OutlineSettings [Disabled by Default]'
   m_EditorClassIdentifier: 
-  edgeColor: {r: 0.25293696, g: 0.25528237, b: 0.26415092, a: 1}
+  edgeColor: {r: 0.25293696, g: 0.25528237, b: 0.26415092, a: 0.3882353}
   thickness: 1
   resolutionInvariant: 0
   fadeWithDistance: 1
@@ -82,6 +82,6 @@ Material:
     - _NormalThresholdMin: 0.1
     - _Thickness: 1
     m_Colors:
-    - _EdgeColor: {r: 0.25293696, g: 0.25528237, b: 0.26415092, a: 1}
+    - _EdgeColor: {r: 0.25293696, g: 0.25528237, b: 0.26415092, a: 0.3882353}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
