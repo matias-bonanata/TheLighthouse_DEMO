@@ -22,7 +22,7 @@ MonoBehaviour:
     seconds: 0
     milliseconds: 0
     timeAsPercentage: 0
-  timeMovementSpeed: 20
+  timeMovementSpeed: 1
   modulateTimeSpeed: 0
   timeSpeedMultiplier:
     serializedVersion: 2

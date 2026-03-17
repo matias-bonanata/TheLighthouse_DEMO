@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Simple Forecast Profile
   m_EditorClassIdentifier: 
   profilesToForecast:
-  - {fileID: 11400000, guid: 455ce7df2555ead47afd8bdb324c85ab, type: 2}
   - {fileID: 11400000, guid: 28ce0162a9eccda47a345fd44e9e6e15, type: 2}
+  - {fileID: 11400000, guid: 455ce7df2555ead47afd8bdb324c85ab, type: 2}
   - {fileID: 11400000, guid: 69c9549d57701234e8b6a0047971e744, type: 2}
   - {fileID: 11400000, guid: f2d3f1cb4e3d78a4fb7f9853c2ec899a, type: 2}
   - {fileID: 11400000, guid: f161b3af7360fc043927736dde8f5c42, type: 2}

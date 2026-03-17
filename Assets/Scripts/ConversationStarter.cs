@@ -8,23 +8,28 @@ using PixelCrushers.DialogueSystem;
 
 public class ConversationStarter : MonoBehaviour
 {
-    [Header("What to do when Interact")]
-    //[SerializeField] private NPCConversation conversation;
-    [SerializeField] private bool willConverse;
-    [SerializeField] private string conversationName;
-    public Transform teleportLocation;
-    public GameObject thingToDestroy;
 
     [Header("Text")]
     [SerializeField] private TextMeshProUGUI uiText;
     [SerializeField] private string message = "x";
     public PlayerInteractUI playerInteractUI;
 
-    [Header("Player Position for Teleport")]
+    [Header("References")]
+    [SerializeField] private FloatingImage floatingImage;
+    [SerializeField] private MentalMeter mentalMeter;
+
+    [Header("Will Converse")]
+    //[SerializeField] private NPCConversation conversation;
+    [SerializeField] private bool willConverse;
+    [SerializeField] private string conversationName;
+
+    [Header("Will Teleport")]
+    public Transform teleportLocation;
     [SerializeField] public CharacterController player;
     [SerializeField] public AudioClip teleportSound;
 
-    [Header("Hold to Delete")]
+    [Header("Will Destroy")]
+    public GameObject thingToDestroy;
     [SerializeField] private float holdTimer = 0f; // 5 seconds
     [SerializeField] private float holdTime = 3f; // 5 seconds
     [SerializeField] private AudioClip deleteSound;
@@ -35,25 +40,24 @@ public class ConversationStarter : MonoBehaviour
     private bool willInitialiseObject = false;
     private bool willToggleObject = false;
 
-    [Header("Camera Change")]
+    [Header("Will Camera Change")]
     [SerializeField] private CinemachineCamera cameraToEdit;
     [SerializeField] private int priorityNumber = 0;
 
-    [Header("Object to Initialise")]
+    [Header("Will Initialise Object")]
     [SerializeField] private GameObject objectToInitialise;
     [SerializeField] private MonoBehaviour scriptToDisable;
 
-    [Header("Toggle Object")]
+    [Header("Will Toggle Object")]
     [SerializeField] private GameObject objectToToggle1;
     [SerializeField] private GameObject objectToToggle2;
     private bool isObject1Toggled = false;
     private bool isObject2Toggled = false;
 
-    [Header("Should Fade")]
+    [Header("Will Fade")]
     [SerializeField] private FadeBlackScreen fadeScript;
 
-    [Header("Mental Meter")]
-    [SerializeField] private MentalMeter mentalMeter;
+    public bool insideCollider = false;
 
     void Start()
     {        
@@ -118,6 +122,8 @@ public class ConversationStarter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            insideCollider = true;
+
             if (playerInteractUI != null)
             {
                 playerInteractUI.ShowContainer();
@@ -125,7 +131,8 @@ public class ConversationStarter : MonoBehaviour
             }
 
             //E to Interact
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) || 
+                (Input.GetMouseButtonDown(0) && floatingImage != null && floatingImage.canInteract == true))
             {
                 if (willConverse == true)
                 {
@@ -191,6 +198,8 @@ public class ConversationStarter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            insideCollider = false;
+
             if (playerInteractUI != null)
                 playerInteractUI.HideContainer();
 
